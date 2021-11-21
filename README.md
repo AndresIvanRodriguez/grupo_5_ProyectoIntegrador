@@ -1,6 +1,3 @@
 # grupo_5_sprint1ProyectoIntegrador
 
-slkjdsañlkjdalksdj
-HOla
-Soy diego 
-hola
+https://github.com/AndresIvanRodriguez/grupo_5_sprint1ProyectoIntegrador/blob/main/README.md
