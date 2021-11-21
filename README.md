@@ -13,7 +13,31 @@ Entregable: Crear archivo README.md en el repositiorio con:
     ● Una breve descripción de los integrantes del equipo.
 
 
-Plataforma de comercio 
+Plataforma de comercio de dicada a la ventade Bicicletas y accesorios, subdividida en 
+en las siguientes categorias: 
+
+Bicicletas 
+
+    Gamas 
+        Alta 
+        Media
+        Baja
+    
+    Categoria
+        Montañan 
+        Ruta
+        Bmx
+        Urbana
+
+    ACCCESORIOS 
+
+    
+● 
+
+Andres Ivan Rodriguez
+Juan Diego Quintero
+Nelson Rodriguez
+Diego Mendoza
 
 
 ## Parte 3 
