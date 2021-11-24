@@ -1,6 +1,7 @@
 # grupo_5_sprint1ProyectoIntegrador
 
 ## Parte 1
+Entregable: URL del repositorio: 
 grupo_5_sprint1ProyectoIntegrador
 https://github.com/AndresIvanRodriguez/grupo_5_ProyectoIntegrador
 
