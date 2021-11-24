@@ -35,6 +35,10 @@ Entregable: Crear archivo README.md en el repositiorio con:
 
 
 ## Parte 3 
-Deberán realizar una búsqueda de sitios similares, relacionados o que sean de interés: ● Por los productos o servicios que ofrecen. ● Por los clientes a los que apuntan. ● Por la estética que presentan. ● Por las funcionalidades implementadas. Entregable: En el README.md agregar un listado de al menos 5 sitios de referencia indicando brevemente por qué fueron elegidos.
+Deberán realizar una búsqueda de sitios similares, relacionados o que sean de interés: 
+● Por los productos o servicios que ofrecen. 
+● Por los clientes a los que apuntan. 
+● Por la estética que presentan. 
+● Por las funcionalidades implementadas. Entregable: En el README.md agregar un listado de al menos 5 sitios de referencia indicando brevemente por qué fueron elegidos.
 
-RTA: A continuación el listado de los 5 sitios de referencia:
+### RTA: A continuación el listado de los 5 sitios de referencia:
