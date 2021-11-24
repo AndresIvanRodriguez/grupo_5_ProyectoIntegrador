@@ -1,8 +1,9 @@
 # grupo_5_sprint1ProyectoIntegrador
 
-
+## Parte 1
 grupo_5_sprint1ProyectoIntegrador
 https://github.com/AndresIvanRodriguez/grupo_5_ProyectoIntegrador
+
 ## Parte 2
 Definir la temática del Market Place
 ¿Qué productos o servicios brindará nuestro sitio? ¿Quién será nuestra audiencia
