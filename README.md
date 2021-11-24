@@ -18,15 +18,13 @@ Entregable: Crear archivo README.md en el repositiorio con:
     ● Plataforma de comercio de dicada a la ventade Bicicletas y accesorios, subdividida en 
      en las siguientes categorias: 
             Bicicletas 
-                  Gamas 
-                        Alta 
-                        Media
-                        Baja
-                  Categoria
-                        Montañan 
-                        Ruta
-                        Bmx
-                        Urbana
+                  Gamas:     Alta 
+                             Media
+                             Baja     
+                  Categoria: Montañan 
+                             Ruta
+                             Bmx
+                             Urbana 
                    ACCCESORIOS 
  
       ● Andres Ivan Rodriguez
