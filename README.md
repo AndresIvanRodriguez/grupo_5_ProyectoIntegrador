@@ -16,7 +16,7 @@ Entregable: Crear archivo README.md en el repositiorio con:
     ● Una breve descripción de los integrantes del equipo.
 
 
-Plataforma de comercio de dicada a la ventade Bicicletas y accesorios, subdividida en 
+Tematica: Plataforma de comercio de dicada a la ventade Bicicletas y accesorios, subdividida en 
 en las siguientes categorias: 
 
 Bicicletas 
