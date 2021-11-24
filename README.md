@@ -29,7 +29,8 @@ Entregable: Crear archivo README.md en el repositiorio con:
  
       ● Andres Ivan Rodriguez
         Juan Diego Quintero
-        ### Nelson Rodriguez: Estudiante Fullstack de Digital House. Le gusta viajar, el futbol, el ajedrez y aprender cosas nuevas en todo el momento. Bartender y barista como   segunda profesion. 
+        Nelson Rodriguez: 
+        Estudiante Fullstack de Digital House. Le gusta viajar, el futbol, el ajedrez y aprender cosas nuevas en todo el momento. Bartender y barista como segunda profesion. 
         Diego Mendoza
 
 
