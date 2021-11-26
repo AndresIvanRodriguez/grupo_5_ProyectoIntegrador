@@ -44,5 +44,6 @@ Deberán realizar una búsqueda de sitios similares, relacionados o que sean de 
 
 ### RTA: A continuación el listado de los 5 sitios de referencia:
 https://www.bike-discount.de/en/ : De este lugar destacamos la estetica de su Home, pero lo que más llamativo nos parecio es la cantidad de información sobre el producto que brinda su Wireframe descripción del producto. Sin embargo consideramos que  en general las pestañas de la pagina contienen demasiada información.<br>
-https://www.specialized.com/es/es/shop/bikes/c/bikes Es la pagina principal de la marca de bicicletas "specialized" que considero es muy completa y podemos obtener bastante contenido de ella. Tiene todas las especificaciones que nos pide el proyecto, además tiene una UI y UX sobresaliente. 
+https://www.specialized.com/es/es/shop/bikes/c/bikes Es la pagina principal de la marca de bicicletas "specialized" que considero es muy completa y podemos obtener bastante contenido de ella. Tiene todas las especificaciones que nos pide el proyecto, además tiene una UI y UX sobresaliente.<br>
+https://www.trekbikes.com/mx/es_MX/electric-mountain-bikes/ El diseño de esta pagina es sencillo pero muy agradable. Lo ideal es hacer un diseño del footer y el header algo similar.  
 
