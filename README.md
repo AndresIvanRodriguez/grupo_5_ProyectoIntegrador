@@ -44,3 +44,5 @@ Deberán realizar una búsqueda de sitios similares, relacionados o que sean de 
 
 ### RTA: A continuación el listado de los 5 sitios de referencia:
 https://www.bike-discount.de/en/ : De este lugar destacamos la estetica de su Home, pero lo que más llamativo nos parecio es la cantidad de información sobre el producto que brinda su Wireframe descripción del producto. Sin embargo consideramos que  en general las pestañas de la pagina contienen demasiada información.
+https://www.specialized.com/es/es/shop/bikes/c/bikes Es la pagina principal de la marca de bicicletas "specialized" que considero es muy completa y podemos obtener bastante contenido de ella. Tiene todas las especificaciones que nos pide el proyecto, además tiene una UI y UX sobresaliente. 
+
