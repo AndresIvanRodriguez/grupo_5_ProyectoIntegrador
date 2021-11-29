@@ -34,7 +34,9 @@ Entregable: Crear archivo README.md en el repositiorio con:
       ● Nelson Rodriguez: 
         Estudiante Fullstack de Digital House. Le gusta viajar, el futbol, el ajedrez y aprender cosas nuevas en todo el momento. Bartender y barista como segunda profesion. 
       ● Diego Alexander Mendoza Enríquez:
-            Soy Ingeniero en Telecomunicaciones, me gusta mucho el área de la tecnología en sus distintas ramas, algunos pasatiempos diferentes a mi carrera son la actividad                 física, conocer distintos lugares, entre otros. Uno de los trabajos que me marco mucho en áreas personales y profesionales fue la recreación, animación y locución,               a tal punto que gusta aplicarlo en algunas situaciones de mi vida.   
+            Soy Ingeniero en Telecomunicaciones, me gusta mucho el área de la tecnología en sus distintas ramas, algunos pasatiempos diferentes a mi carrera son la actividad 
+            física, conocer distintos lugares, entre otros. Uno de los trabajos que me marco mucho en áreas personales y profesionales fue la recreación, animación y locución, 
+            a tal punto que gusta aplicarlo en algunas situaciones de mi vida.   
             
 
 
