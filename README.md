@@ -28,7 +28,8 @@ Entregable: Crear archivo README.md en el repositiorio con:
                    ACCCESORIOS 
  
       ● Andres Ivan Rodriguez:
-        Estudiante de física, apasionado por la ciencia, la investigación y tambien de la programación, me gusta ver futbol (Hincha de Millonario F.c), he practicado ciclismo y          artes marciales pero en pandemia lo abandone. 
+        Estudiante de física, apasionado por la ciencia, la investigación y tambien de la programación, me gusta ver futbol (Hincha de Millonario F.c),
+        he practicado ciclismo y artes marciales pero en pandemia lo abandone. 
       ● Juan Diego Quintero 
       ● Nelson Rodriguez: 
         Estudiante Fullstack de Digital House. Le gusta viajar, el futbol, el ajedrez y aprender cosas nuevas en todo el momento. Bartender y barista como segunda profesion. 
