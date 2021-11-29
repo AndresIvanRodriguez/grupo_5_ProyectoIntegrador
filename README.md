@@ -52,3 +52,6 @@ https://www.bike-discount.de/en/ : De este lugar destacamos la estetica de su Ho
 https://www.specialized.com/es/es/shop/bikes/c/bikes Es la pagina principal de la marca de bicicletas "specialized" que considero es muy completa y podemos obtener bastante contenido de ella. Tiene todas las especificaciones que nos pide el proyecto, además tiene una UI y UX sobresaliente.<br>
 https://www.trekbikes.com/mx/es_MX/electric-mountain-bikes/ El diseño de esta pagina es sencillo pero muy agradable. Lo ideal es hacer un diseño del footer y el header algo similar.  
 
+### Compartimos el link de los wireframes
+https://www.figma.com/file/GhzoNTjoyJ3qaMBxq8aYiO/Home?node-id=0%3A1
+
