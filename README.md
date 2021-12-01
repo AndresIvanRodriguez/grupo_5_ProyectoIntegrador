@@ -31,7 +31,7 @@ Entregable: Crear archivo README.md en el repositiorio con:
         Estudiante de física, apasionado por la ciencia, la investigación y tambien de la programación, me gusta ver futbol (Hincha de Millonario F.c),
         he practicado ciclismo y artes marciales pero en pandemia lo abandone. 
       ● Juan Diego Quintero 
-      Estudiante de Ingeniería Electrónica, me gusta el fútbol aunque por la pandemia ya casi no lo practico,me gusta la programación, me gustan los videojuegos en       tiempos libres.
+      Estudiante de Ingeniería Electrónica, me gusta el fútbol aunque por la pandemia ya casi no lo practico,me gusta la programación, me gustan los videojuegos en tiempos libres.
       ● Nelson Rodriguez: 
         Estudiante Fullstack de Digital House. Le gusta viajar, el futbol, el ajedrez y aprender cosas nuevas en todo el momento. Bartender y barista como segunda profesion. 
       ● Diego Alexander Mendoza Enríquez:
