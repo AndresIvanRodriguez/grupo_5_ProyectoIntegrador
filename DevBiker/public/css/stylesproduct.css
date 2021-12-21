@@ -129,7 +129,7 @@ main{
     padding: auto;
     width: 70%;
     justify-content: center;
-    background-color: rgba(158, 155, 155, 0.3)
+    background-color: rgba(180, 179, 187, 0.3)
 }
 .img-principal img{
     width: 100%;
@@ -140,15 +140,15 @@ main{
     display: flex;
     padding: 10px;
     justify-content: center;
-    background-color:rgba(158, 155, 200, 0.3);
+    background-color:rgba(180, 179, 187, 0.3);
 }
 .minifoto img{
     width: 90%;
     padding: 5px;  
 }
 .productodetalles{
-    justify-content: center;
-    background-color: rgba(156, 59, 59, 0.6);
+    justify-content: top;
+    background-color: rgba(180, 179, 187, 0.3);
     width: 30%;
     display: flex;
     flex-direction:column;
@@ -156,22 +156,23 @@ main{
 .nombre{
     font-size: large;
     text-align: center;
-    padding: 10px;
-    background-color:seagreen;
+    padding: 20% ;
+    background-color:rgba(180, 179, 187, 0.3);
 }
 .precio{
     font-size: large;
     text-align: center;
-    padding: 10px;
-    background-color:seagreen;
+    padding: 20px;
+    background-color: rgba(180, 179, 187, 0.3);
 }
 .colores{
     width: 100%;
     display: flex;
+    padding: 20%;
     font-size: large;
     text-align: center;
     padding: 10px;
-    background-color:seagreen;
+    background-color: rgba(180, 179, 187, 0.3);
 }
 .color img{
     width: 70%;
@@ -181,14 +182,14 @@ main{
 .pago{
     font-size: large;
     text-align: center;
-    padding: 10px;
-    background-color:seagreen;
+    padding: 20%;
+    background-color: rgba(180, 179, 187, 0.3);
 }
 .especificaciones{
     padding: 20px;
 }
 .subespecificaciones{
-    background-color: springgreen;
+    background-color: rgba(180, 179, 187, 0.3);
     padding: 20px;}
 .titulitos{
     font-size: Large;

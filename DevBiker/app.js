@@ -9,6 +9,8 @@ app.use(express.static(publicPath));
 app.listen(3001, () => console.log("Conexión exitosa"));
 
 
-app.get("/", (req, res) => res.sendFile(path.resolve(__dirname, "./views/register.html")));
-app.get("/product", (req, res) => res.sendFile(path.resolve(__dirname, "./views/producto.html")));
+app.get("/home", (req, res) => res.sendFile(path.resolve(__dirname, "./views/home.html")));
+app.get("/producto", (req, res) => res.sendFile(path.resolve(__dirname, "./views/producto.html")));
+app.get("/registro", (req, res) => res.sendFile(path.resolve(__dirname, "./views/registrer.html")));
+app.get("/login", (req, res) => res.sendFile(path.resolve(__dirname, "./views/login.html")));
 
