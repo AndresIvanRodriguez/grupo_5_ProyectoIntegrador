@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&family=Vujahday+Script&display=swap');
+
 /*Normalización*/
 *{
     padding: 0;
@@ -9,7 +12,6 @@
 html{                        /*El tamaño de los navegadores por defecto son 16px*/
     font-size: 65%;          /*De esta manera el valor del navegador es de 10px*/
 }
-
 
 /*Variables*/
 :root{
@@ -42,12 +44,15 @@ header{
     background-color: black;
     border-right: solid 1px white;
 }
-.right{
-    font-size: var(--text1-1);
+.barra .barra-text{
+    font-family: 'Oooh Baby', cursive;
     text-align: center;
     padding: 3px;
+    font-size: 8px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
 }
-.p{
+.login{
     width: 23%;
     background-color: #000080;
     text-align: center;
@@ -63,21 +68,22 @@ header{
     border-top: solid 1px white;
 }
 .logo{
-    width: 13%;
+    width: 30%;
 }
 .logo img{
     width: 100%;
     padding: 0px;
-    margin: 6px;
+    margin: auto
 }
 .nav-list{
-    width: 40%;
+    width: 50%;
     display: none;
 }
 .nav-list ul{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: right;
+    gap: 10px;
     flex-wrap: wrap;
 }
 header .nav ul li{
@@ -86,17 +92,19 @@ header .nav ul li{
     justify-content: center;
 }
 .icons{
-    width: 15%;
+    width: 20%;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 5px;
-    margin: 0px 3px;
-    gap: 0px;
-    font-size: 11px;
+    justify-content: center;
+    gap: 5px;
+    font-size: 9px;
+}
+.icons i{
+    padding: 0px 1px;
 }
 .burger-menu{
     display: flex;
-    padding: 5px;
+    padding: 4px;
+    margin-right: 20px;
     border: solid 1px white;
     border-radius: 3px;
 }
@@ -119,55 +127,144 @@ main{
     background-color: white;
     display: block;
 }
-.img-principal img{
-    width: 60%;
+.img-principal h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.principal .img-principal img{
+    width: 50%;
     display: block;
-    padding: 20px;  
+    padding: 5px;  
     margin: auto;
+    border-radius: 15px;
+}
+.img-principal p{
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+    padding: 8px;
 }
 .text-alt{
-    padding: 5px 20px;
-    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
     text-align: justify;
+    margin-bottom: 15px;
+}
+.banner{
+    display: flex;
+    border: 3px solid #b3b3ff;
+}
+.banner img{
+    width: 100%;
+}
+.bestPrice{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.principal-redes{
+    width: 35%;
+    margin: auto;   
+    text-align: center;
+    background-color: #ccccff;
+    padding: 1px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.principal-redes i{
+    margin: 2px;
+}
+.principal h3{
+    margin-top: 15px;
+    padding: 10px;
+    font-size: var(--text3-1);
 }
 .models{
     width: 100%;
     padding: 5px;
-    border: solid 1px blue;
     display: flex;
-    flex-direction: row;
-}
-.models img{
-    width: 100%;
-    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 main .models article{
-    width: 30%;
-    background-color: gray;
-    margin: 5px;
+    width: 100%;
+    display: flex;
+    background-color: #e9ecff;
+    flex-direction: column;
+    margin: 3px;
     padding: 2px;
+    box-shadow: 1px 1px 1px 1px #ccccff;
+}
+.models img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+    margin: auto;
 }
 .price-descripcion{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5px;
 }
 .price{
-    font-size: 6px;
+    font-size: 11px;
+    background-color: #9999ff;
+    padding: 3px;
+    margin: 3px;
+    box-shadow: 2px 2px #7b8bff;
 }
 .description{
-    font-size: 7px;
+    font-size: 10px;
+}
+.princiapl-redes i{
+    color: #050A30;
+}
+.devbiker{
+    margin: auto;
+    width: 95%;
+    padding: 5px;
+    text-align: justify;
+}
+.devbiker li{
+    margin-left: 16px;
+}
+.findBike{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0px 8px 8px 8px;
+    border: solid 2px #000080;
+    background-color: #b3b3ff;
+    border-radius: 10px;
+    font-size: var(--text1);
+}
+.findBike h3{
+    font-size: 12px;
+}
+.categories{
+    margin: auto;
+    margin-top: 15px;
+    padding: 0px 5px;
+    width: 95%;
+}
+.list-catogories{
+    width: 80%;
+    padding: 5px;
 }
 
 /*Footer*/
 footer{
     background-color: #050A30;
     color: white;
+    text-align: center;
 }
 .footer-list{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -177,36 +274,47 @@ footer{
     list-style-type: none;
     line-height: 16px;
     font-size: var(--text1);
+    color: #ccccff;
+    text-align: center;
 }
 h4{
     padding-bottom: 5px;
-    text-align: center;
     font-weight: bold;
     font-size: var(--text1);
+    margin: 1%;
+}
+.footer-list ul{
+    width: 33.33333%;
+    border-left: 1px solid #9999ff;
+    border-right: 1px solid #9999ff;
+    line-height: 20px;
 }
 .social-media li{
     display:none;
+    justify-content: center;
 }
 .social-media i{
     display: flex;
     justify-content: center;
     margin: 3px;
+    color: #ccccff;
 }
 .copyright{
     background-color: black;
+    font-family: 'Oooh Baby';
     font-size: var(--text1);
     text-align: center;
     border-top: solid 1px white;
     padding: 5px;
+    letter-spacing: 2px;
 }
 
 /*@media*/
 @media (min-width: 376px){
     .nav-list{
-        width: 60%;
         display: flex;
         justify-content: right;
-        font-size: var(--text1);
+        font-size: var(--text1-1);
     }
     .burger-menu{
         display: none;
@@ -218,12 +326,52 @@ h4{
         display: none;
     }
 }
+
 @media (min-width: 426px){
-    .top-header p{
+    .barra .barra-text{
+        font-size: var(--text2);
+    }
+    .login{
         font-size: var(--text2)
     }
     .nav-list{
-        font-size: 10px;
+        font-size: var(--text2);
+    }
+    .img-principal h3{
+        font-size: 18px;
+    }
+    .img-principal p{
+        font-size: var(--text3);
+    }
+    .text-alt{
+        font-size: var(--text3);
+    }
+    .principal-redes{
+        width: 35%;
+        font-size: var(--text3);
+    }
+    .findBike{
+        font-size: var(--text3-1);
+    }
+    .categories{
+        font-size: var(--text3);
+    }
+    .bestPrice{
+        font-size: var(--text3);
+    }
+    /*footer---------------------------*/
+    .icons{
+        font-size: var(--text2);
+        gap: 12px;
+    }
+    main .models article{
+        width: 48%;
+    }
+    .price{
+        font-size: 11px;
+    }
+    .description{
+        font-size:9px;
     }
     .footer-list li{
         font-size: var(--text2);
@@ -232,23 +380,66 @@ h4{
         font-size: var(--text3-1);
     }
 }
+
 @media (min-width: 769px){
-    .top-header p{
+    .login{
         font-size: var(--text3)
     }
-    .icons{
-        font-size: 18px;
+    .barra .barra-text{
+        font-size: var(--text3);
     }
     header .nav ul li{
-        font-size: var(--text3);
+        font-size: 14px;
+        padding: 20px;
     }
-    .footer-list li{
-        font-size: var(--text3);
+    .principal .img-principal h3{
+        font-size: 40px;
     }
+    .img-principal img{
+        width: 50%;
+    }
+    .img-principal p{
+        font-size: 18px;
+    }
+    .text-alt{
+        font-size: 18px;
+    }
+    .principal h3{
+        font-size: 20px;
+    }
+    .icons{
+        font-size: 17px;
+        gap: 15px;
+    }
+    .bestPrice{
+        font-size: 20px;
+    }
+    .principal-redes{
+        width: 30%;
+        font-size: 20px;
+    }
+    main .models article{
+        width: 24%;
+    }
+    .price{
+        font-size: 15px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .findBike{
+        font-size: 16px;
+        padding: 0px 15px 15px 15px;
+    }
+    .categories{
+        font-size: 20px;
+    }
+    /*footer---------------------------*/
     h4{
         font-size: 20px;
     }
     .footer-list li{
+        font-size: var(--text3);
         line-height: 20px;
     }
     .copyright{
