@@ -123,9 +123,12 @@ main{
     width: 5%;
 }
 .principal{
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     background-color: white;
     display: block;
+    
 }
 .img-principal h3{
     text-align: center;
