@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*colores*/
+    --colorLetra: #F4F6FC;
+    --colorCiclista:#233DFF;
+    --fondoAzul:#050A30;
+    --black:black;
+    --wheat:wheat;
+    --moradoOscuro:rgb(65, 0, 45);
+    --colorIcono:rgb(0, 5, 245);
+    --azulclaro:rgb(199, 200, 248);
+    --wiheslesProductosAComprar:rgba(2, 37, 177, 0.304);
+    /*otros*/
+    --roboto:"Roboto", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--roboto);
+    background-color: rgb(241, 252, 255);
+}
+header{
+    background-color: var(--fondoAzul);
+}
+header h2 , .left-navbar a{
+    color: var(--colorLetra);
+}
+.devbiker{
+    height: 10%;
+    width: 150px;
+    background-color: var(--fondoAzul);
+}
+.logo-devbiker{
+  /*  max-width: 12%; */
+  /*  max-height: 12%;*/
+    height: 100%;
+    width: 100%;
+    margin: -10px 0px 0px 0px;
+    /*border: rgb(251, 255, 0) 1px solid;*/
+}
+.img-logo{
+   /* max-width: 12%;*/
+  /*  max-height: 12%;*/
+    height: 40px;
+    width: 90px;
+    /*border: rgb(250, 185, 250) 1px solid;*/
+}
+.carrito img{
+    height: 23px;
+    width: 24px;
+}
+.carrito a{
+    margin: -3px 0px 0px 0px;
+}
+/*.carrito2{
+     display:none;
+}*/
+/*/////////////////////////////////////////
+.carrito{
+transition: all 1s linear;
+}
+.carrito:hover.carrito1{
+    background-image: url('./carrito_rojo_sin_fondo(1).png');
+}
+/////////////////////////////////////7/////
+*/
+.buscar i, .corazon i, .carrito i ,.hamburguer-button i{
+    transition: all 0.5s linear;
+}
+.buscar i:hover{
+    color: var(--colorIcono);
+}
+.corazon i:hover{
+    color: var(--colorIcono);
+}
+.carrito i:hover{
+    color: var(--colorIcono) ;
+}
+.hamburguer-button:hover i{
+    background-color: rgb(32, 1, 61);
+    color: var(--colorIcono);
+}
+.right-navbar i{
+    color: rgb(255,255,255);
+}
+/*                                       Header*/
+.mainheader{
+    padding: 5px 5px;
+}
+/*modificando parte superior del header*/
+.mainheader .perfil{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--black);
+}
+.hamburguer-button i{
+    background-color: rgb(63, 0, 122);
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: rgb(255,255,255);
+    font-size: 20px;
+}
+.mainheader .perfil2{
+    display:flex;
+    justify-content: space-between;    
+}
+.mainheader .perfil h2{
+    font-size: 10px;
+    font-weight: 100;
+    padding-top: 6px;
+    padding-left: 8px;
+}
+.mainheader .perfil li{
+    list-style: none;
+    background-color: rgb(63, 0, 122);
+    padding: 3px 4px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-right: 8px;
+}
+.perfil a{
+    text-decoration: none;
+    color:var(--wheat);
+}
+/* modificanco el nav*/
+/*361px los escondemos*/
+.devbiker{
+    padding: 0% 20px;
+    padding-top: 20px;
+    width: 100%;    
+    max-width:500px ;
+    margin: auto;
+}
+.nav-web{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-web .right-navbar{
+    padding:0px 12px;
+    padding-top: 5px;
+    margin: -5px 0px 16px 0px;
+    display:flex;
+    justify-content: space-around;
+    gap: 10%;
+    background-color: var(--moradoOscuro);
+    border-radius: 8px;
+    gap:3px;
+}
+.nav-web .left-navbar{
+    display: none;
+    /*en 361 no se muestra , se muestra la huburg*/
+}
+.devbiker nav ul,li{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-web a{
+    text-decoration: none;
+    color:var(--wheat);
+    display: inline-block;
+    padding:5px 0px;
+    font-size: 17px;
+}
+/*fin del nav*7
+/*---------------------------------fin de la parte superior del header----------------------------------------------*/
+/*---------------------------------cuerpo Body-----------------------------------------------*/
+.body{
+    margin: 8px 10px 0px 10px;
+}
+.RutaDePosicionamiento{
+    background-color:var(--azulclaro) ;
+    padding: 2px 15px;
+    width: 70%;
+    margin-left:-9px ;
+    margin-top:-9px ;
+}
+.menuCompras{
+    display: flex;
+    justify-content: center;
+    background-color: #C9E7F5;
+    /*border: 1px solid rgb(151, 53, 53);*/
+    margin: 20px 5px 0px 5px;
+    padding: 0%;
+}
+#menu * { list-style:none;}
+#menu li{ line-height:180%;}
+#menu li a{color:#222; text-decoration:none;}
+#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+#menu input[name="list"] {
+    position: absolute;
+    left: -1000em;
+    }
+#menu label:before{ content:"\025b8"; margin-right:4px;}
+#menu input:checked ~ label:before{ content:"\025be";}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
+.menuCompras aside, section{
+    background-color:  rgb(165, 208, 228);
+    padding: 10px;
+}
+.menuVertical{
+    display: none;
+}
+.seccionDeCompras{
+    width: 100%;
+    height: 100%;
+}
+.textoSeccionDeCompras{
+    text-align: center;
+    border-radius: 8%;
+    margin: 0% 10% 20px 10%;
+    justify-content: center;
+    font-size: 20px;
+}
+.seccionDeCompras h5{
+    text-align: center;
+    border-radius: 8%;
+    margin: 2% 10% 0% 10%;
+    justify-content: center;
+    text-justify: 25%;
+    font-size: 15px;
+    padding: 10px 8px;
+}
+.productosAComprar{
+    /*background-color: var(--wiheslesProductosAComprar);*/
+    background-color: var(--wiheslesProductosAComprar);
+    margin: 20px 0px  0px 0px;
+    width: 100%;
+    margin-left: 5px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 8px rgb(100,100,100);
+}
+.productosAgregados{
+    /*background-color: var(--wiheslesProductosAComprar);*/
+    background-color: var(--wiheslesProductosAComprar);
+        margin: 20px 0px  0px 0px;
+    width: 100%;
+    margin-left: 5px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 8px rgb(100,100,100);
+}
+.articulosAgregado{
+    background-color:  rgba(30, 55, 156, 0); /*    color de margen */
+}
+.articulosAgregado ul{
+    background-color: rgb(232, 208, 255);
+    height: 280px;
+    width: 100%;
+    overflow-y:scroll ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    padding: 3px 5px;
+}
+.UlArticulosAgregados{
+    box-shadow: rgb(234, 219, 14);
+}
+.articulosAgregado ul li {
+margin: 6px 2px 6px 2px;
+}
+.seccionDeCompras form{
+    padding: 1px 0px 2px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Boton-pasar {
+    background-color: rgb(63, 0, 122);
+    color: rgb(255,255,255);
+    display: block;
+    max-width: 82px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 9px;
+    margin: auto;
+    margin-top:5px;
+    margin-bottom: 5px;
+    border-color: rgb(63, 0, 122);
+}
+.Boton-comprar {
+    background-color: rgb(63, 0, 122);
+    color: rgb(255,255,255);
+    display: block;
+    max-width: 82px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 9px;
+    margin: auto;
+    margin-top:5px;
+    margin-bottom: 5px;
+    border-color: rgb(63, 0, 122);
+}
+.imagenes{
+    align-items: center;
+    width: 50%;
+    display: flex;
+    margin: 5px 9px 15px 10px;
+    padding:10px 10px 10px 10px;
+}
+.seccionDeCompras .imagenes img{
+    width: 100%;
+}
+.flex-row{
+    padding: 0px 7px;
+    margin: 0px 4px;
+}
+.imagenes .caja{
+    margin:0px 0px 0px 20px ;
+    padding: 0px 7px;
+    float: left;
+}
+.articulosAgregado article{
+    margin: 2px;
+    box-shadow: 0px 0px 8px rgb(100,100,100);
+    padding: 5px 3px 3px 5px;
+    background-color: rgb(174, 174, 243);
+}
+.seccionDeCompras form p{
+    text-align: center;
+    margin: 1px 0px 0px 0px;
+}
+/*---------------------------------fin cuerpo Body-----------------------------------------------*/
+/*-------------------------------------footer---------------------------------------------------*/
+/*-------------------------------------fin de footer---------------------------------------------------*/
+/*@media*/
+@media screen and (min-width:400px) {
+    .body{
+        max-width: 650px;
+        margin: 5px 10% 2px 10%;
+        justify-content: center;
+    }
+}
+/*@media screen and (min-width:361px) and (max-width:768px) {
+ 
+}*/
+@media screen and (min-width:769px) {
+    .body{
+        margin:auto;
+        margin-top:30px;
+    }
+    .devbiker{
+        padding: 0px 45px;
+        padding-top: 20px;
+        width: 100%;    
+        max-width:1000px ;
+        margin: auto;
+    }
+    .nav-web .hamburguer-button{
+        display: none;
+    }
+    .nav-web .left-navbar{
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+        margin-left: -58px;
+    }
+}
+/*fin de @ media*/
+
