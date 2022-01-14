@@ -116,7 +116,7 @@ main{
 }
 .margin-left{
     width: 5%;
-    background-color: #b3b3ff;
+    background-color: hsl(240, 100%, 85%);
 }
 .margin-right{
     background-color: #b3b3ff;
