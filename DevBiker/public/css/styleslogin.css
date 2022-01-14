@@ -100,6 +100,8 @@ header .nav ul li{
     border: solid 1px white;
     border-radius: 3px;
 }
+
+/*footer */
 footer{
     background-color: #050A30;
     color: white;
@@ -194,6 +196,7 @@ h4{
     }
 }
 /*main*/
+
 .container{
     display: flex;
     align-items: center;
@@ -243,10 +246,14 @@ a{
 .boton{
     width: 150px;
     border-radius: 15px;
-    background-color: #048620;
+    background-color: #323ff5;
     color: white;
     margin-top: 30px;
     border: none;
-    border-bottom: 4px solid #0b5a1c;
+    border-bottom: 4px solid #1c0b5a;
     margin-left: 85px;
+}
+main{
+    border-left: 40px solid  #b3b3ff;
+    border-right: 40px solid  #b3b3ff;
 }

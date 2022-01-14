@@ -156,7 +156,7 @@ h4{
         display: none;
     }
 }
-{
+
     .top-header p{
         font-size: var(--text2)
     }
@@ -169,7 +169,7 @@ h4{
     h4{
         font-size: var(--text3-1);
     }
-}
+
 @media (min-width: 769px){
     .top-header p{
         font-size: var(--text3)
@@ -249,10 +249,14 @@ a{
 .boton{
     width: 150px;
     border-radius: 15px;
-    background-color: #048620;
+    background-color: #323ff5;
     color: white;
     margin-top: 30px;
     border: none;
-    border-bottom: 4px solid #0b5a1c;
+    border-bottom: 4px solid #1c0b5a;;
     margin-left: 85px;
+}
+main{
+    border-left: 40px solid  #b3b3ff;
+    border-right: 40px solid  #b3b3ff;
 }
