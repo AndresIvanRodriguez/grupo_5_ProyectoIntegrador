@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&family=Vujahday+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
 /*Normalización*/
 *{
     padding: 0;
@@ -24,13 +26,13 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     --text3-1: 14px;
 }
 
-/*Body*/
+/*Body--------------------------------------*/
 .text-alt{
     width: 90%;
     margin: auto;
 }
 
-/*Header*/
+/*Header------------------------------------*/
 header{
     background-color: #050A30;
     color: white;
@@ -54,7 +56,8 @@ header{
 }
 .login{
     width: 23%;
-    background-color: #000080;
+    font-family: 'Cinzel', serif;
+    background-color: #50546e;
     text-align: center;
     padding: 5px 3px;
     font-weight: bold;
@@ -69,9 +72,10 @@ header{
 }
 .logo{
     width: 30%;
+    text-align: center;
 }
 .logo img{
-    width: 100%;
+    width: 80%;
     padding: 0px;
     margin: auto
 }
@@ -81,6 +85,7 @@ header{
 }
 .nav-list ul{
     display: flex;
+    font-family: 'Patua One', cursive;
     width: 100%;
     justify-content: right;
     gap: 10px;
@@ -109,7 +114,7 @@ header .nav ul li{
     border-radius: 3px;
 }
 
-/*Main*/
+/*Main---------------------------------------------*/
 main{
     width: 100%;
     display: flex;
@@ -128,7 +133,6 @@ main{
     width: 90%;
     background-color: white;
     display: block;
-    
 }
 .img-principal h3{
     text-align: center;
@@ -193,7 +197,7 @@ main{
 main .models article{
     width: 100%;
     display: flex;
-    background-color: #e9ecff;
+    background-color: #e6e6ff;
     flex-direction: column;
     margin: 3px;
     padding: 2px;
@@ -260,7 +264,7 @@ main .models article{
     padding: 5px;
 }
 
-/*Footer*/
+/*Footer-------------------------------------------*/
 footer{
     background-color: #050A30;
     color: white;
@@ -273,34 +277,32 @@ footer{
     justify-content: space-around;
     padding: 10px;
 }
+footer img{
+    width: 90%;
+}
+.footer-list ul{
+    width: 33.33333%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    line-height: 20px;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social-media i{
+    justify-content: center;
+    color: #ccccff;
+    margin: 3px;
+    margin: 5px;
+}
 .footer-list li{
     list-style-type: none;
     line-height: 16px;
     font-size: var(--text1);
     color: #ccccff;
     text-align: center;
-}
-h4{
-    padding-bottom: 5px;
-    font-weight: bold;
-    font-size: var(--text1);
-    margin: 1%;
-}
-.footer-list ul{
-    width: 33.33333%;
-    border-left: 1px solid #9999ff;
-    border-right: 1px solid #9999ff;
-    line-height: 20px;
-}
-.social-media li{
-    display:none;
-    justify-content: center;
-}
-.social-media i{
-    display: flex;
-    justify-content: center;
-    margin: 3px;
-    color: #ccccff;
 }
 .copyright{
     background-color: black;
@@ -312,7 +314,8 @@ h4{
     letter-spacing: 2px;
 }
 
-/*@media*/
+
+/*@media-----------------*/
 @media (min-width: 376px){
     .nav-list{
         display: flex;
@@ -325,9 +328,6 @@ h4{
     .social-media li{
         display: flex;
     }
-    .social-media i{
-        display: none;
-    }
 }
 
 @media (min-width: 426px){
@@ -338,8 +338,9 @@ h4{
         font-size: var(--text2)
     }
     .nav-list{
-        font-size: var(--text2);
+        font-size: 13px;
     }
+    /*Body----------------------------------------------------*/
     .img-principal h3{
         font-size: 18px;
     }
@@ -362,7 +363,7 @@ h4{
     .bestPrice{
         font-size: var(--text3);
     }
-    /*footer---------------------------*/
+    /*footer--------------------------------------------------*/
     .icons{
         font-size: var(--text2);
         gap: 12px;
@@ -376,8 +377,12 @@ h4{
     .description{
         font-size:9px;
     }
+    .social-media i{
+        font-size: 20px;
+    }
     .footer-list li{
         font-size: var(--text2);
+        line-height: 20px;
     }
     h4{
         font-size: var(--text3-1);
@@ -392,9 +397,10 @@ h4{
         font-size: var(--text3);
     }
     header .nav ul li{
-        font-size: 14px;
+        font-size: 16px;
         padding: 20px;
     }
+    /*Body----------------------------------------------------*/
     .principal .img-principal h3{
         font-size: 40px;
     }
@@ -437,13 +443,18 @@ h4{
     .categories{
         font-size: 20px;
     }
-    /*footer---------------------------*/
+    /*footer-------------------------------------------------------*/
     h4{
         font-size: 20px;
+        margin: 15px
     }
     .footer-list li{
         font-size: var(--text3);
-        line-height: 20px;
+        line-height: 25px;
+    }
+    .social-media i{
+        font-size: 30px;
+        margin: 8px 12px;
     }
     .copyright{
         font-size: var(--text3-1);
