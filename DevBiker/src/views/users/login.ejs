@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/styleslogin.css" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+        
+        <div class="container">
+           
+            <div class="container_form">
+             <h1>Iniciar Sesion</h1>
+            <form action="">
+                <h2>Usuario
+                    <input type="text"  >
+                </h2>
+                <h2> Contraseña
+                    <input type="password" >
+                </h2>
+                <input class="boton type="submit" value="Iniciar Sesión">
+                <input class="check" type="checkbox" id="id">
+                <label for="id">Recordar Usuario</label>
+                <a href="/registro">¿Olvidaste tu contraseña?</a>
+                <a href="/register.ejs">Crear cuenta</a>
+                
+            </form>
+       
+            </div>
+            
+           </div>
+          
+    </main>
+    
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>

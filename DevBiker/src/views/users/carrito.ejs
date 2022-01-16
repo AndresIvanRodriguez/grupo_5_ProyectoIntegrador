@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="/css/styleC1.css" type="text/css">
+</head>
+<body>
+    <%- include("../partials/header.ejs") %>
+    <section class="body">
+        <div class="RutaDePosicionamiento" ><label> Ruta de Posicionamiento </label></div>
+        <div class="menuCompras">
+            <section class="seccionDeCompras">
+                <h4 class="textoSeccionDeCompras">Sección de Compras</h4>
+                <div class="productosAgregados">
+                    <div>
+                        <h5>Wisheles</h5>
+                    </div>
+                    <section class="articulosAgregado">
+                            <ul>
+                                <li>
+                                    <article>
+                                        <div class="imagenes">
+                                            <img src="./img/bicycle-g00fa52754_1280.jpg" alt="MacBook Pro 2019">
+                                            <div class="flex-row">
+                                                <p class="price">$ 230.000</p>
+                                                <p class="discount">20% off</p>
+                                            </div>
+                                            <input  class="caja" type="checkbox" name="intereses" id="producto1" value="producto1">
+                                        </div>
+                                        <div class="product-card">
+                                           <!-- <i class="fas fa-truck"></i> <--img del camión-->
+                                            <h5="description">MacBook Pro 2019</5>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article>
+                                        <div class="imagenes">
+                                            <img src="./img/activity-g78007eba3_1280.jpg" alt="MacBook Pro 2019">
+                                            <div class="flex-row">
+                                                <p class="price">$ 230.000</p>
+                                                <p class="discount">20% off</p>
+                                            </div>
+                                            <input  class="caja" type="checkbox" name="intereses" id="producto1" value="producto1">
+                                        </div>
+                                        <div class="product-card">
+                                           <!-- <i class="fas fa-truck"></i> <--img del camión-->
+                                            <h5="description">MacBook Pro 2019</5>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article>
+                                        <div class="imagenes">
+                                            <img src="./img/bicycle-g4e21d1848_1280.png" alt="MacBook Pro 2019">
+                                            <div class="flex-row">
+                                                <p class="price">$ 230.000</p>
+                                                <p class="discount">20% off</p>
+                                            </div>
+                                            <input  class="caja" type="checkbox" name="intereses" id="producto1" value="producto1">
+                                        </div>
+                                        <div class="product-card">
+                                           <!-- <i class="fas fa-truck"></i> <--img del camión-->
+                                            <h5="description">MacBook Pro 2019</5>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article>
+                                        <div class="imagenes">
+                                            <img src="./img/activity-g78007eba3_1280.jpg" alt="MacBook Pro 2019">
+                                            <div class="flex-row">
+                                                <p class="price">$ 230.000</p>
+                                                <p class="discount">20% off</p>
+                                            </div>
+                                            <input  class="caja" type="checkbox" name="intereses" id="producto1" value="producto1">
+                                        </div>
+                                        <div class="product-card">
+                                           <!-- <i class="fas fa-truck"></i> <--img del camión-->
+                                            <h5="description">MacBook Pro 2019</5>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                    </section>
+                    <form class="pasarProductosACompras" action="/" method="post">
+                        <p>Selecciones los productos que desea compra</p>
+                        <button class="Boton-pasar" type="submit" >Pasar a Compra</button>
+                    </form>
+                </div>
+               
+            </section>
+        </div>
+    </section>
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>
