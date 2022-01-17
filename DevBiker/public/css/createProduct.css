@@ -12,7 +12,6 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     font-size: 65%;          /*De esta manera el valor del navegador es de 10px*/
 }
 
-
 /*Variables*/
 :root{
     /*Fuentes (min 426px)*/
@@ -30,9 +29,7 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     margin: auto;
 }
 
-
 /*main*/
-
 .margin-left{
     width: 5%;
     background-color: #b3b3ff;
@@ -45,11 +42,11 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     width: 90%;
     display: flex;
     justify-content: center;
-    background-image: url("../img/bicycle-g00fa52754_1280.jpg");
+    background-image: url("../img/bicycle-g952a5f1a0_1280.jpg");
     background-position: center;
     background-size: cover;
 }
-.container_form{
+.container-form{
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -59,27 +56,24 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     opacity: 0.9;
     margin: 40px;
     font-size: 14px;
+    line-height: 30px;
 }
-.titulo-icon i{
-    display: flex;
-    justify-content: center;
-    color: #050A30;
-    margin-bottom: 10px;
-    font-size: 60px;
+select{
+    display: block;
 }
-.div{
-    line-height: 20px;
+input{
     width: 100%;
+    border-radius: 1px;
 }
-.div input{
+textarea{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 1px;
 }
-.check{
-    margin: 8px 0px;
-    font-size: 10px;
+.titulo{
+    text-align: center;
+    margin: 20px;
 }
-.button{
+.boton{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -94,8 +88,12 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
 
 /*@media------------------------------------------------------------------------*/
 @media (min-width: 769px){
-    .container_form{
+    .container-form{
         width: 50%;
+        background-color: #9999ff;
+        border-radius: 8px;
+        padding: 20px;
+        opacity: 0.9;
         margin: 60px 0px;
         font-size: 20px;
     }

@@ -1,48 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesRegProduct.css">
+<!--head-->
+<%- include("../partials/head.ejs") %>
+
+    <link rel="stylesheet" href="css/createProduct.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Crear</title>
 </head>
 <body>
     <%- include("../partials/header.ejs") %> 
     <main>
-        <h2>Crea tu producto</h2>
-        <form action="">
-            <div class="formu">
-                <label for="Nombre">Nombre producto:</label>
-                <input type="text" id="nombre" placeholder="Nombre"><br>
-                <label for="Precio">Valor del producto:</label>
-                <input type="text" id="valor" placeholder="Precio"><br>
-                <label for="Precio">Stock:</label>
-                <input type="text" id="stock" placeholder="stock"><br>
-                <label for="Precio">Codigo unico:</label>
-                <input type="text" id="sku" placeholder="SKU"><br>
-                <label for="Precio">Categoria:</label>
-                <select name="deporte">
-                    <option>-----</option>
-                    <option>Ropa</option>
-                    <option>Balones</option>
-                    <option>Zapatos</option>
-                    <option>Montaña</option>
-                    <option>Raqutas</option>
-                    <option>Bicicletas</option>
-                    <option>Artes Marciales</option>
-                    <option>Equitacion</option>
-                    <option>Tenis</option>
-                  </select><br>
-                <label for="descripcion">Descripcion del producto:</label><br>
-                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Añade la descripcion"></textarea><br>
-                <label for="Nombre">Cargar imagen</label>
-                <input type="file"><br>
-                <input type="submit" value="Crear Producto">
-            </div>
 
-        </form>
+        <div class="margin-left"></div>
+
+        <div class="principal">
+            <div class="container-form">
+
+                <form action="">
+                    <div>
+                        <h2 class="titulo">Crea tu producto</h2>
+                    </div>
+
+                    <div>
+                        <label for="Nombre">Nombre producto:</label>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </div>
+
+                    <div>
+                        <label for="Precio">Valor del producto:</label>
+                        <input type="text" id="valor" placeholder="Precio">
+                    </div>
+
+                    <div>
+                        <label for="Precio">Categoria:</label>
+                        <select name="Categoria">
+                            <option>------------------</option>
+                            <option>Ruta</option>
+                            <option>BMX</option>
+                            <option>Urbano</option>
+                            <option>Montaña</option>
+                            <option>Accesorios</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="Precio">Stock:</label>
+                        <input type="text" id="stock" placeholder="Stock">
+                    </div>
+
+                    <div>
+                        <label for="Precio">Codigo unico:</label>
+                        <input type="text" id="sku" placeholder="SKU">
+                    </div>
+
+                    <div>
+                        <label for="descripcion">Descripcion del producto:</label>
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Añade la descripción:"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="Nombre">Cargar imagen</label>
+                        <input type="file">
+                    </div>
+                    <div>
+                        <input class="boton" type="submit" value="Crear Producto">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="margin-right"></div>
+
     </main>
     <%- include("../partials/footer.ejs") %>
 </body>
