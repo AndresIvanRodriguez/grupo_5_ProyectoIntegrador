@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/stylesregister.css" type="text/css">
+</head>
+<body>
+    <!--header-->
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+        <div class="margin-left"></div>
+
+        <div class="principal">
+            <div class="container_form">
+                <div class="titulo-icon">
+                    <i class="fas fa-user-plus"></i>
+                    <h2 class="titulo">Crear Cuenta</h2>
+                </div>
+                <form action="">
+                    <div class="div">
+                        <label for="nombre" class="label">Nombres:</label><br>
+                        <input type="text" id="nombre" name="nombre" class="input" required>
+                    </div>
+
+                    <div class="div">
+                        <label for="nombre" class="label">Apellidos:</label><br>
+                        <input type="text" id="nombre" name="nombre" class="input" required>
+                    </div>
+
+                    <div class="div">
+                        <label for="email" class="label">Email:</label><br>
+                        <input type="email" id="email" name="email" class="input" required>
+                    </div>
+
+                    <div class="div">
+                        <label for="fechas" class="label">Fecha nacimiento:</label><br>
+                        <input type="date" id="date" name="fecha" class="input" required>
+                    </div>
+
+                    <div class="div">
+                        <label for="adress" class="label">Domicilio:</label><br>
+                        <input type="text" id="adress" name="adress" class="input" required>
+                    </div>
+
+                    <div class="div">
+                        <label for="password" class="label">Contraseña:</label><br>
+                        <input type="password" id="password" name="password" class="input" required>
+                    </div>
+
+                    <div class="div">
+                        <label for="password" class="label">Confirmar contraseña:</label><br>
+                        <input type="password" id="password" name="password" class="input" required>
+                    </div>
+
+                    <div>
+                        <div>
+                            <input class="check" type="checkbox" id="id">
+                            <label for="id">Terminos Y Condiciones </label>
+                        </div>
+                        <div>
+                            <input class="check" type="checkbox" id="ie">
+                            <label for="ie">Terminos De Uso </label>
+                        </div>
+                    </div>
+                    
+                    <div class="div-button">
+                        <button type="submit" class="button">Crear cuenta</button>
+                        <button type="reset" class="button">Restablecer</button>
+                    </div>  
+                </form>
+            </div>
+        </div>
+
+        <div class="margin-left"></div>
+    </main>
+
+    <!--footer-->
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>

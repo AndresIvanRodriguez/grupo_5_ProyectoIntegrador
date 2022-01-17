@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/styleslogin.css" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+        
+        <div class="margin-left"></div>
+
+        <div class="principal">
+            <div class="container_form">
+                <div class="user"><i class="fas fa-user"></i></div>
+                <br action="">
+                    <section>
+                        <p class="user">Usuario:</p>
+                        <input class="inputU" type="text">
+                        <p class="pass">Contraseña:</p>
+                        <input class="inputC" type="password">
+                        <input class="boton" type="submit" value="Iniciar Sesión">
+                    </section>
+                    <div class="link">
+                        <a href="/registro">¿Olvidaste tu contraseña?</a>
+                        <a href="/register.ejs">Crear cuenta</a> 
+                    </div>
+                </form>
+            </div>  
+        </div>
+
+        <div class="margin-right"></div>
+          
+    </main>
+    
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>
