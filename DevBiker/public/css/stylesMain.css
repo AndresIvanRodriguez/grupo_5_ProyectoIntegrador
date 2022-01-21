@@ -78,6 +78,7 @@ header{
     font-weight: bold;
     font-size: var(--text1-1);
     padding: 8px 0px;
+    color: #050A30;
 }
 .nav{
     width: 100%;

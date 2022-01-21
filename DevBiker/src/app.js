@@ -1,18 +1,30 @@
 const express = require('express');
+const res = require('express/lib/response');
+const path = require('path');
+
 const app = express();
 
-const res = require('express/lib/response');
-
-const path = require('path');
 const publicPath = path.resolve(__dirname,'./public');
 
 app.use(express.static("public"));
 
-const homeRouter = require("./routes/mainRoutes");
-
 app.set("view engine", "ejs");
 app.set("views", "./src/views");
+
 //RUTAS
-app.use(homeRouter);
+const mainRoutes = require("./routes/mainRoutes");
+const adminRoutes = require("./routes/adminRoutes");
+app.use("/", mainRoutes);
+app.use("/admin", adminRoutes);
+
+//Habilitar metodos PUT y DELETE
+const mothodOverride = require("method-override");
+app.use(methodOverride("_method"));
+
 //Servidor
 app.listen(process.env.PORT || 3000, () =>console.log("Servidor Corriendo en Puerto 3000"));
+
+//Error 404
+app.use((req, res, next) => {
+    res.status(404).render("./users/not-found");
+});

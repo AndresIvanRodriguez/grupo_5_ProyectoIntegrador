@@ -1,9 +1,15 @@
 <!--head-->
 <%- include("../partials/head.ejs") %>
 
-    <link rel="stylesheet" href="css/createProduct.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Crear</title>
+    <style>
+        .principal{
+            display: flex;
+            margin: auto;
+            padding: 30px;
+            flex-direction: row;
+        }
+    </style>
 </head>
 <body>
     <%- include("../partials/header.ejs") %> 
@@ -14,24 +20,24 @@
         <div class="principal">
             <div class="container-form">
 
-                <form action="">
+                <form action="" method="">
                     <div>
                         <h2 class="titulo">Crea tu producto</h2>
                     </div>
 
                     <div>
-                        <label for="Nombre">Nombre producto:</label>
-                        <input type="text" id="nombre" placeholder="Nombre">
+                        <label for="nombre">Nombre producto:</label>
+                        <input type="text" name="nombre" placeholder="Nombre">
                     </div>
 
                     <div>
-                        <label for="Precio">Valor del producto:</label>
-                        <input type="text" id="valor" placeholder="Precio">
+                        <label for="valor">Valor del producto:</label>
+                        <input type="text" name="valor" placeholder="Precio">
                     </div>
 
                     <div>
-                        <label for="Precio">Categoria:</label>
-                        <select name="Categoria">
+                        <label for="categoria">Categoria:</label>
+                        <select name="categoria">
                             <option>------------------</option>
                             <option>Ruta</option>
                             <option>BMX</option>
@@ -42,13 +48,13 @@
                     </div>
 
                     <div>
-                        <label for="Precio">Stock:</label>
-                        <input type="text" id="stock" placeholder="Stock">
+                        <label for="stock">Stock:</label>
+                        <input type="text" name="stock" placeholder="Stock">
                     </div>
 
                     <div>
-                        <label for="Precio">Codigo unico:</label>
-                        <input type="text" id="sku" placeholder="SKU">
+                        <label for="sku">Codigo unico:</label>
+                        <input type="text" name="sku" placeholder="SKU">
                     </div>
 
                     <div>
@@ -57,8 +63,8 @@
                     </div>
 
                     <div>
-                        <label for="Nombre">Cargar imagen</label>
-                        <input type="file">
+                        <label for="file">Cargar imagen</label>
+                        <input type="file" name="file">
                     </div>
                     <div>
                         <input class="boton" type="submit" value="Crear Producto">

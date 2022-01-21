@@ -90,7 +90,7 @@ main{
     width: 35%;
     margin: auto;   
     text-align: center;
-    background-color: #ccccff;
+    background-color: #b3b3ff;
     padding: 1px;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -99,7 +99,7 @@ main{
     margin: 2px;
 }
 .principal h3{
-    margin-top: 15px;
+    margin-top: 30px;
     padding: 10px;
     font-size: var(--text3-1);
 }
@@ -115,17 +115,20 @@ main .models article{
     display: flex;
     background-color: #e6e6ff;
     flex-direction: column;
-    margin: 3px;
+    margin: 8px;
     padding: 2px;
     box-shadow: 1px 1px 1px 1px #ccccff;
 }
 .models img{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     display: flex;
     border: solid 1px #ffffff;
     border-radius: 50%;
-    margin: auto;
+}
+.title-models{
+    width: 100%;
+    text-align: center;
 }
 .price-descripcion{
     display: flex;
@@ -168,6 +171,7 @@ main .models article{
 }
 .findBike h3{
     font-size: 12px;
+    margin-top: 10px;
 }
 .categories{
     margin: auto;
@@ -208,7 +212,7 @@ main .models article{
         font-size: var(--text3);
     }
     main .models article{
-        width: 48%;
+        width: 40%;
     }
     .price{
         font-size: 11px;
@@ -231,7 +235,7 @@ main .models article{
         font-size: 18px;
     }
     .principal h3{
-        font-size: 20px;
+        font-size: 25px;
     }
     .bestPrice{
         font-size: 20px;
@@ -241,7 +245,7 @@ main .models article{
         font-size: 20px;
     }
     main .models article{
-        width: 24%;
+        width: 22%;
     }
     .price{
         font-size: 15px;
