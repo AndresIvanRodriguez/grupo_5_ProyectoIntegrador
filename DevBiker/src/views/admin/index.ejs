@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin--index</title>
+    <link rel="stylesheet" href="/css/stylesMain.css">
+</head>
+<body>
+    <%- include("../partials/header.ejs") %> 
+    <% products.forEach(product => { 
+        
+        %> 
+    <div>
+       
+            <!--<img src="/img/<%=product.image%>">!-->
+                <label for="">
+                    
+                    <%=product.name %>
+               
+         <form action="">
+            <a href="./admin/editar">
+                <input type="button" value="Editar">
+            </a>
+                </form>
+         <form action="">
+           <input type="submit"value="Eliminar">
+                </form>   
+              
+            
+      
+    </div>
+    <% }); %>
+    <h3> ¿Quieres Crear Un Producto?</h3>
+    <form action="">
+        <a href="./admin/create">
+            <input type="button" value="Crear">
+         </a>
+             </form>
+</body>
+</html>

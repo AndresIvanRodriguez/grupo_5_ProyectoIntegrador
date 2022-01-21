@@ -107,6 +107,7 @@ main{
     width: 100%;
     padding: 5px;
     display: flex;
+    flex-direction:  row;;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -208,7 +209,8 @@ main .models article{
         font-size: var(--text3);
     }
     main .models article{
-        width: 48%;
+        width: 40%;
+       
     }
     .price{
         font-size: 11px;

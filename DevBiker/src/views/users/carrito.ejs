@@ -21,17 +21,20 @@
                     </div>
                     <section class="articulosAgregado">
                             <ul>
-                               <% for (let i=0; i<4; i++){ %>
+                               
+                                <% carrito.forEach(product => { 
+        
+                                    %> 
                                 <li>
                                     <article>
                                         <div class="description">                                        
-                                            <h5 >MacBook Pro 2019</5>
+                                            <h5 ><%=product.description %></5>
                                         </div>
                                         <div class="imagenes">
-                                            <img src="./img/bicycle-g00fa52754_1280.jpg" alt="MacBook Pro 2019">
+                                            <img src="/img/<%=product.image%>">
                                             <div class="flex-row">
-                                                <p class="price">$230.000</p>
-                                                <p class="discount">20% off</p>
+                                                <p class="price"><%=product.price %></p>
+                                                <p class="discount"><%=product.discount %>%off</p>
                                             </div>
                                             <input  class="caja" type="checkbox" name="intereses" id="producto1" value="producto1">
                                         </div>
@@ -48,7 +51,7 @@
                                      </div>
                                     </article>
                                 </li>
-                               <% } %>
+                                <% }); %>
 
 
                             </ul>

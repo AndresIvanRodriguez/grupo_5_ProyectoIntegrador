@@ -1,0 +1,70 @@
+[
+{"id": 1,
+  "name": "Bicicleta orbea-occam-tr-2018",
+  "price": 100,
+  "discount": 50,
+  "category": "mas vendido",
+  "tipo":"Todo-terreno",
+  "description": " Bicicleta orbea-occam, La mejor posibilidad para un transporte rapido y muy comodo",
+  "image": "orbea-occam-2018.jpg"
+},
+{"id": 2,
+    "name": "Bicicleta orbea-occam-tr-gris-2018",
+    "price": 150,
+    "discount": 30,
+    "category": "para-el-carrito",
+    "tipo":"Todo-terreno",
+    "description": " Bicicleta orbea-occam-gris, La mejor posibilidad para un transporte rapido y muy comodo",
+    "image": "orbea-occam-2018-gris.jpg"},
+    {
+        "id": 3,
+    "name": "Bicicleta orbea-2018",
+    "price": 250,
+    "discount": 30,
+    "category": "para-el-carrito",
+    "tipo":"Montaña",
+    "description": " Bicicleta orbea-occam-gris, La mejor posibilidad para un transporte rapido y muy comodo",
+    "image": "./montaña/Montaña Jeep Baltoro 1.jpg"
+    }
+    ,{
+        "id": 4,
+        "name": "Bicicleta DevBiker montaña",
+        "price": 200000,
+        "discount": 30,
+        "category": "mas vendido",
+        "tipo":"Montaña",
+        "description": " Bicicleta DevBiker montaña",
+        "image": "/main1.jpg"
+    }
+    ,{
+        "id": 5,
+        "name": "Bicicleta DevBiker EFT6",
+        "price": 200000,
+        "discount": 30,
+        "category": "mas vendido",
+        "tipo":"Montaña",
+        "description": " Bicicleta DevBiker EFT6",
+        "image": "/bmx/Freestyle23549A Huffy2.jpg"
+    }
+    ,{
+        "id": 6,
+        "name": "Bicicleta DevBiker EFT7",
+        "price": 200000,
+        "discount": 30,
+        "category": "mas vendido",
+        "tipo":"Montaña",
+        "description": " Bicicleta DevBiker EFT7",
+        "image": "/montaña/MontañaJeep Baltoro4.jpg"
+    }
+    ,{
+        "id": 7,
+        "name": "Bicicleta DevBiker EFT87",
+        "price": 200000,
+        "discount": 30,
+        "category": "mas vendido",
+        "tipo":"Montaña",
+        "description": " Bicicleta DevBiker EFT8",
+        "image": "/ruta/Ruta-Jeep-Nanga-2.jpg"
+    }
+  
+]
