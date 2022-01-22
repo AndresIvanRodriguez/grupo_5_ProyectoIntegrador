@@ -50,9 +50,11 @@ main{
     background-color: white;
     display: block;
 }
-.img-principal h3{
-    text-align: center;
+.principal h3{
     margin-top: 10px;
+    padding: 10px;
+    font-size: var(--text3-1);
+    text-align: center;
 }
 .principal .img-principal img{
     width: 50%;
@@ -98,38 +100,36 @@ main{
 .principal-redes i{
     margin: 2px;
 }
-.principal h3{
-    margin-top: 30px;
-    padding: 10px;
-    font-size: var(--text3-1);
+.princiapl-redes i{
+    color: #050A30;
+}
+.title-models{
+    width: 100%;
+    text-align: center;
 }
 .models{
     width: 100%;
     padding: 5px;
     display: flex;
-    flex-direction:  row;;
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
-main .models article{
-    width: 100%;
+.bikes{
+    width: 90%;
     display: flex;
-    background-color: #e6e6ff;
     flex-direction: column;
+    background-color: #e6e6ff;
     margin: 8px;
     padding: 2px;
     box-shadow: 1px 1px 1px 1px #ccccff;
 }
 .models img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     border: solid 1px #ffffff;
     border-radius: 50%;
-}
-.title-models{
-    width: 100%;
-    text-align: center;
 }
 .price-descripcion{
     display: flex;
@@ -147,9 +147,6 @@ main .models article{
 }
 .description{
     font-size: 10px;
-}
-.princiapl-redes i{
-    color: #050A30;
 }
 .devbiker{
     margin: auto;
@@ -170,19 +167,19 @@ main .models article{
     border-radius: 10px;
     font-size: var(--text1);
 }
-.findBike h3{
-    font-size: 12px;
-    margin-top: 10px;
-}
 .categories{
-    margin: auto;
-    margin-top: 15px;
-    padding: 0px 5px;
-    width: 95%;
+    margin: 50px 0px 20px 0px;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #e6e6ff;
+}
+.titulo-categories{
+    text-align: center;
+    color: black;
 }
 .list-catogories{
-    width: 80%;
-    padding: 5px;
+    width: 100%;
+    margin: 10px;
 }
 
 
@@ -206,18 +203,14 @@ main .models article{
     .findBike{
         font-size: var(--text3-1);
     }
+    .bikes{
+        width: 45%;
+    }
     .categories{
         font-size: var(--text3);
     }
     .bestPrice{
         font-size: var(--text3);
-    }
-    main .models article{
-        width: 40%;
-<<<<<<< HEAD
-=======
-       
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd
     }
     .price{
         font-size: 11px;
@@ -249,8 +242,8 @@ main .models article{
         width: 30%;
         font-size: 20px;
     }
-    main .models article{
-        width: 22%;
+    .bikes{
+        width: 23%;
     }
     .price{
         font-size: 15px;

@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 module.exports = {
     create: (req,res)=>{
-        res.render("products/createProducts");
+        res.render("admin/createProducts");
     }
 }
 
-=======
 const res = require("express/lib/response");
 const fs = require('fs');
 const path = require('path');
@@ -43,4 +41,4 @@ module.exports = {
         res.send("recibimos")
     }
 }
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd
+

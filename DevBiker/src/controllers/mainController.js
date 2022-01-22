@@ -3,9 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.JSON');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-const localizarUbicacion = (category) => {
+const localizarUbicacion = (tipo) => {
     return products.filter(
-      (ubicacion) => ubicacion.category === category,
+      (ubicacion) => ubicacion.tipo === tipo,
     
     )}
   
@@ -25,10 +25,6 @@ module.exports = {
     registerUser: (req,res) => {
         res.render(("users/register"));
     },
-<<<<<<< HEAD
-=======
-    
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd
     carrito:(req,res)=>{
         res.render("users/carrito",{
 			carrito,
@@ -41,9 +37,7 @@ module.exports = {
     productInfo: (req,res) => {
         res.render(("products/product_info"));
     }
-<<<<<<< HEAD
+}
 
-}
-=======
-}
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd
+
+

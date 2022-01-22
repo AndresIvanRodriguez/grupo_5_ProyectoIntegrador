@@ -49,27 +49,19 @@
             <section>
                 <h3 class="title-models">Conoce nuestra linea de bicicletas mas vendidas</h3>
             </section>
-<<<<<<< HEAD
-
-=======
-            <% Masvendidos.forEach(product => { 
-        
-                %> 
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd
-            <section class="models">
-                
-                
-                <article>
+            
+            <section class="models" >
+                <% Masvendidos.forEach(product => { %>
+                <article class="bikes">
                     <img src="/img/<%=product.image%>" alt="Prototipo <%=product.id%> ">
                     <div class="price-descripcion">
                         <p class="price">$ <%=product.price%></p>
                         <p class="description"><%=product.description%></p>
                     </div>
                 </article>
+                <% }); %>
+            </section >
             
-           
-            </section>
-            <% }); %>
             <section class="devbiker">
                 <div class="findBike">
                     <h3>¡Encuentra la bicicleta que necesitas!</h3>
@@ -80,7 +72,8 @@
                         para tus rodadas.</p>
                 </div>
                 <div class="categories">
-                    <h3>Una bicicleta para cada disciplina</h3>
+                    <h2 class="titulo-categories">Categorias</h2>
+                    <h4 class="h3">Una bicicleta para cada disciplina</h4>
                     <p>Ya diste el primer paso y tienes una idea general de lo que necesitas, tu disciplina 
                         favorita y un tipo de marco en mente, pero no aún no has decidido cuál marca prefieres. 
                         ¡No hay problema! Para eso estamos aquí, así que presta mucha atención a los siguientes 

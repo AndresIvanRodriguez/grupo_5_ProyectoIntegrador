@@ -1,70 +1,382 @@
 [
-{"id": 1,
-  "name": "Bicicleta orbea-occam-tr-2018",
-  "price": 100,
-  "discount": 50,
-  "category": "mas vendido",
-  "tipo":"Todo-terreno",
-  "description": " Bicicleta orbea-occam, La mejor posibilidad para un transporte rapido y muy comodo",
-  "image": "orbea-occam-2018.jpg"
-},
-{"id": 2,
-    "name": "Bicicleta orbea-occam-tr-gris-2018",
-    "price": 150,
-    "discount": 30,
-    "category": "para-el-carrito",
-    "tipo":"Todo-terreno",
-    "description": " Bicicleta orbea-occam-gris, La mejor posibilidad para un transporte rapido y muy comodo",
-    "image": "orbea-occam-2018-gris.jpg"},
+    {
+        "id": 1,
+        "name": "Jeep Baltoro Vesubio",
+        "price": 950000,
+        "color": "Negro",
+        "discount": 20,
+        "category": "montaña",
+        "tipo":"mas vendido",
+        "description": "Bicicleta de Montaña Jeep Baltoro 29 pulgadas Vesubio",
+        "Stock": 5,
+        "image": "/montaña/1 Montaña Jeep Baltoro 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 21,
+            "Tipo de freno": "Disco mecánico",
+            "Suspensión": "Delantera"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Jeep Baltoro black-orange",
+        "price": 950000,
+        "color": "Negro-Naranja",
+        "discount": 20,
+        "category": "montaña",
+        "tipo":"mas vendido",
+        "description": "Bicicleta de Montaña Jeep Baltoro 29 pulgadas black-orange",
+        "Stock": 5,
+        "image": "/montaña/2 Montaña Jeep Baltoro 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 21,
+            "Tipo de freno": "Disco mecánico",
+            "Suspensión": "Delantera"
+        }
+    },
     {
         "id": 3,
-    "name": "Bicicleta orbea-2018",
-    "price": 250,
-    "discount": 30,
-    "category": "para-el-carrito",
-    "tipo":"Montaña",
-    "description": " Bicicleta orbea-occam-gris, La mejor posibilidad para un transporte rapido y muy comodo",
-    "image": "./montaña/Montaña Jeep Baltoro 1.jpg"
-    }
-    ,{
+        "name": "Kawasaki Dominator",
+        "price": 1100000,
+        "color": "Negro-Rojo",
+        "discount": 30,
+        "category": "montaña",
+        "tipo":"mas vendido",
+        "description": "Bicicleta de Montaña Kawasaki Dominator 29 Pulgadas",
+        "Stock": 5,
+        "image": "./montaña/3 Montaña Kawasaki Dominator 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 10,
+            "Tipo de freno": "Disco hidráulico",
+            "Suspensión": "Delantera"
+        }
+    },
+    {
         "id": 4,
-        "name": "Bicicleta DevBiker montaña",
-        "price": 200000,
-        "discount": 30,
-        "category": "mas vendido",
-        "tipo":"Montaña",
-        "description": " Bicicleta DevBiker montaña",
-        "image": "/main1.jpg"
-    }
-    ,{
+        "name": "GW Hyena",
+        "price": 720000,
+        "discount": 15,
+        "category": "montaña",
+        "tipo":"carrito",
+        "description": "Bicicleta GW Hyena rin 27,5 de 24 Velocidades",
+        "Stock": 5,
+        "image": "./montaña/4 GW Hyena 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 24,
+            "Tipo de freno": "Disco mecánico",
+            "Suspensión": "Delantera"
+        }
+    },
+    {
         "id": 5,
-        "name": "Bicicleta DevBiker EFT6",
-        "price": 200000,
-        "discount": 30,
-        "category": "mas vendido",
-        "tipo":"Montaña",
-        "description": " Bicicleta DevBiker EFT6",
-        "image": "/bmx/Freestyle23549A Huffy2.jpg"
-    }
-    ,{
+        "name": "Ninja kawasaki",
+        "price": 1200000,
+        "color": "Negro mate",
+        "discount": 15,
+        "category": "montaña",
+        "tipo":"mas vendido",
+        "description": " Bicicleta de Montaña Kawasaki Ninja 29 Pulgadas",
+        "Stock": 5,
+        "image": "/montaña/5 Montaña Ninja Kawasaki 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 24,
+            "Tipo de freno": "Disco mecánico",
+            "Suspensión": "doble"
+        }
+    },
+    {
         "id": 6,
-        "name": "Bicicleta DevBiker EFT7",
-        "price": 200000,
-        "discount": 30,
-        "category": "mas vendido",
-        "tipo":"Montaña",
-        "description": " Bicicleta DevBiker EFT7",
-        "image": "/montaña/MontañaJeep Baltoro4.jpg"
-    }
-    ,{
+        "name": "Montaña Kawasaki Expert",
+        "price": 1100000,
+        "color": "Verde",
+        "discount": 10,
+        "category": "montaña",
+        "tipo":"x",
+        "description": "Bicicleta Montaña Kawasaki Expert 27.5 pulgadas",
+        "Stock": 5,
+        "image": "/montaña/6 Montaña Kawasaki Expert 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 24,
+            "Tipo de freno": "Disco mecánico",
+            "Suspensión": "Doble"
+        }
+    },
+    {
         "id": 7,
-        "name": "Bicicleta DevBiker EFT87",
-        "price": 200000,
+        "name": "Schwinn Knowles",
+        "price": 1000000,
+        "color": "Verde",
+        "discount": 40,
+        "category": "montaña",
+        "tipo":"mas vendida",
+        "description": "Bicicleta de Montaña Schwinn Knowles 29 Pulgadas",
+        "Stock": 5,
+        "image": "/montaña/7 Montaña Schwinn Knowles 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 21,
+            "Tipo de freno": "Disco mecánico delantero",
+            "Suspensión": "Doble"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Jeep Milano",
+        "price": 1200000,
+        "color": "Negro",
+        "discount": 10,
+        "category": "ruta",
+        "tipo":"mas vendida",
+        "description": "Bicicleta de Ruta Jeep Milano 1 700c",
+        "Stock": 5,
+        "image": "/ruta/1 Ruta Jeep Milano 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 14,
+            "Tipo de freno": "V-brake",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 10,
+        "name": "GW Sacramento",
+        "price": 1800000,
+        "color": "Gris",
+        "discount": 10,
+        "category": "ruta",
+        "tipo":"mas vendida",
+        "description": "Bicicleta de Ruta GW Sacramento 700c",
+        "Stock": 5,
+        "image": "/ruta/2 Ruta GW Sacramento 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 9,
+            "Tipo de freno": "Disco hidráulico",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Java Siluro",
+        "price": 4700000,
+        "color": "Blanco",
+        "discount": 10,
+        "category": "ruta",
+        "tipo":"x",
+        "description": "Bicicleta De Ruta Java Siluro 3D 700C",
+        "Stock": 5,
+        "image": "/ruta/7 Montaña Schwinn Knowles 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 11,
+            "Tipo de freno": "Disco hidráulico",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Java Vesuvio D",
+        "price": 6900000,
+        "color": "Negro",
+        "discount": 12,
+        "category": "ruta",
+        "tipo":"mas vendida",
+        "description": "Bicicleta De Ruta Java Vesuvio D 700C",
+        "Stock": 5,
+        "image": "/ruta/4 Ruta Java Vesuvio D 700C 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Carbono",
+            "Número de cambios": 11,
+            "Tipo de freno": "Disco hidráulico",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Jeep Nanga",
+        "price": 990000,
+        "color": "Azul",
+        "discount": 8,
+        "category": "ruta",
+        "tipo":"mas vendida",
+        "description": "Bicicleta de Ruta Jeep Nanga 28 pulgadas",
+        "Stock": 5,
+        "image": "/ruta/5 Ruta Jeep Nanga 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 7,
+            "Tipo de freno": "V-brake",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Jeep Nuptse",
+        "price": 960000,
+        "color": "Negro",
+        "discount": 14,
+        "category": "urbana",
+        "tipo":"j",
+        "description": "Bicicleta Urbana Jeep Nuptse 28 pulgadas",
+        "Stock": 5,
+        "image": "/urbana/1 Urbana Jeep Nuptse 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 7,
+            "Tipo de freno": "Caliper",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 16,
+        "name": "Mountain Gear Cardinal",
+        "price": 490000,
+        "color": "Blanco",
+        "discount": 5,
+        "category": "urbana",
+        "tipo":"u",
+        "description": "Bicicletas Urbana Mountain Gear Cardinal 26 Pulgadas",
+        "Stock": 5,
+        "image": "/urbana/2 Urbana Mountain Gear Cardinal 1.jpg",
+        "caracteristicas": {
+            "Género": "Mujer",
+            "Material del marco": "Acero",
+            "Número de cambios": 18,
+            "Tipo de freno": "V-brake",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 17,
+        "name": "Scoop Rome",
+        "price": 500000,
+        "color": "Negro",
+        "discount": 0,
+        "category": "urbana",
+        "tipo":"u",
+        "description": "Bicicleta Urbana Rome. 28.V21 Scoop 28 Pulgadas",
+        "Stock": 5,
+        "image": "/urbana/3 Urbana Rome. 28.V21 Scoop 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Acero",
+            "Número de cambios": 6,
+            "Tipo de freno": "V-brake",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 18,
+        "name": "Schwinn Network",
+        "price": 590000,
+        "color": "Azul",
         "discount": 30,
-        "category": "mas vendido",
-        "tipo":"Montaña",
-        "description": " Bicicleta DevBiker EFT8",
-        "image": "/ruta/Ruta-Jeep-Nanga-2.jpg"
+        "category": "urbana",
+        "tipo":"u",
+        "description": "Bicicleta Urbana Schwinn Network 700c",
+        "Stock": 5,
+        "image": "/urbana/4 Urbana Schwinn Network 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Acero",
+            "Número de cambios": 7,
+            "Tipo de freno": "V-brake",
+            "Suspensión": "Delantera"
+        }
+    },
+    {
+        "id": 19,
+        "name": "Scoop Amsterdam",
+        "price": 590000,
+        "color": "Blanco",
+        "discount": 5,
+        "category": "urbana",
+        "tipo":"r",
+        "description": "Bicicleta Urbana Scoop Amsterdam V18 28 pulgadas",
+        "Stock": 5,
+        "image": "/urbana/19 Urbana Scoop Amsterdam 1.jpg",
+        "caracteristicas": {
+            "Género": "Mujer",
+            "Material del marco": "Acero",
+            "Número de cambios": 6,
+            "Tipo de freno": "V-brake",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 20,
+        "name": "Scoop Flyer",
+        "price": 590000,
+        "color": "Gris",
+        "discount": 14,
+        "category": "urbana",
+        "tipo":"u",
+        "description": "Bicicleta Urbana Scoop Flyer 28 V20 28 pulgadas",
+        "Stock": 5,
+        "image": "/urbana/20 Urbana Scoop Flyer 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Acero",
+            "Número de cambios": 7,
+            "Tipo de freno": "V-brake",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 21,
+        "name": "Victory",
+        "price": 480000,
+        "color": "Azul",
+        "discount": 5,
+        "category": "urbana",
+        "tipo":"u",
+        "description": "Bicicleta urbana 26 pulgadas Urbana",
+        "Stock": 5,
+        "image": "/urbana/21 Urbana victory 1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Aluminio",
+            "Número de cambios": 18,
+            "Tipo de freno": "V-brake",
+            "Suspensión": "Sin suspensión"
+        }
+    },
+    {
+        "id": 22,
+        "name": "Freestyle Huffy",
+        "price": 780000,
+        "color": "Cafe",
+        "discount": 5,
+        "category": "bmx",
+        "tipo":"bmx",
+        "description": "Bicicleta Freestyle 23549A Huffy 20 pulgadas",
+        "Stock": 5,
+        "image": "/bmx/22 Freestyle23549A Huffy1.jpg",
+        "caracteristicas": {
+            "Género": "Unisex",
+            "Material del marco": "Acero",
+            "Número de cambios": "sin cambios",
+            "Tipo de freno": "Caliper",
+            "Suspensión": "Sin suspensión"
+        }
     }
-  
+    
 ]

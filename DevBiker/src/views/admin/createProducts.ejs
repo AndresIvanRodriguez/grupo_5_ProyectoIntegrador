@@ -20,17 +20,16 @@
         <div class="principal">
             <div class="container-form">
 
-<<<<<<< HEAD:DevBiker/src/views/products/createProducts.ejs
                 <form action="" method="">
-=======
+
                 <form action="/producto" method="POST">
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd:DevBiker/src/views/admin/createProducts.ejs
+
                     <div>
                         <h2 class="titulo">Crea tu producto</h2>
                     </div>
 
                     <div>
-<<<<<<< HEAD:DevBiker/src/views/products/createProducts.ejs
+
                         <label for="nombre">Nombre producto:</label>
                         <input type="text" name="nombre" placeholder="Nombre">
                     </div>
@@ -41,65 +40,51 @@
                     </div>
 
                     <div>
+                        <label for="color">Color:</label>
+                        <input type="text" name="color" placeholder="Color">
+                    </div>
+
+                    <div>
+                        <label for="descuento">Descuento:</label>
+                        <input type="text" name="descuento" placeholder="Descuento">
+                    </div>
+
+                    <div>
                         <label for="categoria">Categoria:</label>
                         <select name="categoria">
-=======
-                        <label for="name">Nombre producto:</label>
-                        <input type="text" id="nombre" placeholder="Nombre">
-                    </div>
-
-                    <div>
-                        <label for="price">Valor del producto:</label>
-                        <input type="text" id="valor" placeholder="Precio">
-                    </div>
-
-                    <div>
-                        <label for="price">Tipo:</label>
-                        <select name="tipo">
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd:DevBiker/src/views/admin/createProducts.ejs
                             <option>------------------</option>
                             <option>Ruta</option>
                             <option>BMX</option>
                             <option>Urbano</option>
                             <option>Montaña</option>
-                            <option>Accesorios</option>
                         </select>
                     </div>
 
                     <div>
-<<<<<<< HEAD:DevBiker/src/views/products/createProducts.ejs
-                        <label for="stock">Stock:</label>
-                        <input type="text" name="stock" placeholder="Stock">
-                    </div>
-
-                    <div>
-                        <label for="sku">Codigo unico:</label>
-                        <input type="text" name="sku" placeholder="SKU">
-=======
-                        <label for="price">Stock:</label>
-                        <input type="text" id="stock" placeholder="Stock">
-                    </div>
-
-                    <div>
-                        <label for="price">Codigo unico:</label>
-                        <input type="text" id="sku" placeholder="SKU">
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd:DevBiker/src/views/admin/createProducts.ejs
+                        <label for="tipo">Tipo:</label>
+                        <select name="tipo">
+                            <option>------------------</option>
+                            <option>masVendido</option>
+                            <option>promocion</option>
+                            <option>nueva</option>
+                        </select>
                     </div>
 
                     <div>
                         <label for="description">Descripcion del producto:</label>
-                        <textarea name="description" id="descripcion" cols="30" rows="10" placeholder="Añade la descripción:"></textarea>
+                        <textarea name="description" cols="30" rows="10" placeholder="Añade la descripción:"></textarea>
                     </div>
 
                     <div>
-<<<<<<< HEAD:DevBiker/src/views/products/createProducts.ejs
                         <label for="file">Cargar imagen</label>
                         <input type="file" name="file">
-=======
-                        <label for="name">Cargar imagen</label>
-                        <input type="file">
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd:DevBiker/src/views/admin/createProducts.ejs
                     </div>
+
+                    <div>
+                        <label for="stock">Stock:</label>
+                        <input type="text" name="stock" placeholder="Stock">
+                    </div>
+
                     <div>
                         <input class="boton" type="submit" value="Crear Producto">
                     </div>

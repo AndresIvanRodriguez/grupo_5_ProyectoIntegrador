@@ -11,12 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
-<<<<<<< HEAD
-    "express": "^4.17.1",
     "method-override": "^3.0.0",
-=======
     "express": "^4.17.2",
->>>>>>> b81fa4ad063927d18a6d7151bc0f3010f6c5bbcd
     "nodemon": "^2.0.15"
   }
 }

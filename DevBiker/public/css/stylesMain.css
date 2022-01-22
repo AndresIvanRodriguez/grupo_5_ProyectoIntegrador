@@ -18,6 +18,10 @@
 html{                        /*El tamaño de los navegadores por defecto son 16px*/
     font-size: 65%;          /*De esta manera el valor del navegador es de 10px*/
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 
 /*Variables*/
 :root{
@@ -79,6 +83,7 @@ header{
     font-size: var(--text1-1);
     padding: 8px 0px;
     color: #050A30;
+    text-decoration: none;
 }
 .nav{
     width: 100%;
@@ -223,9 +228,6 @@ footer img{
     .icons{
         font-size: var(--text2);
         gap: 12px;
-    }
-    main .models article{
-        width: 48%;
     }
     .price{
         font-size: 11px;
