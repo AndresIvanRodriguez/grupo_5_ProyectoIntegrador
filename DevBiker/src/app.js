@@ -16,6 +16,9 @@ const adminRoutes = require("./routes/adminRoutes");
 app.use("/", mainRoutes);
 app.use("/admin", adminRoutes);
 
+
+
+
 //Habilitar metodos PUT y DELETE
 const methodOverride = require("method-override");
 app.use(methodOverride("_method"));

@@ -98,7 +98,7 @@ header{
 }
 .logo img{
     width: 100%;
-    padding: 0px;
+    height: 50px;
 }
 .nav-list{
     width: 50%;
@@ -135,7 +135,7 @@ header .nav ul li{
     margin: 10px 20px 10px 0px;
 }
 .burger-menu i{
-    font-size: 25px;
+    font-size: 22px;
 }
 
 
@@ -221,7 +221,10 @@ footer img{
         font-size: var(--text2)
     }
     .nav-list{
-        font-size: 13px;
+        font-size: 11px;
+    }
+    .logo img{
+        height: 60px;
     } 
     
     /*footer--------------------------------------------------*/
@@ -253,14 +256,15 @@ footer img{
         font-size: var(--text3)
     }
     .barra .barra-text{
-        font-size: var(--text3);
+        font-size: 18px;
     }
     header .nav ul li{
-        font-size: 16px;
-        padding: 20px;
+        font-size: 15px;
+        padding: 10px;
     }
     .logo img{
         margin: 0px 0px 5px 30px;
+        height: 100px;
     }
     .icons{
         font-size: 17px;

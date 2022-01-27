@@ -125,9 +125,10 @@ main{
     box-shadow: 1px 1px 1px 1px #ccccff;
 }
 .models img{
-    width: 100%;
+    width: 95%;
     height: 100%;
     display: flex;
+    margin: auto;
     border: solid 1px #ffffff;
     border-radius: 50%;
 }
@@ -138,15 +139,24 @@ main{
     align-items: center;
     padding: 5px;
 }
-.price{
-    font-size: 11px;
+.nombre{
+    margin: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.precio{
+    font-size: 13px;
     background-color: #9999ff;
     padding: 3px;
     margin: 3px;
-    box-shadow: 2px 2px #7b8bff;
+    font-weight: bold;
+    border-radius: 3px;
 }
-.description{
-    font-size: 10px;
+.descripcion{
+    font-size: 15px;
+    margin-top: 3px;
+    text-align: center;
 }
 .devbiker{
     margin: auto;
@@ -168,7 +178,7 @@ main{
     font-size: var(--text1);
 }
 .categories{
-    margin: 50px 0px 20px 0px;
+    margin: 50px 0px 30px 0px;
     padding: 10px 20px;
     width: 100%;
     background-color: #e6e6ff;
@@ -176,6 +186,7 @@ main{
 .titulo-categories{
     text-align: center;
     color: black;
+    margin: 5px;
 }
 .list-catogories{
     width: 100%;
@@ -206,14 +217,17 @@ main{
     .bikes{
         width: 45%;
     }
+    .nombre{
+        font-size: 16px;
+    }
+    .descripcion{
+        font-size: 14px;
+    }
     .categories{
         font-size: var(--text3);
     }
     .bestPrice{
         font-size: var(--text3);
-    }
-    .price{
-        font-size: 11px;
     }
 }
 
@@ -245,11 +259,15 @@ main{
     .bikes{
         width: 23%;
     }
-    .price{
-        font-size: 15px;
+    .precio{
+        margin: 5px 0px;
+        font-size: 17px;
     }
-    .description{
-        font-size: 14px;
+    .descripcion{
+        font-size: 16px;
+    }
+    .nombre{
+        font-size: 20px;
     }
     .findBike{
         font-size: 16px;

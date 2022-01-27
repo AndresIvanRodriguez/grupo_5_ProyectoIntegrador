@@ -11,16 +11,16 @@
         "Stock": 5,
         "image": "/montaña/1 Montaña Jeep Baltoro 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 21,
-            "Tipo de freno": "Disco mecánico",
-            "Suspensión": "Delantera"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 21,
+            "tipoFreno": "Disco mecánico",
+            "suspension": "Delantera"
         }
     },
     {
         "id": 2,
-        "name": "Jeep Baltoro black-orange",
+        "name": "Jeep Baltoro",
         "price": 950000,
         "color": "Negro-Naranja",
         "discount": 20,
@@ -30,11 +30,11 @@
         "Stock": 5,
         "image": "/montaña/2 Montaña Jeep Baltoro 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 21,
-            "Tipo de freno": "Disco mecánico",
-            "Suspensión": "Delantera"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 21,
+            "tipoFreno": "Disco mecánico",
+            "suspension": "Delantera"
         }
     },
     {
@@ -49,11 +49,11 @@
         "Stock": 5,
         "image": "./montaña/3 Montaña Kawasaki Dominator 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 10,
-            "Tipo de freno": "Disco hidráulico",
-            "Suspensión": "Delantera"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 10,
+            "tipoFreno": "Disco hidráulico",
+            "suspension": "Delantera"
         }
     },
     {
@@ -65,13 +65,13 @@
         "tipo":"carrito",
         "description": "Bicicleta GW Hyena rin 27,5 de 24 Velocidades",
         "Stock": 5,
-        "image": "./montaña/4 GW Hyena 1.jpg",
+        "image": "./montaña/4 Montaña GW Hyena 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 24,
-            "Tipo de freno": "Disco mecánico",
-            "Suspensión": "Delantera"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambioss": 24,
+            "tipoFreno": "Disco mecánico",
+            "suspension": "Delantera"
         }
     },
     {
@@ -86,16 +86,16 @@
         "Stock": 5,
         "image": "/montaña/5 Montaña Ninja Kawasaki 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 24,
-            "Tipo de freno": "Disco mecánico",
-            "Suspensión": "doble"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 24,
+            "tipoFreno": "Disco mecánico",
+            "suspension": "doble"
         }
     },
     {
         "id": 6,
-        "name": "Montaña Kawasaki Expert",
+        "name": "Kawasaki Expert",
         "price": 1100000,
         "color": "Verde",
         "discount": 10,
@@ -105,11 +105,11 @@
         "Stock": 5,
         "image": "/montaña/6 Montaña Kawasaki Expert 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 24,
-            "Tipo de freno": "Disco mecánico",
-            "Suspensión": "Doble"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambioss": 24,
+            "tipoFreno": "Disco mecánico",
+            "suspension": "Doble"
         }
     },
     {
@@ -124,11 +124,11 @@
         "Stock": 5,
         "image": "/montaña/7 Montaña Schwinn Knowles 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 21,
-            "Tipo de freno": "Disco mecánico delantero",
-            "Suspensión": "Doble"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 21,
+            "tipoFreno": "Disco mecánico delantero",
+            "suspension": "Doble"
         }
     },
     {
@@ -141,17 +141,17 @@
         "tipo":"mas vendida",
         "description": "Bicicleta de Ruta Jeep Milano 1 700c",
         "Stock": 5,
-        "image": "/ruta/1 Ruta Jeep Milano 1.jpg",
+        "image": "/ruta/8 Ruta Jeep Milano 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 14,
-            "Tipo de freno": "V-brake",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 14,
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
         }
     },
     {
-        "id": 10,
+        "id": 9,
         "name": "GW Sacramento",
         "price": 1800000,
         "color": "Gris",
@@ -160,17 +160,17 @@
         "tipo":"mas vendida",
         "description": "Bicicleta de Ruta GW Sacramento 700c",
         "Stock": 5,
-        "image": "/ruta/2 Ruta GW Sacramento 1.jpg",
+        "image": "/ruta/9 Ruta GW Sacramento 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 9,
-            "Tipo de freno": "Disco hidráulico",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 9,
+            "tipoFreno": "Disco hidráulico",
+            "suspension": "Sin suspensión"
         }
     },
     {
-        "id": 11,
+        "id": 10,
         "name": "Java Siluro",
         "price": 4700000,
         "color": "Blanco",
@@ -179,36 +179,36 @@
         "tipo":"x",
         "description": "Bicicleta De Ruta Java Siluro 3D 700C",
         "Stock": 5,
-        "image": "/ruta/7 Montaña Schwinn Knowles 1.jpg",
+        "image": "/ruta/10 Ruta Java Siluro 3D 700C 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 11,
-            "Tipo de freno": "Disco hidráulico",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 11,
+            "tipoFreno": "Disco hidráulico",
+            "suspension": "Sin suspensión"
         }
     },
     {
-        "id": 13,
+        "id": 11,
         "name": "Java Vesuvio D",
-        "price": 6900000,
+        "price": 3900000,
         "color": "Negro",
         "discount": 12,
         "category": "ruta",
         "tipo":"mas vendida",
         "description": "Bicicleta De Ruta Java Vesuvio D 700C",
         "Stock": 5,
-        "image": "/ruta/4 Ruta Java Vesuvio D 700C 1.jpg",
+        "image": "/ruta/11 Ruta Java Vesuvio D 700C 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Carbono",
-            "Número de cambios": 11,
-            "Tipo de freno": "Disco hidráulico",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Carbono",
+            "numeroCambios": 11,
+            "tipoFreno": "Disco hidráulico",
+            "suspension": "Sin suspensión"
         }
     },
     {
-        "id": 14,
+        "id": 12,
         "name": "Jeep Nanga",
         "price": 990000,
         "color": "Azul",
@@ -217,13 +217,50 @@
         "tipo":"mas vendida",
         "description": "Bicicleta de Ruta Jeep Nanga 28 pulgadas",
         "Stock": 5,
-        "image": "/ruta/5 Ruta Jeep Nanga 1.jpg",
+        "image": "/ruta/12 Ruta Jeep Nanga 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 7,
-            "Tipo de freno": "V-brake",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 7,
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Merida",
+        "price": 3900000,
+        "color": "Blanco",
+        "discount": 8,
+        "category": "ruta",
+        "tipo":"t",
+        "description": "7000-E Bicicleta de Carretera S Merida Reacto brillante TITAN/SILK 2021 Di2 Racing",
+        "image": "/ruta/13 Bicicleta de Carretera S Merida Reacto 1.jpg",
+        "caracteristicas": {
+            "genero": "Unisex",
+            "material": "Fibra de Carbón",
+            "numeroCambios": 7,
+            "tipoFreno": "Hidráulico",
+            "suspension": "Sin suspensión"
+        }
+    },
+    {
+        "id": 14,
+        "name": "TRIBAN",
+        "price": 2100000,
+        "color": "Blanco",
+        "discount": 8,
+        "category": "ruta",
+        "tipo":"t",
+        "description": "Bicicleta Triban Rc 120 disco cn fr",
+        "Stock": 5,
+        "image": "/ruta/14 TRIBAN 1.jpg",
+        "caracteristicas": {
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 7,
+            "tipoFreno": "Disco mecánicos Promax DSK-300R",
+            "suspension": "Sin suspensión"
         }
     },
     {
@@ -236,18 +273,18 @@
         "tipo":"j",
         "description": "Bicicleta Urbana Jeep Nuptse 28 pulgadas",
         "Stock": 5,
-        "image": "/urbana/1 Urbana Jeep Nuptse 1.jpg",
+        "image": "/urbana/15 Urbana Jeep Nuptse 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 7,
-            "Tipo de freno": "Caliper",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 7,
+            "tipoFreno": "Caliper",
+            "suspension": "Sin suspensión"
         }
     },
     {
         "id": 16,
-        "name": "Mountain Gear Cardinal",
+        "name": "Gear Cardinal",
         "price": 490000,
         "color": "Blanco",
         "discount": 5,
@@ -255,13 +292,13 @@
         "tipo":"u",
         "description": "Bicicletas Urbana Mountain Gear Cardinal 26 Pulgadas",
         "Stock": 5,
-        "image": "/urbana/2 Urbana Mountain Gear Cardinal 1.jpg",
+        "image": "/urbana/16 Urbana Mountain Gear Cardinal 1.jpg",
         "caracteristicas": {
-            "Género": "Mujer",
-            "Material del marco": "Acero",
-            "Número de cambios": 18,
-            "Tipo de freno": "V-brake",
-            "Suspensión": "Sin suspensión"
+            "genero": "Mujer",
+            "material": "Acero",
+            "numeroCambios": 18,
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
         }
     },
     {
@@ -274,13 +311,13 @@
         "tipo":"u",
         "description": "Bicicleta Urbana Rome. 28.V21 Scoop 28 Pulgadas",
         "Stock": 5,
-        "image": "/urbana/3 Urbana Rome. 28.V21 Scoop 1.jpg",
+        "image": "/urbana/17 Urbana Rome. 28.V21 Scoop 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Acero",
-            "Número de cambios": 6,
-            "Tipo de freno": "V-brake",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": 6,
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
         }
     },
     {
@@ -293,13 +330,13 @@
         "tipo":"u",
         "description": "Bicicleta Urbana Schwinn Network 700c",
         "Stock": 5,
-        "image": "/urbana/4 Urbana Schwinn Network 1.jpg",
+        "image": "/urbana/18 Urbana Schwinn Network 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Acero",
-            "Número de cambios": 7,
-            "Tipo de freno": "V-brake",
-            "Suspensión": "Delantera"
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": 7,
+            "tipoFreno": "V-brake",
+            "suspension": "Delantera"
         }
     },
     {
@@ -314,11 +351,11 @@
         "Stock": 5,
         "image": "/urbana/19 Urbana Scoop Amsterdam 1.jpg",
         "caracteristicas": {
-            "Género": "Mujer",
-            "Material del marco": "Acero",
-            "Número de cambios": 6,
-            "Tipo de freno": "V-brake",
-            "Suspensión": "Sin suspensión"
+            "genero": "Mujer",
+            "material": "Acero",
+            "numeroCambios": 6,
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
         }
     },
     {
@@ -333,11 +370,11 @@
         "Stock": 5,
         "image": "/urbana/20 Urbana Scoop Flyer 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Acero",
-            "Número de cambios": 7,
-            "Tipo de freno": "V-brake",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": 7,
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
         }
     },
     {
@@ -352,11 +389,11 @@
         "Stock": 5,
         "image": "/urbana/21 Urbana victory 1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Aluminio",
-            "Número de cambios": 18,
-            "Tipo de freno": "V-brake",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Aluminio",
+            "numeroCambios": 18,
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
         }
     },
     {
@@ -371,12 +408,125 @@
         "Stock": 5,
         "image": "/bmx/22 Freestyle23549A Huffy1.jpg",
         "caracteristicas": {
-            "Género": "Unisex",
-            "Material del marco": "Acero",
-            "Número de cambios": "sin cambios",
-            "Tipo de freno": "Caliper",
-            "Suspensión": "Sin suspensión"
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": "sin cambios",
+            "tipoFreno": "Caliper",
+            "suspension": "Sin suspensión"
+        }
+    },
+    {
+        "id": 23,
+        "name": "Bmx Stealth",
+        "price": 1200000,
+        "color": "Negro-azul",
+        "discount": 0,
+        "category": "bmx",
+        "tipo":"bmx",
+        "description": "Bicicleta Bmx Stealth Bicicleta Freestyle Elite 20 pulgadas ",
+        "Stock": 5,
+        "image": "/bmx/23 Bmx Stealth 1.jpg",
+        "caracteristicas": {
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": "sin cambios",
+            "tipoFreno": "U-Brake",
+            "suspension": "Sin suspensión"
+        }
+    },
+    {
+        "id": 24,
+        "name": "KHE Strikedown Pro",
+        "price": 2200000,
+        "color": "Gris",
+        "discount": 5,
+        "category": "bmx",
+        "tipo":"bmx",
+        "description": "Bicicleta BMX KHE Strikedown Pro 20 pulgadas fijar Rotor Stealth Grey sólo 9,7kg",
+        "Stock": 5,
+        "image": "/bmx/24 BMX KHE Strikedown Pro 1.jpg",
+        "caracteristicas": {
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": "sin cambios",
+            "tipoFreno": "U-Brake",
+            "suspension": "Sin suspensión"
+        }
+    },
+    {
+        "id": 25,
+        "name": "BMX Manivela",
+        "price": 1780000,
+        "color": "Blanco",
+        "discount": 5,
+        "category": "bmx",
+        "tipo":"bmx",
+        "description": "Bicicleta BMX Elite Outlaw 26pulgadas Manivela",
+        "Stock": 5,
+        "image": "/bmx/25 BMX Bicicleta Bici Manivela 1.jpg",
+        "caracteristicas": {
+            "genero": "Unisex",
+            "material": "Chrome",
+            "numeroCambios": "sin cambios",
+            "tipoFreno": "U-Brake",
+            "suspension": "Sin suspensión"
+        }
+    },
+    {
+        "id": 26,
+        "name": "KHE United Roouse",
+        "price": 980000,
+        "color": "Azul-negro",
+        "discount": 5,
+        "category": "bmx",
+        "tipo":"bmx",
+        "description": "Bicicleta BMX KHE United Roouse Negro Azul 20 pulgadas con rotor sólo 11,65kg",
+        "Stock": 5,
+        "image": "/bmx/26 BMX KHE United Roouse 1.jpg",
+        "caracteristicas": {
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": "sin cambios",
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
+        }
+    },
+    {
+        "id": 27,
+        "name": "The Stealth",
+        "price": 970000,
+        "color": "Blanco",
+        "discount": 5,
+        "category": "bmx",
+        "tipo":"bmx",
+        "description": "BMX Elite The Stealth 20 pulgadas Freestyle",
+        "Stock": 5,
+        "image": "/bmx/27 BMX Elite The Stealth 1.jpg",
+        "caracteristicas": {
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": "sin cambios",
+            "tipoFreno": "V-brake",
+            "suspension": "Sin suspensión"
+        }
+    },
+    {
+        "id": 28,
+        "name": "GT Slammer",
+        "price": 1500000,
+        "color": "Negro",
+        "discount": 5,
+        "category": "bmx",
+        "tipo":"bmx",
+        "description": "BMX GT Slammer negro",
+        "Stock": 5,
+        "image": "/bmx/28 BMX GT Slammer 1.jpg",
+        "caracteristicas": {
+            "genero": "Unisex",
+            "material": "Acero",
+            "numeroCambios": "sin cambios",
+            "tipoFreno": "U-brake",
+            "suspension": "Sin suspensión"
         }
     }
-    
 ]

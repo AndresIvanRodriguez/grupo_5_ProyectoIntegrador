@@ -35,7 +35,9 @@ module.exports = {
 		})
     },
     edit:(req,res)=>{
-        res.render(("admin/edit"))
+        let categorias=['Urbano','BMX','Montaña','Ruta'];
+        let tipos=['Más vendido','promocion','Nueva'];
+        res.render("admin/edit",{products,categorias,tipos,toThousand});
     },
     create: (req,res)=>{
         res.send("recibimos")

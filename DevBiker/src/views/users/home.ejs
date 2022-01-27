@@ -51,12 +51,13 @@
             </section>
             
             <section class="models" >
-                <% Masvendidos.forEach(product => { %>
+                <% masVendidos.forEach(product => { %>
                 <article class="bikes">
-                    <img src="/img/<%=product.image%>" alt="Prototipo <%=product.id%> ">
+                    <p class="nombre"><%=product.name%></p>
+                    <img src="/img/<%=product.image%>" alt="Prototipo <%=product.name%> ">
                     <div class="price-descripcion">
-                        <p class="price">$ <%=product.price%></p>
-                        <p class="description"><%=product.description%></p>
+                        <p class="precio">$ <%=product.price%></p>
+                        <p class="descripcion"><%=product.description%></p>
                     </div>
                 </article>
                 <% }); %>

@@ -1,0 +1,81 @@
+<!--head-->
+<!--head-->
+<%- include("../partials/head.ejs") %>
+    <title>Crear</title>
+    <style>
+        .principal{
+            display: flex;
+            margin: auto;
+            padding: 30px;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+        <div class="margin-left"></div>
+        <div class="principal">
+            <div class="container-form">
+                <form action="" method="">
+                <form action="/producto" method="POST">
+                    <div>
+                        <h2 class="titulo">Modificar el Ariculo <%= products[0].id %> </h2>
+                    </div>
+                    <div>
+                        <label for="nombre">Nombre producto:</label>
+                        <!--<input type="text" name="nombre" placeholder="Nombre">-->
+                        <input type="text" name="nombre" value="<%= products[0].name %>">
+                    </div>
+                    <div>
+                        <label for="valor">Valor del producto:</label>
+                        <!--<input type="text" name="valor" placeholder="Precio">-->
+                        <input type="text" name="valor" value="<%= products[0].price %>">
+                    </div>
+                    <div>
+                        <label for="color">Color:</label>
+                        <!--<input type="text" name="color" placeholder="Color">-->
+                        <input type="text" name="color" value="<%= products[0].color%>">
+                    </div>
+                    <div>
+                        <label for="descuento">Descuento:</label>
+                        <input type="text" name="descuento" value="<%= products[0].discount%>">
+                    </div>
+                    <div>
+                        <label for="categoria" >Categoria:</label>
+                        <select name="categoria">
+                            <% for (let i =0; i<categorias.length; i++){ %>    
+                                <% if (products[0].category == categorias[i] ) {%>        
+                                  <%} else {%>
+                                    <option value=""><%= categorias[i]%></option>
+                            <%}}%>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tipo">Tipo:</label>
+                        <select name="tipo">
+                        </select>
+                    </div>
+                    <div>
+                        <label for="description">Descripcion del producto:</label>
+                        <textarea name="description" cols="30" rows="10" placeholder="Añade la descripción:"></textarea>
+                    </div>
+                    <div>
+                        <label for="file">Cargar imagen</label>
+                        <input type="file" name="file">
+                    </div>
+                    <div>
+                        <label for="stock">Stock:</label>
+                        <input type="text" name="stock" placeholder="Stock">
+                    </div>
+                    <div>
+                        <input class="boton" type="submit" value="Crear Producto">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="margin-right"></div>
+    </main>
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>
