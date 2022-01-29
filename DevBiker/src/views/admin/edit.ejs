@@ -20,8 +20,15 @@
                 <form action="" method="">
                 <form action="/producto" method="POST">
                     <div>
-                        <h2 class="titulo">Modificar el Ariculo <%= products[0].id %> </h2>
+                        <h2 class="titulo">Modificar el Ariculo <%= productoPorIdUrl.id %> </h2>
                     </div>
+
+                    <div>
+                        <h2 >Producto por url por solo uno <%= urlId %>  msm  <%= productoPorIdUrl.name%> :</h2>
+                        <!--<input type="text" name="nombre" placeholder="Nombre">-->
+                        <input type="text" name="nombre" value="<%= productoPorIdUrl.id %>">
+                    </div>
+
                     <div>
                         <label for="nombre">Nombre producto:</label>
                         <!--<input type="text" name="nombre" placeholder="Nombre">-->
@@ -30,22 +37,22 @@
                     <div>
                         <label for="valor">Valor del producto:</label>
                         <!--<input type="text" name="valor" placeholder="Precio">-->
-                        <input type="text" name="valor" value="<%= products[0].price %>">
+                        <input type="text" name="valor" value="<%= productoPorIdUrl.price %>">
                     </div>
                     <div>
                         <label for="color">Color:</label>
                         <!--<input type="text" name="color" placeholder="Color">-->
-                        <input type="text" name="color" value="<%= products[0].color%>">
+                        <input type="text" name="color" value="<%= productoPorIdUrl.color%>">
                     </div>
                     <div>
                         <label for="descuento">Descuento:</label>
-                        <input type="text" name="descuento" value="<%= products[0].discount%>">
+                        <input type="text" name="descuento" value="<%= productoPorIdUrl.discount%>">
                     </div>
                     <div>
                         <label for="categoria" >Categoria:</label>
                         <select name="categoria">
                             <% for (let i =0; i<categorias.length; i++){ %>    
-                                <% if (products[0].category == categorias[i] ) {%>        
+                                <% if (productoPorIdUrl.category == categorias[i] ) {%>        
                                   <%} else {%>
                                     <option value=""><%= categorias[i]%></option>
                             <%}}%>

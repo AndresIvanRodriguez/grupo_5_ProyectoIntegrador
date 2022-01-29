@@ -34,11 +34,28 @@ module.exports = {
 			toThousand
 		})
     },
+    
     edit:(req,res)=>{
         let categorias=['Urbano','BMX','Montaña','Ruta'];
         let tipos=['Más vendido','promocion','Nueva'];
-        res.render("admin/edit",{products,categorias,tipos,toThousand});
+        let urlId= req.params.idProducto;
+
+        for (let i=0; i<products.length; i++){
+            
+            if(urlId==products[i].id){
+                
+                let productoPorIdUrl=products[i];
+                return res.render("admin/edit",{products,categorias,tipos,urlId,productoPorIdUrl,toThousand});
+            }
+            else {
+                //return res.send("Error");
+            }
+        }
+
+        
     },
+
+
     create: (req,res)=>{
         res.send("recibimos")
     }
