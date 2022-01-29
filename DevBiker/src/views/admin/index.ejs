@@ -19,11 +19,10 @@
                     
                     <%=product.name %>
                
-         <form action="">
-            <a href="./admin/editar">
-                <input type="button" value="Editar">
-            </a>
-                </form>
+         <form action="/admin/editar/<%= product.id %>" method="get" >
+                <input type="submit" value="Editar" >
+         </form>
+
          <form action="">
            <input type="submit"value="Eliminar">
                 </form>   
