@@ -26,7 +26,7 @@ module.exports = {
 		res.redirect('/products');
 	},
     vista: (req,res)=>{
-        res.render(("admin/createProducts"));
+        res.render(("admin/create"));
     },
     index:(req,res)=>{
         res.render("admin/index",{

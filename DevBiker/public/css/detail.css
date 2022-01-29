@@ -68,7 +68,9 @@ h2{
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    
+}
+.bikes:hover{
+    box-shadow: 0px 0px 8px #050A30;
 }
 .bikes img{
     width: 100%;
@@ -104,6 +106,12 @@ h2{
     margin: 10px 0px;
     color: #050A30;  
 }
+.caracteristicas-titulo{
+    font-weight: bold;
+}
+.caracteristica{
+    padding-left: 30px;
+}   
 
 @media (min-width: 426px){
 

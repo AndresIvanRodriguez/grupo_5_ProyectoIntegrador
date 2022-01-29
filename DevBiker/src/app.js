@@ -12,8 +12,8 @@ app.set("views", "./src/views");
 
 //RUTAS
 const mainRoutes = require("./routes/mainRoutes");
-const adminRoutes = require("./routes/adminRoutes");
 app.use("/", mainRoutes);
+const adminRoutes = require("./routes/adminRoutes");
 app.use("/admin", adminRoutes);
 
 

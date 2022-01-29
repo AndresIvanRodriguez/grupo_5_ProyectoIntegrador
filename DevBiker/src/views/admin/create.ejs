@@ -1,0 +1,108 @@
+<!--head-->
+<%- include("../partials/head.ejs") %>
+
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/adminCreate.css" type="text/css">
+</head>
+<body>
+    <%- include("../partials/header.ejs") %> 
+    <main>
+
+        <div class="margin-left"></div>
+
+        <div class="principal">
+
+            <div class="container-form">
+                <div>
+                    <h2 class="titulo">Crea tu producto</h2>
+                </div>
+                <form action="" method="">
+                    <div>
+                        <label for="id">ID del producto:</label>
+                        <input type="text" name="id" placeholder="ID del producto">
+                    </div>
+                    <div>
+                        <label for="name">Nombre producto:</label>
+                        <input type="text" name="name" placeholder="Nombre del producto">
+                    </div>
+                    <div>
+                        <label for="price">Valor del producto:</label>
+                        <input type="text" name="price" placeholder="Precio">
+                    </div>
+                    <div>
+                        <label for="color">Color:</label>
+                        <input type="text" name="color" placeholder="Color">
+                    </div>
+                    <div>
+                        <label for="discount">Descuento:</label>
+                        <input type="text" name="discount" placeholder="Descuento">
+                    </div>
+                    <div>
+                        <label for="category">Categoria:</label>
+                        <select name="category">
+                            <option>------------------</option>
+                            <option>Ruta</option>
+                            <option>BMX</option>
+                            <option>Urbano</option>
+                            <option>Montaña</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tipo">Tipo:</label>
+                        <select name="tipo">
+                            <option>------------------</option>
+                            <option>Mas Vendido</option>
+                            <option>Promocion</option>
+                            <option>Nueva</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="description">Descripcion del producto:</label>
+                        <textarea name="description" cols="30" rows="10" placeholder="Añade la descripción:"></textarea>
+                    </div>
+                    <div>
+                        <label for="stock">Stock:</label>
+                        <input type="text" name="stock" placeholder="Stock">
+                    </div>
+                    <div>
+                        <label for="file">Cargar imagen</label>
+                        <input type="file" name="file">
+                    </div>
+                    <div>
+                        <label for="file">Caracteristicas:</label>
+                        <div>
+                            <label for="genero">Genero:</label>
+                            <input type="text" name="genero">
+                        </div>
+                        <div>
+                            <label for="material">Material marco:</label>
+                            <input type="text" name="material">
+                        </div>
+                        <div>
+                            <label for="numeroCambios">Numero de cambios:</label>
+                            <input type="text" name="numeroCambios">
+                        </div>
+                        <div>
+                            <label for="tipoFreno">Tipo de freno</label>
+                            <input type="text" name="tipoFreno">
+                        </div>
+                        <div>
+                            <label for="suspension">Suspención:</label>
+                            <input type="text" name="suspension">
+                        </div>
+                    </div>
+
+                    <div>
+                        <input class="button" type="submit" value="Crear Producto">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="margin-right"></div>
+
+    </main>
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>

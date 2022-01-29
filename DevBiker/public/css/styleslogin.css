@@ -51,7 +51,7 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     display: flex;
     flex-direction: column;
     width: 70%;
-    background-color: #9999ff;
+    background-color: #b3b3ff;
     border-radius: 8px;
     padding: 20px;
     opacity: 0.9;
@@ -107,7 +107,6 @@ section{
 @media (min-width: 769px){
     .container_form{
         width: 40%;
-        background-color: #8080ff;
         border-radius: 8px;
         padding: 20px;
         opacity: 0.9;

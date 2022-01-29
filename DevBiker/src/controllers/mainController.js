@@ -18,12 +18,6 @@ const mostrarCategoria = (category) => {
   
 const masVendidos = localizarUbicacion("mas vendido");
 const carrito = localizarUbicacion("para-el-carrito");
-
-const montana = mostrarCategoria("montaña");
-const urbana = mostrarCategoria("urbana");
-const ruta = mostrarCategoria("ruta");
-const bmx = mostrarCategoria("bmx");
-
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const allbikes = localizarUbicacion("");
@@ -50,38 +44,50 @@ module.exports = {
 			toThousand
 		});
     },
-    //Mostrar página de descripción del producto
-    producto:(req,res)=>{
-        res.render(("users/producto"));
-    },
-    productInfo: (req,res) => {
-        res.render(("products/product_info"));
-    },
     //Mostrar página de todos los productos
-    allProducts: (req, res)=>{
-        res.render("products/allProducts", {
+    products: (req, res)=>{
+        res.render("products/products", {
             products
         });
     },
+    //Mostrar página para el detalle del producto
+    detail: (req, res)=>{
+        let id = req.params.id;
+        let product = products.find(p => p.id == id);
+        res.render("products/detail", {
+            product,
+            toThousand
+        });
+    },
     //Páginas por categoria
-    montana: (req,res)=>{
+    montana: (req, res)=>{
+        const montana = mostrarCategoria("montaña");
         res.render("products/cMontana", {
             montana
         });
     },
-    ruta: (req,res)=>{
+    ruta: (req, res)=>{
+        const ruta = mostrarCategoria("ruta");
         res.render("products/cRuta",{
             ruta
         });
     },
-    bmx: (req,res)=>{
+    bmx: (req, res)=>{
+        const bmx = mostrarCategoria("bmx");
         res.render("products/cBmx", {
             bmx
         });
     },
-    urbana: (req,res)=>{
+    urbana: (req, res)=>{
+        const urbana = mostrarCategoria("urbana");
         res.render("products/cUrbana", {
+            
             urbana
+        });
+    },
+    oferta: (req,res)=>{
+        res.render("products/oferta", {
+            products
         });
     }
 }

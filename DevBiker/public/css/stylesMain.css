@@ -78,12 +78,17 @@ header{
     font-family: 'Roboto', sans-serif;
     background-color: #8080ff;
     text-align: center;
-    padding: 5px 3px;
     font-weight: bold;
+    padding: 5px 3px;
     font-size: var(--text1-1);
     padding: 8px 0px;
-    color: #050A30;
     text-decoration: none;
+}
+.login:hover{
+    box-shadow: 0px 0px 12px white;
+}
+.login a{
+    color: #050A30;
 }
 .nav{
     width: 100%;
@@ -109,13 +114,17 @@ header{
     font-family: 'Roboto', sans-serif;
     width: 100%;
     justify-content: right;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 header .nav ul li{
     list-style-type: none;
     display: flex;
     justify-content: center;
+}
+header .nav ul li:hover{
+    box-shadow: 2px 2px 2px white;
+    font-size: 20px;
 }
 .icons{
     width: 20%;
@@ -126,6 +135,10 @@ header .nav ul li{
 }
 .icons i{
     padding: 0px 1px;
+}
+.icons i:hover{
+    color: #b3b3ff;
+    font-size: 30px;
 }
 .burger-menu{
     display: flex;
@@ -172,6 +185,9 @@ footer img{
     margin: 3px;
     margin: 5px;
 }
+.social-media i:hover{
+    color: white;
+}
 .footer-list li{
     list-style-type: none;
     line-height: 16px;
@@ -196,7 +212,7 @@ footer img{
     .nav-list{
         display: flex;
         justify-content: right;
-        font-size: var(--text1-1);
+        font-size: var(--text1);
     }
     .burger-menu{
         display: none;
@@ -221,7 +237,7 @@ footer img{
         font-size: var(--text2)
     }
     .nav-list{
-        font-size: 11px;
+        font-size: 12px;
     }
     .logo img{
         height: 60px;
@@ -265,6 +281,12 @@ footer img{
     .logo img{
         margin: 0px 0px 5px 30px;
         height: 100px;
+    }
+    .nav-list{
+        font-size: 15px;
+    }
+    .nav-list ul{
+        gap: 30px;
     }
     .icons{
         font-size: 17px;

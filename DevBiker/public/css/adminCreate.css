@@ -12,24 +12,11 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     font-size: 65%;          /*De esta manera el valor del navegador es de 10px*/
 }
 
-
-/*Variables*/
-:root{
-    /*Fuentes (min 426px)*/
-    --text1: 9px;
-    --text1-1: 8px;
-    --text2: 10px;
-    --text2-1: 9px;
-    --text3: 15px;
-    --text3-1: 14px;
-}
-
 /*Body*/
 .text-alt{
     width: 90%;
     margin: auto;
 }
-
 
 /*main*/
 .principal{
@@ -40,7 +27,7 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     background-position: center;
     background-size: cover;
 }
-.container_form{
+.container-form{
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -51,24 +38,16 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     margin: 40px;
     font-size: 14px;
 }
-.titulo-icon i{
-    display: flex;
-    justify-content: center;
-    color: #050A30;
-    margin-bottom: 10px;
-    font-size: 60px;
+.titulo{
+    text-align: center;
+    margin-bottom: 20px;
 }
-.div{
+label{
     line-height: 20px;
-    width: 100%;
 }
 .div input{
     width: 100%;
     border-radius: 5px;
-}
-.check{
-    margin: 8px 0px;
-    font-size: 10px;
 }
 .button{
     display: flex;

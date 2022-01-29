@@ -2,7 +2,7 @@
 <%- include("../partials/head.ejs") %>
 
 <title>DevBiker</title>
-<link rel="stylesheet" href="/css/stylesAllProducts.css">
+<link rel="stylesheet" href="/css/products.css">
 </head>
 
 <body>
@@ -19,6 +19,7 @@
                 <div class="card">
                     <% bmx.forEach(bmx => { %>
                     <article class="bikes">
+                        <a href="/products/detail/<%= bmx.id %>">
                         <section class="nombre-img">
                             <p class="nombre"><%=bmx.name%></p>
                             <img src="/img/<%=bmx.image%>" alt="Prototipo <%=bmx.name%> ">
@@ -29,6 +30,7 @@
                             
                         </section>
                         <p class="descripcion"><%=bmx.description%></p>
+                        </a>
                     </article>
                     <% }); %>
                 </div>

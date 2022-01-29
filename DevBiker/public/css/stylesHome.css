@@ -100,6 +100,9 @@ main{
 .principal-redes i{
     margin: 2px;
 }
+.principal-redes i:hover{
+    font-size: 30px;
+}
 .princiapl-redes i{
     color: #050A30;
 }
@@ -123,6 +126,9 @@ main{
     margin: 8px;
     padding: 2px;
     box-shadow: 1px 1px 1px 1px #ccccff;
+}
+.bikes:hover{
+    box-shadow: 0px 0px 8px #050A30;
 }
 .models img{
     width: 95%;
