@@ -31,3 +31,4 @@ app.listen(process.env.PORT || 3000, () =>console.log("Servidor Corriendo en Pue
 app.use((req, res, next) => {
     res.status(404).render("./users/not-found");
 });
+module.exports=app;

@@ -1,9 +1,3 @@
-module.exports = {
-    create: (req,res)=>{
-        res.render("admin/createProducts");
-    }
-}
-
 const res = require("express/lib/response");
 const fs = require('fs');
 const path = require('path');
@@ -13,17 +7,17 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 module.exports = {
     store: (req, res) => {
-		console.log(req.body);
+		let image = req.file ? req.file.filename : "default-image.png";
 		let newProduct = {
 			id: products[products.length - 1].id + 1,
 			...req.body,
-			image: 'default-img.png'
+			image: image
 		};
 
 		products.push(newProduct);
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
 
-		res.redirect('/products');
+		res.redirect('/');
 	},
     vista: (req,res)=>{
         res.render(("admin/create"));
@@ -35,7 +29,7 @@ module.exports = {
 		})
     },
     
-    edit:(req,res)=>{
+    /*edit:(req,res)=>{
         let categorias=['Urbano','BMX','Montaña','Ruta'];
         let tipos=['Más vendido','promocion','Nueva'];
         let urlId= req.params.idProducto;
@@ -53,11 +47,7 @@ module.exports = {
         }
 
         
-    },
+    }*/
 
-
-    create: (req,res)=>{
-        res.send("recibimos")
-    }
 }
 
