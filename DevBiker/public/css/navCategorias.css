@@ -37,11 +37,13 @@ h2:target{
 }
 .lista-categorias{
     width: 100%;
+    font-size: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #050A30;
     padding: 8px 0px;
+    border-radius: 6px;
 }
 .lista-categorias li{
     list-style-type: none;
@@ -52,9 +54,18 @@ h2:target{
     box-shadow: 0px 0px 10px white;
 }
 
-
-
-
+.montana:target{
+    box-shadow: 0px 0px 10px white;
+}
+.montana:target{
+    box-shadow: 0px 0px 10px white;
+}
+.montana:target{
+    box-shadow: 0px 0px 10px white;
+}
+.montana:target{
+    box-shadow: 0px 0px 10px white;
+}
 
 
 @media (min-width: 426px){
