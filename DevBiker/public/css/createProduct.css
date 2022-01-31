@@ -42,16 +42,13 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     width: 90%;
     display: flex;
     justify-content: center;
-    background-image: url("../img/bicycle-g952a5f1a0_1280.jpg");
-    background-position: center;
-    background-size: cover;
 }
 .container-form{
     display: flex;
     flex-direction: column;
-    width: 70%;
-    background-color: #9999ff;
-    border-radius: 8px;
+    width: 80%;
+    background-color: #b3b3ff;
+    border-radius: 5px;
     padding: 20px;
     opacity: 0.9;
     margin: 40px;
@@ -63,7 +60,7 @@ select{
 }
 input{
     width: 100%;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 textarea{
     width: 100%;
@@ -73,25 +70,29 @@ textarea{
     text-align: center;
     margin: 20px;
 }
-.boton{
+.caracteristicas{
+    font-weight: bold;
+    font-size: 15px;
+}
+.button{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #050A30;
     color: white;
     font-size: 14px;    
     padding: 5px;
-    margin: 15px 0px;
+    margin: auto;
+    margin-top: 10px;
 }
 
 /*@media------------------------------------------------------------------------*/
 @media (min-width: 769px){
     .container-form{
         width: 50%;
-        background-color: #9999ff;
-        border-radius: 8px;
+        background-color: #b3b3ff;
         padding: 20px;
         opacity: 0.9;
         margin: 60px 0px;
@@ -103,7 +104,12 @@ textarea{
     .div{
         line-height: 25px;
     }
+    .caracteristicas{
+        font-weight: bold;
+        font-size: 21px;
+    }
     .button{
+        width: 50%;
         font-size: 18px;
     }
 }

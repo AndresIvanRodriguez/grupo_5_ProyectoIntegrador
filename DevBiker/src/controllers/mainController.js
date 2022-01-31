@@ -61,25 +61,25 @@ module.exports = {
     },
     //Páginas por categoria
     montana: (req, res)=>{
-        const montana = mostrarCategoria("montaña");
+        const montana = mostrarCategoria("Montaña");
         res.render("products/cMontana", {
             montana
         });
     },
     ruta: (req, res)=>{
-        const ruta = mostrarCategoria("ruta");
+        const ruta = mostrarCategoria("Ruta");
         res.render("products/cRuta",{
             ruta
         });
     },
     bmx: (req, res)=>{
-        const bmx = mostrarCategoria("bmx");
+        const bmx = mostrarCategoria("BMX");
         res.render("products/cBmx", {
             bmx
         });
     },
     urbana: (req, res)=>{
-        const urbana = mostrarCategoria("urbana");
+        const urbana = mostrarCategoria("Urbana");
         res.render("products/cUrbana", {
             
             urbana

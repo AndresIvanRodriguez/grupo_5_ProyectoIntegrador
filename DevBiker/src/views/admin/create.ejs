@@ -2,7 +2,7 @@
 <%- include("../partials/head.ejs") %>
 
     <title>Registro</title>
-    <link rel="stylesheet" href="/css/adminCreate.css" type="text/css">
+    <link rel="stylesheet" href="/css/createProduct.css" type="text/css">
 </head>
 <body>
     <%- include("../partials/header.ejs") %> 
@@ -19,24 +19,28 @@
                 <form action="/admin" method="POST" enctype="multipart/form-data">
                    
                     <div>
-                        <label for="name">Nombre producto:</label>
-                        <input type="text" name="name" placeholder="Nombre del producto">
+                        <label for="name">Nombre producto:</label>  
+                        <input type="text" name="name" placeholder="Nombre del producto" required>
                     </div>
                     <div>
                         <label for="price">Valor del producto:</label>
-                        <input type="text" name="price" placeholder="Precio">
+                        <input type="number" name="price" placeholder="Precio" required>
                     </div>
                     <div>
                         <label for="color">Color:</label>
-                        <input type="text" name="color" placeholder="Color">
+                        <input type="text" name="color" placeholder="Color" required>
                     </div>
                     <div>
                         <label for="discount">Descuento:</label>
-                        <input type="text" name="discount" placeholder="Descuento">
+                        <input type="text" name="discount" placeholder="Descuento" required>
+                    </div>
+                    <div>
+                        <label for="stock">Stock:</label>
+                        <input type="number" name="stock" placeholder="Stock" required>
                     </div>
                     <div>
                         <label for="category">Categoria:</label>
-                        <select name="category">
+                        <select name="category" required>
                             <option>------------------</option>
                             <option>Ruta</option>
                             <option>BMX</option>
@@ -46,7 +50,7 @@
                     </div>
                     <div>
                         <label for="tipo">Tipo:</label>
-                        <select name="tipo">
+                        <select name="tipo" required>
                             <option>------------------</option>
                             <option>Mas Vendido</option>
                             <option>Promocion</option>
@@ -54,38 +58,39 @@
                         </select>
                     </div>
                     <div>
-                        <label for="description">Descripcion del producto:</label>
-                        <textarea name="description" cols="30" rows="10" placeholder="Añade la descripción:"></textarea>
-                    </div>
-                    <div>
-                        <label for="stock">Stock:</label>
-                        <input type="text" name="stock" placeholder="Stock">
+                        <label for="caracteristicas.genero">Genero:</label>
+                        <select name="caracteristicas.genero" required>
+                            <option>------------------</option>
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                            <option>Unisex</option>
+                        </select>
                     </div>
                     <div>
                         <label for="Nombre">Cargar imagen</label>
-                        <input type="file" name="image" id="image">
+                        <input type="file" name="image" id="image" required>
                     </div>
                     <div>
-                        <label for="file">Caracteristicas:</label>
+                        <label for="description">Descripcion del producto:</label>
+                        <textarea name="description" cols="10" rows="5" placeholder="Añade la descripción:" required></textarea>
+                    </div>
+                    <div>
+                        <label for="file" class="caracteristicas">Caracteristicas</label>
                         <div>
-                            <label for="genero">Genero:</label>
-                            <input type="text" name="genero">
+                            <label for="caracteristicas.material">Material marco:</label>
+                            <input type="text" name="caracteristicas.material" required>
                         </div>
                         <div>
-                            <label for="material">Material marco:</label>
-                            <input type="text" name="material">
+                            <label for="caracteristicas.numeroCambios">Numero de cambios:</label>
+                            <input type="number" name="caracteristicas.numeroCambios" required>
                         </div>
                         <div>
-                            <label for="numeroCambios">Numero de cambios:</label>
-                            <input type="text" name="numeroCambios">
+                            <label for="caracteristicas.tipoFreno">Tipo de freno:</label>
+                            <input type="text" name="caracteristicas.tipoFreno" required>
                         </div>
                         <div>
-                            <label for="tipoFreno">Tipo de freno</label>
-                            <input type="text" name="tipoFreno">
-                        </div>
-                        <div>
-                            <label for="suspension">Suspención:</label>
-                            <input type="text" name="suspension">
+                            <label for="caracteristicas.suspension">Suspención:</label>
+                            <input type="text" name="caracteristicas.suspension" required>
                         </div>
                     </div>
 
