@@ -1,11 +1,14 @@
-const res = require("express/lib/response");
+/* const res = require("express/lib/response"); */
+/* const { redirect } = require('express/lib/response'); */
 const fs = require('fs');
 const path = require('path');
+
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.JSON');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-module.exports = {
+
+const controller = {
     store: (req, res) => {
 		let image = req.file ? req.file.filename : "default-image.png";
 		let newProduct = {
@@ -29,25 +32,50 @@ module.exports = {
 		})
     },
     
-    /*edit:(req,res)=>{
-        let categorias=['Urbano','BMX','Montaña','Ruta'];
-        let tipos=['Más vendido','promocion','Nueva'];
-        let urlId= req.params.idProducto;
+    edit:(req, res)=>{
+        let id = req.params.id;		//conocer el id del product
+		let productToEdit = products.find(product => product.id == id);
 
-        for (let i=0; i<products.length; i++){
-            
-            if(urlId==products[i].id){
-                
-                let productoPorIdUrl=products[i];
-                return res.render("admin/edit",{products,categorias,tipos,urlId,productoPorIdUrl,toThousand});
-            }
-            else {
-                //return res.send("Error");
-            }
-        }
+        res.render("admin/editar", {
+            productToEdit,
+			products
+        });
+    },
 
-        
-    }*/
+    update: (req, res) => {
+		let id = req.params.id;
+		let productToEdit = products.find(product => product.id == id);
 
+		productToEdit = {
+            id: productToEdit.id,
+			...req.body,
+            image: productToEdit.image
+		};
+
+		let newProducts = products.map(product => {
+			if(product.id == productToEdit.id){
+				product = {...productToEdit}
+			}
+			return product;
+		})
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
+		res.redirect("/admin");
+
+        console.log(productToEdit)
+	},
+    
+    destroy : (req, res) => {
+		let id = req.params.id;
+		let finalProducts = products.filter(product => product.id != id);
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, " "));
+		res.redirect("/admin");
+
+        console.log(finalProducts)
+	}
 }
+
+module.exports = controller;
+
 

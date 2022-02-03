@@ -20,8 +20,6 @@ const masVendidos = localizarUbicacion("mas vendido");
 const carrito = localizarUbicacion("para-el-carrito");
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-const allbikes = localizarUbicacion("");
-
 module.exports = {
     //Mostrar página de inicio
     home: (req,res)=>{
