@@ -22,6 +22,8 @@ const mainRoutes = require("./routes/mainRoutes");
 app.use("/", mainRoutes);
 const adminRoutes = require("./routes/adminRoutes");
 app.use("/admin", adminRoutes);
+const usersRoutes=require("./routes/usersRoutes")
+app.use("/users",usersRoutes);
 
 //Servidor
 app.listen(process.env.PORT || 3001, () =>console.log("Servidor Corriendo en Puerto 3000"));

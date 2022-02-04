@@ -1,0 +1,17 @@
+[
+ {
+  "id": 1,
+  "nombre": [
+   "Juan Diego",
+   "Quintero Peralta"
+  ],
+  "email": "juandiegoq56@gmail.com",
+  "fecha": "2000-11-21",
+  "adress": "dassdsadsa",
+  "password": [
+   "0303030030030",
+   "0303030030030"
+  ],
+  "image": "default-image.png"
+ }
+]

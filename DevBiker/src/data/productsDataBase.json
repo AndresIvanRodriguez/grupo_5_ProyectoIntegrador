@@ -538,5 +538,20 @@
   "numeroCambios": "6",
   "tipoFreno": "V-brike",
   "suspension": "Delantero"
+ },
+ {
+  "id": 35,
+  "nombre": [
+   "fdsfsd",
+   "ddfsdfd"
+  ],
+  "email": "juandiegoq56@gmail.com",
+  "fecha": "2022-02-21",
+  "adress": "dsdfdsfsddf",
+  "password": [
+   "0303030030030",
+   "dsfdfdfdsfdsf"
+  ],
+  "image": "default-image.png"
  }
 ]
