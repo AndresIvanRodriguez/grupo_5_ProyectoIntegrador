@@ -490,23 +490,6 @@
   "suspension": "Delantero"
  },
  {
-  "id": 30,
-  "name": "la mehor",
-  "price": "2300000",
-  "color": "rojaa",
-  "discount": "50",
-  "category": "Urbano",
-  "tipo": "Nueva",
-  "description": "asdsa",
-  "stock": "1111",
-  "genero": "hombre",
-  "material": "aluminio",
-  "numeroCambios": "8",
-  "tipoFreno": "freno de disco",
-  "suspension": "si",
-  "image": "default-image.png"
- },
- {
   "id": 32,
   "name": "Gw 2018",
   "price": "800000",
@@ -542,27 +525,18 @@
  },
  {
   "id": 34,
-  "name": "Nelson Giobanny",
+  "name": "WFR Gote",
   "price": "23233",
   "color": "Amarilla",
-  "discount": "",
-  "stock": ""
- },
- {
-  "id": 35,
-  "name": "jjjjjkjjjkjkjkjk",
-  "price": "298744",
-  "color": "Rojo",
   "discount": "20",
-  "stock": "",
-  "category": "------------------",
-  "tipo": "------------------",
-  "genero": "------------------",
-  "image": "1643855811650-bicycle-g4e21d1848_1280.png",
+  "stock": "5",
+  "category": "BMX",
+  "tipo": "Mas Vendido",
+  "genero": "Hombre",
   "description": "",
   "material": "Acero",
-  "numeroCambios": "",
-  "tipoFreno": "",
-  "suspension": ""
+  "numeroCambios": "6",
+  "tipoFreno": "V-brike",
+  "suspension": "Delantero"
  }
 ]

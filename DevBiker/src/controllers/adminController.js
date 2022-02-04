@@ -22,9 +22,11 @@ const controller = {
 
 		res.redirect('/');
 	},
+
     vista: (req,res)=>{
         res.render(("admin/create"));
     },
+	
     index:(req,res)=>{
         res.render("admin/index",{
 			products,
@@ -61,18 +63,14 @@ const controller = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
 		res.redirect("/admin");
-
-        console.log(productToEdit)
 	},
-    
+
     destroy : (req, res) => {
 		let id = req.params.id;
 		let finalProducts = products.filter(product => product.id != id);
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, " "));
 		res.redirect("/admin");
-
-        console.log(finalProducts)
 	}
 }
 

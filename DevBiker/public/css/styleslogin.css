@@ -51,7 +51,7 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     display: flex;
     flex-direction: column;
     width: 70%;
-    background-color: #b3b3ff;
+    background-color: #ccccff;
     border-radius: 8px;
     padding: 20px;
     opacity: 0.9;
@@ -101,6 +101,9 @@ section{
     display: flex;
     flex-direction: column;
     line-height: 25px;
+}
+.link a{
+    color: #050A30;
 }
 
 /*@media------------------------------------------------------------------------*/

@@ -15,10 +15,10 @@
         <div class="principal">
             <div class="categorias">
                 <%- include("../partials/nav-categorias.ejs") %>
-                <h3 class="titulo">Aqui encuentras nuestros productos en oferta</h3>
+                <h3 class="titulo" id="titulo">Aqui encuentras nuestros productos en oferta</h3>
                 <div class="card">
                     <% products.forEach(product => { %>
-                        <% if(product.discount > 10){ %>
+                        <% if(product.discount > 19){ %>
                     <article class="bikes">
                         <section>
                             <p class="nombre"><%=product.name%></p>
@@ -27,7 +27,7 @@
                             <img src="/img/<%=product.image%>" alt="Prototipo <%=product.name%> ">
                         </section>
                         <section class="datos">
-                            <p class="descuento">%<%=product.discount%> OFF
+                            <p class="descuento" id="descuento">%<%=product.discount%> OFF
                             <style></style></p>
                             <p class="precio">$<%=product.price%></p>
                         </section>

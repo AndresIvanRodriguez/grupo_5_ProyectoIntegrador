@@ -198,6 +198,9 @@ main{
     width: 100%;
     margin: 10px;
 }
+.list-catogories a{
+    color: #050A30;
+}
 
 
 /*@media-----------------*/
