@@ -538,5 +538,35 @@
   "numeroCambios": "6",
   "tipoFreno": "V-brike",
   "suspension": "Delantero"
+ },
+ {
+  "id": 35,
+  "nombre": [
+   "asdasd",
+   "asdasd"
+  ],
+  "email": "nelmman@hotmail.com",
+  "fecha": "2022-02-06",
+  "adress": "asd",
+  "password": [
+   "123",
+   "123"
+  ],
+  "image": "default-image.png"
+ },
+ {
+  "id": 36,
+  "nombre": [
+   "asdasd",
+   "sadas"
+  ],
+  "email": "nelmman@hotmail.com",
+  "fecha": "2022-02-04",
+  "adress": "dsfgsdf",
+  "password": [
+   "asd",
+   "asd"
+  ],
+  "image": "default-image.png"
  }
 ]

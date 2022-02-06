@@ -17,7 +17,7 @@
                     <i class="fas fa-user-plus"></i>
                     <h2 class="titulo">Crear Cuenta</h2>
                 </div>
-                <form action="">
+                <form action="/users" method="POST">
                     <div class="div">
                         <label for="nombre" class="label">Nombres:</label><br>
                         <input type="text" id="nombre" name="nombre" class="input" required>
@@ -30,27 +30,27 @@
 
                     <div class="div">
                         <label for="email" class="label">Email:</label><br>
-                        <input type="email" id="email" name="email" class="input" required>
+                        <input type="email" id="email" name="email" class="input" >
                     </div>
 
                     <div class="div">
                         <label for="fechas" class="label">Fecha nacimiento:</label><br>
-                        <input type="date" id="date" name="fecha" class="input" required>
+                        <input type="date" id="date" name="fecha" class="input" >
                     </div>
 
                     <div class="div">
                         <label for="adress" class="label">Domicilio:</label><br>
-                        <input type="text" id="adress" name="adress" class="input" required>
+                        <input type="text" id="adress" name="adress" class="input" >
                     </div>
 
                     <div class="div">
                         <label for="password" class="label">Contraseña:</label><br>
-                        <input type="password" id="password" name="password" class="input" required>
+                        <input type="password" id="password" name="password" class="input" >
                     </div>
 
                     <div class="div">
                         <label for="password" class="label">Confirmar contraseña:</label><br>
-                        <input type="password" id="password" name="password" class="input" required>
+                        <input type="password" id="password" name="password" class="input" >
                     </div>
 
                     <div>
@@ -65,8 +65,8 @@
                     </div>
                     
                     <div class="div-button">
-                        <button type="submit" class="button">Crear cuenta</button>
-                        <button type="reset" class="button">Restablecer</button>
+                        <input type="submit" class="button">Crear cuenta</input>
+                        <input type="reset" class="button">Restablecer</input>
                     </div>  
                 </form>
             </div>

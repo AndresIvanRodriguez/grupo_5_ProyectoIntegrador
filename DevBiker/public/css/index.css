@@ -48,6 +48,16 @@ h1{
     width: 100%;
     border: solid 1px black;
 }
+tr{
+    background-color: #e3e6e3;
+}
+tr:hover{
+    background-color: #b3b3ff;
+}
+td{
+    text-align: center;
+    width: 25%;
+}
 .products{
     display: flex;
     justify-content: space-around;
@@ -55,10 +65,6 @@ h1{
     height: 40px;
     align-items: center;
     font-size: 13px;
-}
-td{
-    text-align: center;
-    width: 25%;
 }
 input{
     padding: 0px 2px;
@@ -71,13 +77,28 @@ input{
     margin: 15px;
     font-size: 15px;
 }
+.submit{
+    padding: 1px 5px;
+    background-color: #b3b3ff;
+    border: solid 1px #e3e6e3;
+    border-radius: 5px;
+}
+.submit:hover{
+    background-color: #050A30;
+    color: white;
+}
 .create input{
-    padding: 3px 5px;
+    padding: 6px 20px;
     background-color: #050A30;
     color: white;
     border-radius: 3px;
     margin: 5px
 }
+.create input:hover{
+    border: solid 4px #b3b3ff;
+    /* box-shadow: 3px 3px 3px 3px #9999ff; */
+}
+
 
 
 @media (min-width: 426px){

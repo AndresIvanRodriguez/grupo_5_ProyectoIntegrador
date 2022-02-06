@@ -31,10 +31,6 @@ module.exports = {
     loginUser: (req,res)=> {
         res.render("users/login");
     },
-    //Mostrar página de registro
-    registerUser: (req,res) => {
-        res.render(("users/register"));
-    },
     //Mostrar página de carrito de compras
     carrito:(req,res)=>{
         res.render("users/carrito",{
