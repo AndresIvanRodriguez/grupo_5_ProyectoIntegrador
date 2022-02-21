@@ -28,8 +28,12 @@ module.exports = {
         });
     },
     //Mostrar página de login
-    loginUser: (req,res)=> {
+/*     loginUser: (req,res)=> {
         res.render("users/login");
+    }, */
+    //Mostrar página de registro
+    registerUser: (req,res) => {
+        res.render(("users/register"));
     },
     //Mostrar página de carrito de compras
     carrito:(req,res)=>{

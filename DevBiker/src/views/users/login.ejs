@@ -14,20 +14,31 @@
         <div class="principal">
             <div class="container_form">
                 <div class="user"><i class="fas fa-user"></i></div>
-                <br action="">
+                <form action="" method="POST">
                     <section>
+                        <div>
+                            <label for="email" class="user">Ingrese su correo</label>
+                            <input class="input" type="text" name="email" >
+                            <% if(locals.errors && errors.email){ %>
+                                <p style="color: red;"><%= email.msg %></p>
+                            <% } %>
+                        </div>
 
-                        <label for="usuario" class="user">Usuario</label>
-                        <input class="inputU" type="text" name="usuario">
-
-                        <label for="contraseña" class="pass">Contraseña</label>
-                        <input class="inputC" type="password" name="contraseña">
+                        <div>
+                            <label for="password" class="pass">Contraseña</label>
+                            <input class="input" type="password" name="password">
+                            <% if(locals.errors){ 
+                                errors.forEach(error => { %>
+                                    <p style="color: red;"><%= error.msg %></p>
+                            <% } )
+                            } %>
+                        </div>
                         
-                        <input class="boton" type="submit" value="Iniciar Sesión">
+                        <button class="boton" type="submit">Iniciar Sesion</button>
                     </section>
                     <div class="link">
                         <a href="/registro">¿Olvidaste tu contraseña?</a>
-                        <a href="/admin/register">Crear cuenta</a> 
+                        <a href="/users/register">Crear cuenta</a> 
                     </div>
                 </form>
             </div>  

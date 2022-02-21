@@ -14,59 +14,72 @@
         <div class="principal">
             <div class="container_form">
                 <div class="titulo-icon">
-                    <i class="fas fa-user-plus"></i>
                     <h2 class="titulo">Crear Cuenta</h2>
-                </div>
-                <form action="/users" method="POST">
+                    <i class="fas fa-user-plus"></i>
+                </div>                
+
+                <form action="/users" method="POST" enctype="multipart/form-data">
                     <div class="div">
-                        <label for="nombre" class="label">Nombres:</label><br>
-                        <input type="text" id="nombre" name="nombre" class="input" required>
+                        <label for="nombre" class="label">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" class="input" >
                     </div>
+                    <% if(locals.errors && errors.nombre){ %>
+                        <p style="color: red;"><%= errors.nombre.msg %></p>
+                    <% } %>
 
                     <div class="div">
-                        <label for="nombre" class="label">Apellidos:</label><br>
-                        <input type="text" id="nombre" name="nombre" class="input" required>
+                        <label for="apellidos" class="label">Apellidos:</label><br>
+                        <input type="text" id="nombre" name="apellidos" class="input" >
                     </div>
+                    <% if(locals.errors && errors.apellidos){ %>
+                        <p style="color: red;"><%= errors.apellidos.msg %></p>
+                    <% } %>
 
                     <div class="div">
                         <label for="email" class="label">Email:</label><br>
                         <input type="email" id="email" name="email" class="input" >
                     </div>
+                    <% if(locals.errors && errors.email){ %>
+                        <p style="color: red;"><%= errors.email.msg %></p>
+                    <% } %>
 
                     <div class="div">
-                        <label for="fechas" class="label">Fecha nacimiento:</label><br>
-                        <input type="date" id="date" name="fecha" class="input" >
+                        <label for="fecha" class="label">Fecha nacimiento:</label><br>
+                        <input type="date" id="date" name="fecha" class="input" required>
                     </div>
 
                     <div class="div">
                         <label for="adress" class="label">Domicilio:</label><br>
-                        <input type="text" id="adress" name="adress" class="input" >
+                        <input type="text" id="adress" name="adress" class="input" required>
                     </div>
 
                     <div class="div">
                         <label for="password" class="label">Contraseña:</label><br>
-                        <input type="password" id="password" name="password" class="input" >
+                        <input type="password" id="password" name="password" class="input">
                     </div>
+                    <% if(locals.errors && errors.password){ %>
+                        <p style="color: red;"><%= errors.password.msg %></p>
+                    <% } %>
 
                     <div class="div">
-                        <label for="password" class="label">Confirmar contraseña:</label><br>
-                        <input type="password" id="password" name="password" class="input" >
+                        <label for="image" class="label">Agregar imagen:</label><br>
+                        <input type="file" id="image" name="image" class="input" required>
                     </div>
 
-                    <div>
+                    <div class="check">
                         <div>
-                            <input class="check" type="checkbox" id="id">
-                            <label for="id">Terminos Y Condiciones </label>
+                            <label for="condiciones">Terminos Y Condiciones </label>
+                            <input type="checkbox" id="condiciones" name="condiciones" required>
                         </div>
                         <div>
-                            <input class="check" type="checkbox" id="ie">
-                            <label for="ie">Terminos De Uso </label>
+                            <label for="terminos">Terminos De Uso </label>
+                            <input type="checkbox" id="terminos" name="terminos" required>
                         </div>
                     </div>
                     
                     <div class="div-button">
-                        <input type="submit" class="button">Crear cuenta</input>
-                        <input type="reset" class="button">Restablecer</input>
+                        <button type="submit" class="button">Crear cuenta</button>
+                        <button type="reset" class="button">Restablecer</button>
                     </div>  
                 </form>
             </div>

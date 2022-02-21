@@ -41,7 +41,7 @@
                     <div>
                         <label for="category">Categoria:</label>
                         <select name="category" required>
-                            <option>------------------</option>
+                            <option>Elige una categoria</option>
                             <option>Ruta</option>
                             <option>BMX</option>
                             <option>Urbano</option>
@@ -51,16 +51,15 @@
                     <div>
                         <label for="tipo">Tipo:</label>
                         <select name="tipo" required>
-                            <option>------------------</option>
                             <option>Mas Vendido</option>
                             <option>Promocion</option>
-                            <option>Nueva</option>
+                            <option selected disabled>Nueva</option>
                         </select>
                     </div>
                     <div>
-                        <label for="caracteristicas.genero">Genero:</label>
-                        <select name="caracteristicas.genero" required>
-                            <option>------------------</option>
+                        <label for="genero">Genero:</label>
+                        <select name="genero" required>
+                            <option value="" selected disabled>Elige un genero</option>
                             <option>Hombre</option>
                             <option>Mujer</option>
                             <option>Unisex</option>
@@ -72,25 +71,25 @@
                     </div>
                     <div>
                         <label for="description">Descripcion del producto:</label>
-                        <textarea name="description" cols="10" rows="5" placeholder="Añade la descripción:" required></textarea>
+                        <textarea name="description" cols="10" rows="3" placeholder="Añade la descripción:" required></textarea>
                     </div>
                     <div>
                         <label for="file" class="caracteristicas">Caracteristicas</label>
                         <div>
-                            <label for="material">Material marco:</label>
-                            <input type="text" name="material" required>
+                            <label for="caracteristicas.material">Material marco:</label>
+                            <input type="text" name="caracteristicas.material" required>
                         </div>
                         <div>
-                            <label for="numeroCambios">Numero de cambios:</label>
-                            <input type="number" name="numeroCambios" required>
+                            <label for="caracteristicas.numeroCambios">Numero de cambios:</label>
+                            <input type="number" name="caracteristicas.numeroCambios" required>
                         </div>
                         <div>
-                            <label for="tipoFreno">Tipo de freno:</label>
-                            <input type="text" name="tipoFreno" required>
+                            <label for="caracteristicas.tipoFreno">Tipo de freno:</label>
+                            <input type="text" name="caracteristicas.tipoFreno" required>
                         </div>
                         <div>
-                            <label for="suspension">Suspención:</label>
-                            <input type="text" name="suspension" required>
+                            <label for="caracteristicas.suspension">Suspención:</label>
+                            <input type="text" name="caracteristicas.suspension" required>
                         </div>
                     </div>
 

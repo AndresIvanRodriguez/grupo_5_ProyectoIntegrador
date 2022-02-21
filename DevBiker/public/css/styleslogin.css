@@ -75,12 +75,7 @@ section{
     text-align: left;
     font-size: 15px;
 }
-.inputU{
-    width: 100%;
-    display: flex;
-    border-radius: 5px;
-}
-.inputC{
+.input{
     width: 100%;
     display: flex;
     border-radius: 5px;

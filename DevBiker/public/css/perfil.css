@@ -1,0 +1,49 @@
+/*Normalización*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos Comunes*/
+html{                        /*El tamaño de los navegadores por defecto son 16px*/
+    font-size: 65%;          /*De esta manera el valor del navegador es de 10px*/
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Main---------------------------------------------*/
+main{
+    width: 100%;
+    display: flex;
+}
+.margin-left{
+    width: 5%;
+    background-color: #b3b3ff;
+}
+.margin-right{
+    background-color: #b3b3ff;
+    width: 5%;
+}
+.principal{
+    display: flex;
+    width: 90%;
+    background-color: white;
+}
+.container{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid 1px black;
+    padding: 30px;
+}
+.perfil{
+    margin: auto;
+}
+.datos{
+    line-height: 20px;
+    font-weight: bold;
+}

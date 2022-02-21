@@ -54,6 +54,7 @@
   "id": 4,
   "name": "GW Hyena",
   "price": 720000,
+  "color": "Negro",
   "discount": 15,
   "category": "Montaña",
   "tipo": "carrito",
@@ -62,7 +63,7 @@
   "image": "./montaña/4 Montaña GW Hyena 1.jpg",
   "genero": "Unisex",
   "material": "Aluminio",
-  "numeroCambioss": 24,
+  "numeroCambios": 24,
   "tipoFreno": "Disco mecánico",
   "suspension": "Delantera"
  },
@@ -211,6 +212,7 @@
   "category": "Ruta",
   "tipo": "t",
   "description": "7000-E Bicicleta de Carretera S Merida Reacto brillante TITAN/SILK 2021 Di2 Racing",
+  "Stock": 5,
   "image": "/ruta/13 Bicicleta de Carretera S Merida Reacto 1.jpg",
   "genero": "Unisex",
   "material": "Fibra de Carbón",
@@ -227,7 +229,7 @@
   "category": "Ruta",
   "tipo": "t",
   "description": "Bicicleta Triban Rc 120 disco cn fr",
-  "Stock": 5,
+  "stock": 5,
   "image": "/ruta/14 TRIBAN 1.jpg",
   "genero": "Unisex",
   "material": "Aluminio",
@@ -530,10 +532,10 @@
   "color": "Amarilla",
   "discount": "20",
   "stock": "5",
-  "category": "BMX",
-  "tipo": "Mas Vendido",
-  "genero": "Hombre",
-  "description": "",
+  "category": "------------------",
+  "tipo": "------------------",
+  "genero": "------------------",
+  "description": "hfhgfhg",
   "material": "Acero",
   "numeroCambios": "6",
   "tipoFreno": "V-brike",
@@ -542,31 +544,33 @@
  {
   "id": 35,
   "nombre": [
-   "asdasd",
-   "asdasd"
+   "fdsfsd",
+   "ddfsdfd"
   ],
-  "email": "nelmman@hotmail.com",
-  "fecha": "2022-02-06",
-  "adress": "asd",
+  "email": "juandiegoq56@gmail.com",
+  "fecha": "2022-02-21",
+  "adress": "dsdfdsfsddf",
   "password": [
-   "123",
-   "123"
+   "0303030030030",
+   "dsfdfdfdsfdsf"
   ],
   "image": "default-image.png"
  },
  {
   "id": 36,
-  "nombre": [
-   "asdasd",
-   "sadas"
-  ],
-  "email": "nelmman@hotmail.com",
-  "fecha": "2022-02-04",
-  "adress": "dsfgsdf",
-  "password": [
-   "asd",
-   "asd"
-  ],
-  "image": "default-image.png"
+  "name": "ggggggggggggg",
+  "price": "2323",
+  "color": "Rojo",
+  "discount": "4",
+  "stock": "5",
+  "category": "BMX",
+  "tipo": "Mas Vendido",
+  "genero": "Hombre",
+  "description": "werwrwe",
+  "caracteristicas.material": "Acero",
+  "caracteristicas.numeroCambios": "4",
+  "caracteristicas.tipoFreno": "wefsdf",
+  "caracteristicas.suspension": "sdfsdf",
+  "image": "1645298879530-1643660482728-Orbea-Occam-AM-M-LTD-2018.jpg"
  }
 ]

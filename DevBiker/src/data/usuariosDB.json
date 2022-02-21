@@ -1,0 +1,34 @@
+[
+ {
+  "id": 2,
+  "nombre": "Juan",
+  "apellidos": "Lopez",
+  "email": "nelmman93@gmail.com",
+  "fecha": "2022-02-03",
+  "adress": "Sopó",
+  "password": "hola",
+  "image": "1645394020301-1643659165948-OrbeaOccamTR 2018.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Nelson",
+  "apellidos": "RODRIGUEZ FERNANDEZ",
+  "email": "nelmman@hotmail.com",
+  "fecha": "2022-02-17",
+  "adress": "Sopó",
+  "password": "$2a$10$kL2aH/uZ4ZUd5USDW6pVIe0qy9nuDuaQWl/waw2NRnU3sKFJlOBfO",
+  "image": "1645399035033-1645298879530-1643660482728-Orbea-Occam-AM-M-LTD-2018.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Juan Diego",
+  "apellidos": "Quintero",
+  "email": "juan@dh.com",
+  "fecha": "2022-02-10",
+  "adress": "asdasda",
+  "password": "$2a$10$GFWoDod1jQdUfkIO/0OnK.QpXgOWHQuiJdkTRg9K0ykrjY8pp6G3q",
+  "condiciones": "on",
+  "terminos": "on",
+  "image": "1645403516200-1643660482728-Orbea-Occam-AM-M-LTD-2018.jpg"
+ }
+]
