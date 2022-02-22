@@ -1,20 +1,13 @@
-# grupo_5_sprint1ProyectoIntegrador
+# ProyectoIntegrador grupo 5
 
 ## Parte 1
 Entregable: URL del repositorio: 
 https://github.com/AndresIvanRodriguez/grupo_5_ProyectoIntegrador
 
-## Parte 2
-Definir la temática del Market Place
-¿Qué productos o servicios brindará nuestro sitio? ¿Quién será nuestra audiencia
-objetivo? ¿Cómo ajustaremos nuestra oferta a ese público?
-Entregable: Crear archivo README.md en el repositiorio con:
+## Tematica del Market place
 
-● Una breve descripción de la oferta de productos y/o servicios ofrecidos por su
-      sitio. También agregar una breve descripción del público al que apunta el sitio.
+Realizar un sitio web e-comerce relacionado al mundo de las bicicletas, donde el usuario podra conocer las diferentes categorias de nuestros productos junto a sus precios y caracteristicas. Esta página estará enfocada a todas aquellas personas apasionadas al mundo de las bicicletas, aquellas personas que disfrutan de una mañana pedaliando o incluso yendo al trabajo sin tener que tomar un transporte público, y lo mejor, de forma saludable. Por esta razon y muchas más creamos DevBiker, nuestro sitio web para ofrecer las mejores biciletas al mercado y con los mejores precios. 
       
-● Una breve descripción de los integrantes del equipo.
-
     ● Plataforma de comercio de dicada a la ventade Bicicletas y accesorios, subdividida en 
      en las siguientes categorias: 
             Bicicletas 
@@ -26,20 +19,17 @@ Entregable: Crear archivo README.md en el repositiorio con:
                              Bmx
                              Urbana 
                    ACCCESORIOS 
- 
-      ● Andres Ivan Rodriguez:
-        Estudiante de física, apasionado por la ciencia, la investigación y tambien de la programación, me gusta ver futbol (Hincha de Millonario F.c),
-        he practicado ciclismo y artes marciales pero en pandemia lo abandone. 
-      ● Juan Diego Quintero 
-      Estudiante de Ingeniería Electrónica, me gusta el fútbol aunque por la pandemia ya casi no lo practico,me gusta la programación, me gustan los videojuegos en tiempos libres.
-      ● Nelson Rodriguez: 
-        Estudiante Fullstack de Digital House. Le gusta viajar, el futbol, el ajedrez y aprender cosas nuevas en todo el momento. Bartender y barista como segunda profesion. 
-      ● Diego Alexander Mendoza Enríquez:
-            Soy Ingeniero en Telecomunicaciones, me gusta mucho el área de la tecnología en sus distintas ramas, algunos pasatiempos diferentes a mi carrera son la actividad 
-            física, conocer distintos lugares, entre otros. Uno de los trabajos que me marco mucho en áreas personales y profesionales fue la recreación, animación y locución, 
-            a tal punto que gusta aplicarlo en algunas situaciones de mi vida.   
-            
-
+                   
+      ● Descripción de los integrantes del equipo.
+            ● Andres Ivan Rodriguez:
+              Estudiante de física, apasionado por la ciencia, la investigación y tambien de la programación, me gusta ver futbol (Hincha de Millonario F.c),
+              he practicado ciclismo y artes marciales pero en pandemia lo abandone. 
+            ● Juan Diego Quintero: 
+              Estudiante de Ingeniería Electrónica, me gusta el fútbol aunque por la pandemia ya casi no lo practico,me gusta la programación, me gustan los videojuegos en                     tiempos libres.
+            ● Nelson Rodriguez: 
+              Estudiante de desarrollo de software, especializado en la programación web Fullstack por Digital House. Me gusta viajar, ver deportes, jugar ajedrez y aprender                   cosas nuevas en todo el momento. Bartender y barista como segunda profesion. 
+            ● Diego Alexander Mendoza Enríquez:
+              Soy Ingeniero en Telecomunicaciones, me gusta mucho el área de la tecnología en sus distintas ramas, algunos pasatiempos diferentes a mi carrera son la                           actividad física, conocer distintos lugares, entre otros. Uno de los trabajos que me marco mucho en áreas personales y profesionales fue la recreación, animación y               locución, a tal punto que gusta aplicarlo en algunas situaciones de mi vida.   
 
 ## Parte 3 
 Deberán realizar una búsqueda de sitios similares, relacionados o que sean de interés: 
