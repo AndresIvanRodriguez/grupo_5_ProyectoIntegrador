@@ -36,6 +36,10 @@
                         <label for="password" class="label">Contraseña:</label><br>
                         <input type="password" id="password" name="password" value="<%= usersToEdit.password %>">
                     </div>
+                    <div class="div">
+                        <label for="image" class="label">Foto de perfil:</label><br>
+                        <img src="/img/<%=usersToEdit.image%>" alt="Prototipo <%=usersToEdit.name%> ">
+                    </div>
                     <div>
                         <button class="submit" type="submit">Guardar cambios</button>
                     </div>

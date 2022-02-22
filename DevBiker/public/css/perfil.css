@@ -35,15 +35,79 @@ main{
 }
 .container{
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: solid 1px black;
-    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: solid 2px #b3b3ff;
+    width: 80%;
+    padding: 10px;
 }
 .perfil{
-    margin: auto;
+    text-align: left;
+    margin-bottom: 20px;
 }
-.datos{
+h4{
+    font-weight: bold;
+}
+.title-image{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.titleFoto{
+    width: 40%;
+    text-align: left;
+}
+.img{
+    width: 60%;
+    margin-bottom: 20px;
+    margin: auto;
+    text-align: center;
+}
+.img img{
+    width: 90%;
+}
+.informacion{
+    border-top: solid #b3b3ff 2px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 15px;
     line-height: 20px;
     font-weight: bold;
+}
+.datos{
+    margin: 10px 30px;
+    font-size: 12px;
+
+}
+
+
+/*@media*/
+
+@media (min-width: 426px){
+    .container{
+        width: 75%;
+        padding: 10px;
+    }
+    .img img{
+        width: 90%;
+        height: 140px;
+    }
+
+}
+@media (min-width: 769px){
+    .container{
+        width: 60%;
+    }
+    .img img{
+        width: 90%;
+        height: 210px;
+    }
+}
+@media (min-width: 1025px){
+    .container{
+        width: 50%;
+    }
+    .img img{
+        width: 90%;
+    }
 }

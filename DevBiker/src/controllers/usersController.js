@@ -4,7 +4,9 @@ const usersFilePath = path.join(__dirname, '../data/usuariosDB.JSON');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const bcrypt = require("bcryptjs");
 
+const User = require("../models/User");			//modelo User
 const { validationResult } = require("express-validator");
+const bcryptjs = require('bcryptjs');
 
 const controller = {
 
@@ -13,68 +15,84 @@ const controller = {
 	},
 
 	processRegister: (req, res) => {	
-		let image = req.file ? req.file.filename : "default-image.png";
-		let password = bcrypt.hashSync(req.body.password, 10);
+		const resultValidation = validationResult(req);
 
-		let email = req.body.email;
-		let usuario = users.find(el => el.email === email);
-
-		//funcion de express validator para validar el formulario
-		const resultValidation = validationResult(req);	
-
-		if(resultValidation.errors.length > 0 || usuario){
-			res.render("users/register", {
+		if(resultValidation.errors.length > 0){
+			return res.render("users/register", {
 				errors: resultValidation.mapped(),	
+				oldData: req.body
 			})
-		} else {
-			let userToCreate = {
-				id: users[users.length - 1].id + 1,
-				...req.body,
-				password: password,
-				image: image
-			};
+		} 
 
-			users.push(userToCreate);
-			fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-	
-			res.render('users/login');
+		let userInDB = User.findByField("email", req.body.email);
+
+		if(userInDB){
+			return res.render("users/register", {
+				errors: {
+					email: {
+						msg: "Esta email ya esta registrado"
+					}
+				},	
+				oldData: req.body
+			})
 		}
+
+		let userToCreate = {
+			...req.body,
+			image: req.file.filename,
+			password: bcrypt.hashSync(req.body.password, 10)
+		}
+
+		User.create(userToCreate)
+	
+		return res.render('users/login');
+
 	},
 
 	login: (req, res) => {
 		res.render("users/login");
 	},
 
-	profile: (req, res) => {
-		//let id = req.params.id;
-		//let usuario = users.find(p => p.id == id);
-		res.render("users/perfil");
-	},
-
 	index:(req,res)=>{
-        res.render("users/index",{
-            users
-        })
-    },
-
-	loginProcess: (req, res) => {
-		let email = req.body.email;
-		let usuarioEmail = users.find(el => el.email === email);
-
-		let passwordBody = req.body.password;
-		
-		let passwordUsuario = bcrypt.compareSync(passwordBody, usuarioEmail.password);
-		console.log(passwordUsuario)
-
-		let usuarioCorrecto = usuarioEmail && passwordUsuario;
-		
-		if(usuarioCorrecto){
-			/* delete usuarioCorrecto.password; */			//Borrar la contraseña en la sessio por seguridad
-			return res.render("users/perfil");
-		} else {
-			return res.render("users/login");
-		}
+		res.render("users/index",{
+			users
+		})
 	},
+	
+	loginProcess: (req, res) => {
+		let userToLogin = User.findByField('email', req.body.email);
+
+		if(userToLogin){
+			let passwordCorrecta = bcryptjs.compareSync(req.body.password, userToLogin.password)
+			if(passwordCorrecta){
+				delete userToLogin.password;
+				req.session.userLogged = userToLogin;
+				res.redirect("perfil")
+			}
+			return res.render("users/login", {
+				errors: {
+					email: {
+						msg: "Los datos ingresados son incorrectos"
+					}
+				}
+			});
+		}
+
+		return res.render("users/login", {
+			errors: {
+				email: {
+					msg: "Correo electronico no registrado"
+				}
+			}
+		});	
+	},
+
+	profile: (req, res) => {
+		res.render("users/perfil", {
+			user: req.session.userLogged
+		});
+	},
+	
 	edit:(req, res)=>{
         let id = req.params.id;     //conocer el id del product
         let usersToEdit = users.find(users => users.id == id);

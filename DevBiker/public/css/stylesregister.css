@@ -89,6 +89,11 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
 .check{
     font-size: 10px;
 }
+.obligatorio{
+    text-align: right;
+    font-size: 12px;
+    margin: 20px 0px;
+}
 
 /*@media------------------------------------------------------------------------*/
 @media (min-width: 769px){

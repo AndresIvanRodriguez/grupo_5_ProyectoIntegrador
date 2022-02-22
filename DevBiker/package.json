@@ -20,5 +20,6 @@
     "nodemon": "^2.0.15",
     "save": "^2.4.0",
     "sequelize": "^6.16.2"
-  }
+  },
+  "devDependencies": {}
 }

@@ -526,22 +526,6 @@
   "image": "1643659165948-OrbeaOccamTR 2018.jpg"
  },
  {
-  "id": 34,
-  "name": "WFR Gote",
-  "price": "23233",
-  "color": "Amarilla",
-  "discount": "20",
-  "stock": "5",
-  "category": "------------------",
-  "tipo": "------------------",
-  "genero": "------------------",
-  "description": "hfhgfhg",
-  "material": "Acero",
-  "numeroCambios": "6",
-  "tipoFreno": "V-brike",
-  "suspension": "Delantero"
- },
- {
   "id": 35,
   "nombre": [
    "fdsfsd",
@@ -558,19 +542,18 @@
  },
  {
   "id": 36,
-  "name": "ggggggggggggg",
-  "price": "2323",
-  "color": "Rojo",
-  "discount": "4",
+  "name": "Nelson Giobanny",
+  "price": "55555555555555",
+  "color": "Amarilla",
+  "discount": "2",
   "stock": "5",
   "category": "BMX",
-  "tipo": "Mas Vendido",
   "genero": "Hombre",
-  "description": "werwrwe",
-  "caracteristicas.material": "Acero",
-  "caracteristicas.numeroCambios": "4",
-  "caracteristicas.tipoFreno": "wefsdf",
-  "caracteristicas.suspension": "sdfsdf",
-  "image": "1645298879530-1643660482728-Orbea-Occam-AM-M-LTD-2018.jpg"
+  "description": "sdfsdfsdf",
+  "material": "Acero",
+  "numeroCambios": "14",
+  "tipoFreno": "V-brike",
+  "suspension": "Delantero",
+  "image": "1645539749799-1645298879530-1643660482728-Orbea-Occam-AM-M-LTD-2018.jpg"
  }
 ]

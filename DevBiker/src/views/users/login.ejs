@@ -18,26 +18,21 @@
                     <section>
                         <div>
                             <label for="email" class="user">Ingrese su correo</label>
-                            <input class="input" type="text" name="email" >
-                            <% if(locals.errors && errors.email){ %>
-                                <p style="color: red;"><%= email.msg %></p>
-                            <% } %>
+                            <input class="input" type="text" name="email" required>
                         </div>
-
+                        
                         <div>
                             <label for="password" class="pass">Contraseña</label>
-                            <input class="input" type="password" name="password">
-                            <% if(locals.errors){ 
-                                errors.forEach(error => { %>
-                                    <p style="color: red;"><%= error.msg %></p>
-                            <% } )
-                            } %>
+                            <input class="input" type="password" name="password" required>
                         </div>
+                        <% if(locals.errors && errors.email){ %>
+                            <p style="color: red;"><%= errors.email.msg %></p>
+                        <% } %>
                         
                         <button class="boton" type="submit">Iniciar Sesion</button>
                     </section>
                     <div class="link">
-                        <a href="/registro">¿Olvidaste tu contraseña?</a>
+                        <a href="">¿Olvidaste tu contraseña?</a>
                         <a href="/users/register">Crear cuenta</a> 
                     </div>
                 </form>
