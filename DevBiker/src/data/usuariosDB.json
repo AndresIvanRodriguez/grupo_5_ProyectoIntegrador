@@ -23,6 +23,7 @@
  },
  {
   "id": 3,
+<<<<<<< HEAD
   "nombre": "Nelson Giobanny",
   "apellidos": "Rodríguez Fernández",
   "email": "nelmman93@gmail.com",
@@ -30,5 +31,16 @@
   "adress": "Sopó",
   "password": "$2a$10$GcVoruhmY66Z4lYMOerGKebocA40GQeSjbSBjejkcrtXaeV2IAvJe",
   "image": "1645636211159-1644760481236-IMG_20171108_213605_698.jpg"
+=======
+  "nombre": "Andres",
+  "apellidos": "Rodriguez",
+  "email": "airodriguezmo@unal.edu.co",
+  "adress": "Bogota",
+  "fecha": "1999-01-14",
+  "password": "$2a$10$xcBvrbzCUN85w.qIS3FkSOgsWP.WFH0ry7OibLHhWbTAdz7B34MbC",
+  "condiciones": "on",
+  "terminos": "on",
+  "image": "1645718694544-foto.jpeg"
+>>>>>>> 6cb3dfd85ab43a3b562930f423ab1f206f39ff78
  }
 ]

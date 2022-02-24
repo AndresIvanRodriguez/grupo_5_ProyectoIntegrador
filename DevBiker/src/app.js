@@ -3,6 +3,8 @@ const path = require('path');
 const methodOverride = require("method-override");
 const publicPath = path.resolve(__dirname,'./public');
 const session = require("express-session");
+const cookieParser = require("cookie-parser");
+const cookieAuthMiddleware = require('./middlewares/cookieAuthMiddleware')
 
 const app = express();
 app.use(express.static("public"));
@@ -15,6 +17,10 @@ app.use(session({ secret: "Secreto",
     resave: false,
     saveUninitialized: false    
 } ));  //Siempre va a ser global
+
+// Usarcookies de forma global
+app.use(cookieAuthMiddleware);
+app.use(cookieParser());
 
 app.use(express.urlencoded({ extended: false })); //captura la informacion enviada por un formulario
 app.use(express.json());
@@ -32,7 +38,7 @@ app.use("/admin", adminRoutes);
 app.use("/users", usersRoutes);
 
 //Servidor
-app.listen(process.env.PORT || 3000, () =>console.log("Servidor Corriendo en Puerto 3000"));
+app.listen(process.env.PORT || 3001, () =>console.log("Servidor Corriendo en Puerto 3000"));
 
 //Error 404
 app.use((req, res, next) => {
