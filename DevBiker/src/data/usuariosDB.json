@@ -1,14 +1,12 @@
 [
  {
   "id": 1,
-  "nombre": "Nelson Giobanny",
+  "nombre": "Nelson",
   "apellidos": "Rodríguez Fernandez",
   "email": "nelmman@hotmail.com",
-  "adress": "Sopó",
   "fecha": "1212-12-12",
-  "password": "$2a$10$Ws7shCKB1k/JvNUKh9MPsOan3XUF.6JclhfrEb4VDiUBjJCOOgJcK",
-  "condiciones": "on",
-  "terminos": "on",
+  "adress": "Sopó",
+  "password": "$2a$10$JYQ/oB/LqbeWamlwkO9ZweEyAr4KLEpnJ.8qu.EIW6w1tgR/VZ6yi",
   "image": "1645483174991-activity-g78007eba3_1280.jpg"
  },
  {
@@ -22,5 +20,15 @@
   "condiciones": "on",
   "terminos": "on",
   "image": "1645538813488-IMG_20211118_120316.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Nelson Giobanny",
+  "apellidos": "Rodríguez Fernández",
+  "email": "nelmman93@gmail.com",
+  "fecha": "1990-02-12",
+  "adress": "Sopó",
+  "password": "$2a$10$GcVoruhmY66Z4lYMOerGKebocA40GQeSjbSBjejkcrtXaeV2IAvJe",
+  "image": "1645636211159-1644760481236-IMG_20171108_213605_698.jpg"
  }
 ]

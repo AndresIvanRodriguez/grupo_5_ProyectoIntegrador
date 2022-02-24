@@ -127,6 +127,11 @@ const controller = {
         let finalUsers = users.filter(users => users.id != id);
         fs.writeFileSync(usersFilePath, JSON.stringify(finalUsers, null, " "));
         res.redirect("/users");
+	},
+
+	logout: (req, res) => {
+		req.session.destroy();
+		return res.redirect("/");
 	}
 }
 

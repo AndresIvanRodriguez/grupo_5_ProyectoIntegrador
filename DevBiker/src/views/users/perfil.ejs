@@ -31,8 +31,24 @@
                     <p class="datos">Email: <%= user.email %></p>
                     <p class="datos">Fecha de nacimiento: <%= user.fecha %></p>
                 </section>
+                <section class="botones"> 
+                    <div class="buttonEditar">
+                        <form action="/users/editar/<%= user.id %>" method="get" >
+                            <input type="submit" value="Editar" >
+                        </form>
+                    </div>
+                    <div class="buttonEditar">
+                        <form action="/users/logout" method="get" >
+                            <input type="submit" value="Cerrar session" >
+                        </form>
+                    </div>  
+                </section>
+            </div>
 
-            </div>  
+            <div class="picture">
+                <img src="/img/pexels-anna.jpg" alt="">
+            </div> 
+             
         </div>
 
         <div class="margin-right"></div>

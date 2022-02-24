@@ -101,6 +101,16 @@ textarea{
     margin-top: 10px;
 }
 
+/*Estilo para usuarios*/
+.image{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 40%;
+    margin: 20px;
+}
+
 /*@media------------------------------------------------------------------------*/
 @media (min-width: 769px){
     .container-form{
@@ -115,7 +125,7 @@ textarea{
         font-size: 100px;
     }
     .div{
-        line-height: 25px;
+        line-height: 28px;
     }
     .caracteristicas{
         font-weight: bold;

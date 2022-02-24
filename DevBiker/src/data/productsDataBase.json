@@ -97,7 +97,7 @@
   "image": "/montaña/6 Montaña Kawasaki Expert 1.jpg",
   "genero": "Unisex",
   "material": "Aluminio",
-  "numeroCambioss": 24,
+  "numeroCambios": 24,
   "tipoFreno": "Disco mecánico",
   "suspension": "Doble"
  },
@@ -524,36 +524,5 @@
   "tipoFreno": "V-brike",
   "suspension": "Delantero",
   "image": "1643659165948-OrbeaOccamTR 2018.jpg"
- },
- {
-  "id": 35,
-  "nombre": [
-   "fdsfsd",
-   "ddfsdfd"
-  ],
-  "email": "juandiegoq56@gmail.com",
-  "fecha": "2022-02-21",
-  "adress": "dsdfdsfsddf",
-  "password": [
-   "0303030030030",
-   "dsfdfdfdsfdsf"
-  ],
-  "image": "default-image.png"
- },
- {
-  "id": 36,
-  "name": "Nelson Giobanny",
-  "price": "55555555555555",
-  "color": "Amarilla",
-  "discount": "2",
-  "stock": "5",
-  "category": "BMX",
-  "genero": "Hombre",
-  "description": "sdfsdfsdf",
-  "material": "Acero",
-  "numeroCambios": "14",
-  "tipoFreno": "V-brike",
-  "suspension": "Delantero",
-  "image": "1645539749799-1645298879530-1643660482728-Orbea-Occam-AM-M-LTD-2018.jpg"
  }
 ]

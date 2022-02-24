@@ -42,37 +42,33 @@
                         <label for="category">Categoria:</label>
                         <select name="category" value="<%= productToEdit.category %>">
                             <option>------------------</option>
-                            <option value="<%= productToEdit.category %>">Ruta</option>
-                            <option value="<%= productToEdit.category %>">BMX</option>
-                            <option value="<%= productToEdit.category %>">Urbano</option>
-                            <option value="<%= productToEdit.category %>">Montaña</option>
+                            <option value="<%= productToEdit.category %>" >Ruta</option>
+                            <option value="<%= productToEdit.category %>" >BMX</option>
+                            <option value="<%= productToEdit.category %>" >Urbano</option>
+                            <option value="<%= productToEdit.category %>" >Montaña</option>
                         </select>
                     </div>
                     <div>
                         <label for="tipo">Tipo:</label>
                         <select name="tipo" value="<%= productToEdit.tipo %>">
                             <option>------------------</option>
-                            <option value="masVendida">Mas Vendido</option>
-                            <option value="promocion">Promocion</option>
-                            <option value="nueva">Nueva</option>
+                            <option value="masVendida" >Mas Vendido</option>
+                            <option value="promocion" >Promocion</option>
+                            <option value="nueva" >Nueva</option>
                         </select>
                     </div>
                     <div>
                         <label for="genero">Genero:</label>
                         <select name="genero">
                             <option>------------------</option>
-                            <option value="<%= productToEdit.genero %>">Hombre</option>
-                            <option value="<%= productToEdit.genero %>">Mujer</option>
-                            <option value="<%= productToEdit.genero %>">Unisex</option>
+                            <option value="<%= productToEdit.genero %>" >Hombre</option>
+                            <option value="<%= productToEdit.genero %>" >Mujer</option>
+                            <option value="<%= productToEdit.genero %>" selected>Unisex</option>
                         </select>
                     </div>
                     <div>
-                        <label for="image">Cargar imagen</label>
-                        <input type="file" name="image" id="image" value="<%= productToEdit.image %>">
-                    </div>
-                    <div>
                         <label for="description">Descripcion del producto:</label>
-                        <textarea name="description" cols="10" rows="3" value="<%= productToEdit.description %>"></textarea>
+                        <textarea name="description" cols="10" rows="3" value="<%= productToEdit.description %>" selected></textarea>
                     </div>
                     <div>
                         <label for="file" class="caracteristicas">Caracteristicas</label>
@@ -91,6 +87,11 @@
                         <div>
                             <label for="suspension">Suspención:</label>
                             <input type="text" name="suspension" value="<%= productToEdit.suspension %>">
+                        </div>
+                        <div>
+                            <label for="image">Cambiar imagen</label>
+                            <img src="/img/<%=productToEdit.image%>" alt="Prototipo <%=productToEdit.name%> ">
+                            <input type="file" name="image" id="image" value="<%= productToEdit.image %>">
                         </div>
                     </div>
 

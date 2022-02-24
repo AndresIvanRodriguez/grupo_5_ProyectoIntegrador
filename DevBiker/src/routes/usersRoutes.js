@@ -6,7 +6,9 @@ const usersController = require("../controllers/usersController");
 
 const validationsRegister = require("../middlewares/validationsRMiddlewares");
 
-/* const guestMiddleware = require("../middlewares/guestMiddleware");*/
+//Con este middleware el usuaraio logueado no podra ingresar a las rutas que sea pasado
+const guestMiddleware = require("../middlewares/guestMiddleware");
+const authMiddleware = require("../middlewares/authMiddleware");
 
 //Donde se va almacenar las imagenes
 let storage = multer.diskStorage({
@@ -22,26 +24,29 @@ const validationUser = [
 ]
 
 //Formulario de registro
-router.get('/register', /* guestMiddleware, */ usersController.register);
+router.get('/register', guestMiddleware, usersController.register);
 
 //Procesar el registro
 router.post('/', upload.single("image"), validationsRegister, usersController.processRegister); 
 
 //Formulario del login
-router.get('/login', usersController.login);
+router.get('/login', guestMiddleware, usersController.login);
 
 //Formulario del login
 router.post('/login', validationUser, usersController.loginProcess);
 
 //Procesar login
-router.get("/perfil", usersController.profile);
+router.get("/perfil", authMiddleware, usersController.profile);
+
+//Procesar logout
+router.get("/logout", usersController.logout);
 
 //ruta index
 router.get("/", usersController.index);
 
 //Rutas editar
 router.get("/editar/:id", usersController.edit);
-router.patch("/editar/:id", usersController.update);
+router.patch("/editar/:id", upload.single("image"), usersController.update);
 
 //Ruta eliminar producto
 router.delete('/delete/:id', usersController.destroy);

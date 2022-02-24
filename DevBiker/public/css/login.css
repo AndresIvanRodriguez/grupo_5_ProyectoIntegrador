@@ -43,7 +43,7 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     width: 90%;
     display: flex;
     justify-content: center;
-    background-image: url("../img/bicycle-g00fa52754_1280.jpg");
+    background-image: url("../img/bicycle.jpg");
     background-position: center;
     background-size: cover;
 }

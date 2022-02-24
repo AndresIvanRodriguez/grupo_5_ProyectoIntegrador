@@ -1,4 +1,5 @@
 /* const path = require('path'); */
+
 const fs = require("fs");
 
 const User = {                                  //.this se refiere a trabajar con un metodo
