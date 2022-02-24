@@ -30,7 +30,7 @@ const controller = {
 			return res.render("users/register", {
 				errors: {
 					email: {
-						msg: "Esta email ya esta registrado"
+						msg: "Esta email ya está registrado"
 					}
 				},	
 				oldData: req.body
@@ -67,6 +67,10 @@ const controller = {
 			if(passwordCorrecta){
 				delete userToLogin.password;
 				req.session.userLogged = userToLogin;
+				if(req.body.recordarme != undefined){	
+					console.log("Aqui va la cookie 1:",req.cookies);
+					res.cookie('recordarme', userToLogin.email,{maxAge: 600000});
+					}
 				res.redirect("perfil")
 			}
 			return res.render("users/login", {

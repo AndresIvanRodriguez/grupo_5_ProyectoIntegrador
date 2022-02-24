@@ -22,5 +22,17 @@
   "condiciones": "on",
   "terminos": "on",
   "image": "1645538813488-IMG_20211118_120316.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Andres",
+  "apellidos": "Rodriguez",
+  "email": "airodriguezmo@unal.edu.co",
+  "adress": "Bogota",
+  "fecha": "1999-01-14",
+  "password": "$2a$10$xcBvrbzCUN85w.qIS3FkSOgsWP.WFH0ry7OibLHhWbTAdz7B34MbC",
+  "condiciones": "on",
+  "terminos": "on",
+  "image": "1645718694544-foto.jpeg"
  }
 ]
