@@ -507,22 +507,5 @@
   "tipoFreno": "freno de disco",
   "suspension": "si",
   "image": "1643557807370-Captura.PNG"
- },
- {
-  "id": 33,
-  "name": "TRE Bike",
-  "price": "760000",
-  "color": "Amarilla",
-  "discount": "40",
-  "category": "Ruta",
-  "tipo": "Nueva",
-  "description": "Bicileta TRE bike de 19\" ",
-  "stock": "5",
-  "genero": "Unisex",
-  "material": "Acero",
-  "numeroCambios": "14",
-  "tipoFreno": "V-brike",
-  "suspension": "Delantero",
-  "image": "1643659165948-OrbeaOccamTR 2018.jpg"
  }
 ]

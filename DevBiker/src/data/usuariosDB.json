@@ -1,46 +1,62 @@
 [
  {
   "id": 1,
-  "nombre": "Nelson",
-  "apellidos": "Rodríguez Fernandez",
+  "nombre": "Nelson ",
+  "apellidos": "Rodríguez Fernández",
   "email": "nelmman@hotmail.com",
-  "fecha": "1212-12-12",
   "adress": "Sopó",
-  "password": "$2a$10$JYQ/oB/LqbeWamlwkO9ZweEyAr4KLEpnJ.8qu.EIW6w1tgR/VZ6yi",
-  "image": "1645483174991-activity-g78007eba3_1280.jpg"
+  "fecha": "1990-12-12",
+  "password": "$2a$10$NkeSS6K4U1oh5kkZ9NqSWuQS8DG/Na5XnKv1ckeHAt3/QWMGTiOPu",
+  "condiciones": "on",
+  "terminos": "on",
+  "image": "1645806667038-IMG_20171108_213605_698.jpg"
  },
  {
   "id": 2,
-  "nombre": "Juan",
-  "apellidos": "Lopez",
-  "email": "sds@hotmail.com",
-  "adress": "Sopó",
-  "fecha": "2004-04-04",
-  "password": "$2a$10$V0Eu58rnPsBDwpgHU3lPwOlrTrB5o9ZlVG/DZ35P2SwxHiEQopfg2",
+  "nombre": "Andrea",
+  "apellidos": "Garzón Lopez",
+  "email": "andrea@hotmail.com",
+  "adress": "Bogotá",
+  "fecha": "2000-11-23",
+  "password": "$2a$10$healJfJEmF9sFuqqbqylnO3GGCDDYgC.UuJ.Oi2kHp/Ya/ZYHTaI6",
   "condiciones": "on",
   "terminos": "on",
-  "image": "1645538813488-IMG_20211118_120316.jpg"
+  "image": "1645806836054-cultura_447217514_138922044_1280x1706.jpg"
  },
  {
   "id": 3,
-<<<<<<< HEAD
-  "nombre": "Nelson Giobanny",
-  "apellidos": "Rodríguez Fernández",
-  "email": "nelmman93@gmail.com",
-  "fecha": "1990-02-12",
-  "adress": "Sopó",
-  "password": "$2a$10$GcVoruhmY66Z4lYMOerGKebocA40GQeSjbSBjejkcrtXaeV2IAvJe",
-  "image": "1645636211159-1644760481236-IMG_20171108_213605_698.jpg"
-=======
-  "nombre": "Andres",
-  "apellidos": "Rodriguez",
-  "email": "airodriguezmo@unal.edu.co",
-  "adress": "Bogota",
-  "fecha": "1999-01-14",
-  "password": "$2a$10$xcBvrbzCUN85w.qIS3FkSOgsWP.WFH0ry7OibLHhWbTAdz7B34MbC",
+  "nombre": "Falcao",
+  "apellidos": "Garcia Zárate",
+  "email": "falcao@gamil.com",
+  "adress": "Madrid",
+  "fecha": "1988-04-03",
+  "password": "$2a$10$7Wtfb.WTO85zfH6nHS.XzuZeItaBzaoLIWRrcOTDt246H0rNjbouW",
   "condiciones": "on",
   "terminos": "on",
-  "image": "1645718694544-foto.jpeg"
->>>>>>> 6cb3dfd85ab43a3b562930f423ab1f206f39ff78
+  "image": "1645806970901-Radamel_Falcao_García.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "N'Golo",
+  "apellidos": "Kante",
+  "email": "kanet@hotmail.com",
+  "adress": "Paris",
+  "fecha": "1992-09-23",
+  "password": "$2a$10$9XM6cBoViE0MOaRcl4fQ3eooAVnhOr9xFkNpG3TXxSiSsA5yYv.aC",
+  "condiciones": "on",
+  "terminos": "on",
+  "image": "1645807167649-D8UsQVDUwAAkw_z.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "sdfsdf",
+  "apellidos": "sdfsdf",
+  "email": "s@hotmail.com",
+  "adress": "sdfsdf",
+  "fecha": "0333-03-31",
+  "password": "$2a$10$WO7YPypvU16ravkt93OPvuqDZjc1QkxCEAYTw5RCH3KucLAFg6d/W",
+  "condiciones": "on",
+  "terminos": "on",
+  "image": "1645807598914-Radamel_Falcao_García.jpg"
  }
 ]

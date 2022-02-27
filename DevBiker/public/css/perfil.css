@@ -66,6 +66,7 @@ h4{
 }
 .img img{
     width: 90%;
+    object-fit: contain;
 }
 .informacion{
     border-top: solid #b3b3ff 2px;
@@ -90,7 +91,7 @@ h4{
     margin-bottom: 20px;
 }
 .buttonEditar input{
-    width: 40%;
+    width: 30%;
     border-radius: 10px;
     background-color: #050A30;
     color: white;

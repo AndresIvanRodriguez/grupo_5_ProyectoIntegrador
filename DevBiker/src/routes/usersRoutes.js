@@ -23,17 +23,17 @@ const validationUser = [
 	body("password").isEmpty().withMessage("La contraseña no es correcta")
 ]
 
-//Formulario de registro
-router.get('/register', guestMiddleware, usersController.register);
-
-//Procesar el registro
-router.post('/', upload.single("image"), validationsRegister, usersController.processRegister); 
-
 //Formulario del login
 router.get('/login', guestMiddleware, usersController.login);
 
 //Formulario del login
 router.post('/login', validationUser, usersController.loginProcess);
+
+//Formulario de registro
+router.get('/register', guestMiddleware, usersController.register);
+
+//Procesar el registro
+router.post('/', upload.single("image"), validationsRegister, usersController.processRegister); 
 
 //Procesar login
 router.get("/perfil", authMiddleware, usersController.profile);

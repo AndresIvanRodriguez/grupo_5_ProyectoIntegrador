@@ -3,8 +3,23 @@
 <header>
     <div class="top-header">
         <div class="barra"><p class="barra-text">"Lo que gastas en tu bicicleta, lo ahorras en salud"</p></div>
-        <div class="login"><a href="/users/login"><p>INICIAR SESIÓN</p></a></div>
-    </div>
+            <% if(!locals.isLogged){ %>
+                <div class="login">
+                    <a href="/users/login">INICIAR SESIÓN</p></a>
+                </div>
+                <% } else { %>
+                <div class="login2">
+                    <div class="perfilNav">
+                        <a href="/users/perfil"><p>
+                            <i class="fas fa-user"></i> 
+                            <%= locals.userLogged.nombre %></p></a>
+                    </div>
+                    <div class="logout">
+                        <a href="/users/logout"><p>CERRAR SESIÓN</p></a>
+                    </div>
+                </div>
+            <% } %>
+        </div>
     <div class="nav">
         <div class="logo">
             <a href="/"><img src="/img/DevBiker1.png" alt="Logo-DevBiker"></a>

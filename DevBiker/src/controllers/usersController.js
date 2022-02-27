@@ -10,6 +10,10 @@ const bcryptjs = require('bcryptjs');
 
 const controller = {
 
+	login: (req, res) => {
+		res.render("users/login");
+	},
+
 	register: (req, res) => {
 		return res.render("users/register");
 	},
@@ -30,7 +34,7 @@ const controller = {
 			return res.render("users/register", {
 				errors: {
 					email: {
-						msg: "Esta email ya está registrado"
+						msg: "Este email ya está registrado"
 					}
 				},	
 				oldData: req.body
@@ -45,12 +49,7 @@ const controller = {
 
 		User.create(userToCreate)
 	
-		return res.render('users/login');
-
-	},
-
-	login: (req, res) => {
-		res.render("users/login");
+		return res.redirect('users/login');
 	},
 
 	index:(req,res)=>{
@@ -71,7 +70,7 @@ const controller = {
 					console.log("Aqui va la cookie 1:",req.cookies);
 					res.cookie('recordarme', userToLogin.email,{maxAge: 600000});
 					}
-				res.redirect("perfil")
+				res.redirect("/")
 			}
 			return res.render("users/login", {
 				errors: {
@@ -93,7 +92,7 @@ const controller = {
 
 	profile: (req, res) => {
 		res.render("users/perfil", {
-			user: req.session.userLogged
+			user: req.session.userLogged			//La vista va a conocer esta variable
 		});
 	},
 	
@@ -130,7 +129,7 @@ const controller = {
         let id = req.params.id;
         let finalUsers = users.filter(users => users.id != id);
         fs.writeFileSync(usersFilePath, JSON.stringify(finalUsers, null, " "));
-        res.redirect("/users");
+        return res.redirect("/users");
 	},
 
 	logout: (req, res) => {
