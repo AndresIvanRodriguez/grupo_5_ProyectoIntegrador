@@ -46,17 +46,5 @@
   "condiciones": "on",
   "terminos": "on",
   "image": "1645807167649-D8UsQVDUwAAkw_z.jpg"
- },
- {
-  "id": 5,
-  "nombre": "sdfsdf",
-  "apellidos": "sdfsdf",
-  "email": "s@hotmail.com",
-  "adress": "sdfsdf",
-  "fecha": "0333-03-31",
-  "password": "$2a$10$WO7YPypvU16ravkt93OPvuqDZjc1QkxCEAYTw5RCH3KucLAFg6d/W",
-  "condiciones": "on",
-  "terminos": "on",
-  "image": "1645807598914-Radamel_Falcao_García.jpg"
  }
 ]

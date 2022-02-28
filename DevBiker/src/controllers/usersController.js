@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const usersFilePath = path.join(__dirname, '../data/usuariosDB.JSON');
-const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const bcrypt = require("bcryptjs");
 
 const User = require("../models/User");			//modelo User
@@ -122,14 +122,16 @@ const controller = {
             return users;
         })
         fs.writeFileSync(usersFilePath, JSON.stringify(newUsers, null, " "));
-        res.redirect("/users");
+		users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+        res.render("users/index",{users});
     },
 
 	destroy : (req, res) => {
         let id = req.params.id;
         let finalUsers = users.filter(users => users.id != id);
         fs.writeFileSync(usersFilePath, JSON.stringify(finalUsers, null, " "));
-        return res.redirect("/users");
+        users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+        res.render("users/index",{users});
 	},
 
 	logout: (req, res) => {
