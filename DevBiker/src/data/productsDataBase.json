@@ -476,22 +476,6 @@
   "suspension": "Sin suspensión"
  },
  {
-  "id": 29,
-  "name": "Nelson Giobanny",
-  "price": "22222",
-  "color": "Amarilla",
-  "discount": "2",
-  "stock": "5",
-  "category": "Ruta",
-  "tipo": "Mas Vendido",
-  "genero": "Unisex",
-  "description": "sdfsfsdfsdf",
-  "material": "Acero",
-  "numeroCambios": "14",
-  "tipoFreno": "V-brike",
-  "suspension": "Delantero"
- },
- {
   "id": 32,
   "name": "Gw 2018",
   "price": "800000",

@@ -42,13 +42,13 @@ router.get("/perfil", authMiddleware, usersController.profile);
 router.get("/logout", usersController.logout);
 
 //ruta index
-router.get("/", usersController.index);
+router.get("/", authMiddleware, usersController.index);
 
 //Rutas editar
-router.get("/editar/:id", usersController.edit);
+router.get("/editar/:id", authMiddleware, usersController.edit);
 router.patch("/editar/:id", upload.single("image"), usersController.update);
 
 //Ruta eliminar producto
-router.delete('/delete/:id', usersController.destroy);
+router.delete('/delete/:id', authMiddleware, usersController.destroy);
 
 module.exports = router;

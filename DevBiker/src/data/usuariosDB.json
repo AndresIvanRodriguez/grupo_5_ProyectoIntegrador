@@ -46,5 +46,29 @@
   "condiciones": "on",
   "terminos": "on",
   "image": "1645807167649-D8UsQVDUwAAkw_z.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "Diego Alexander",
+  "apellidos": "Mendoza ",
+  "email": "diegoMendoza@gmail.com",
+  "adress": "Bosa",
+  "fecha": "1996-01-07",
+  "password": "$2a$10$psLX0Kqd/qyOUQvaVFPjfOaRG7RR4bqXDYWPVVxq4yjP3DP4zCSsS",
+  "condiciones": "on",
+  "terminos": "on",
+  "image": "1646094803796-depositphotos_36608939-stock-photo-unknown-person.jpg"
+ },
+ {
+  "id": 6,
+  "nombre": "Juan Diego",
+  "apellidos": "Quintero Peralta",
+  "email": "juandiegoq56@gmail.com",
+  "adress": "Bogota - carrera falsa 123",
+  "fecha": "2000-11-21",
+  "password": "$2a$10$43R0Fp8t6XLJTabVGhtYs.WWr9ixhEAU383Qe58/P4ow6RNDdekoG",
+  "condiciones": "on",
+  "terminos": "on",
+  "image": "1646095534534-nuevo_mote_cristiano_ronaldo_juventus_el_bicho_6811.jpg"
  }
 ]

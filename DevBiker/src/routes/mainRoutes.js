@@ -3,11 +3,12 @@ const { route } = require("express/lib/application");
 const router = express.Router();
 
 const mainController = require("../controllers/mainController");
+const authMiddleware = require("../middlewares/authMiddleware");
 
 router.get("/", mainController.home);
 /* router.get('/login', mainController.loginUser); */
 /* router.get('/register', mainController.registerUser); */
-router.get("/carrito", mainController.carrito);
+router.get("/carrito", authMiddleware, mainController.carrito);
 router.get("/products", mainController.products);
 router.get("/products/detail/:id", mainController.detail);
 
