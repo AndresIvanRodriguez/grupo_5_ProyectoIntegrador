@@ -16,7 +16,7 @@ router.get("/products/detail/:id", mainController.detail);
 router.get('/products/cMontana', mainController.montana);
 router.get("/products/cRuta", mainController.ruta);
 router.get("/products/cBmx", mainController.bmx);
-router.get("/products/cUrbana", mainController.urbana);
-router.get("/products/oferta", mainController.oferta);
+router.get("/products/cUrbana", mainController.urbano);
+router.get("/products/oferta", mainController.oferta); 
 
 module.exports = router;

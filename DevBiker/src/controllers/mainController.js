@@ -1,40 +1,30 @@
-const fs = require('fs');
-const path = require('path');
+// Base de datos
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
-const productsFilePath = path.join(__dirname, '../data/productsDataBase.JSON');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-const localizarUbicacion = (tipo) => {
-    return products.filter(
-      (ubicacion) => ubicacion.tipo === tipo
-    );
-};
-
-const mostrarCategoria = (category) => {
-    return products.filter(
-      (categoria) => categoria.category === category
-    );
-};
-  
-const masVendidos = localizarUbicacion("mas vendido");
-const carrito = localizarUbicacion("para-el-carrito");
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 module.exports = {
     //Mostrar página de inicio
-    home: (req,res)=>{
+    home: async (req, res)=>{
+        const oferta = await db.Product.findAll({
+            where: {
+                descuento: {
+                    [Op.gte]: 15
+                }
+            }
+        })
         res.render("users/home", {
-            masVendidos,
+            oferta
         });
     },
-    //Mostrar página de login
-/*     loginUser: (req,res)=> {
-        res.render("users/login");
-    }, */
+
     //Mostrar página de registro
     registerUser: (req,res) => {
         res.render(("users/register"));
     },
+
     //Mostrar página de carrito de compras
     carrito:(req,res)=>{
         res.render("users/carrito",{
@@ -42,51 +32,88 @@ module.exports = {
 			toThousand
 		});
     },
+
     //Mostrar página de todos los productos
-    products: (req, res)=>{
+    products: async (req, res)=>{
+        const products = await db.Product.findAll();
         res.render("products/products", {
             products
         });
     },
-    //Mostrar página para el detalle del producto
-    detail: (req, res)=>{
-        let id = req.params.id;
-        let product = products.find(p => p.id == id);
-        res.render("products/detail", {
-            product,
-            toThousand
+
+    /* //Mostrar página para el detalle del producto*/
+    detail: (req, res) => {
+        db.Product.findByPk(req.params.id)
+        .then(product => {
+            res.render('products/detail', {
+                product
+            });
         });
     },
+
     //Páginas por categoria
-    montana: (req, res)=>{
-        const montana = mostrarCategoria("Montaña");
-        res.render("products/cMontana", {
-            montana
-        });
+    montana: (req, res) => {
+        db.Product.findAll({
+            where: {
+                categoriaId: 1
+            }
+        })
+        .then(montana => {
+            res.render("products/cMontana", {
+                    montana
+            })
+        })
     },
-    ruta: (req, res)=>{
-        const ruta = mostrarCategoria("Ruta");
-        res.render("products/cRuta",{
-            ruta
-        });
+
+    ruta: (req, res) => {
+        db.Product.findAll({
+            where: {
+                categoriaId: 2
+            }
+        })
+        .then(ruta => {
+            res.render("products/cRuta", {
+                    ruta
+            })
+        })
     },
-    bmx: (req, res)=>{
-        const bmx = mostrarCategoria("BMX");
-        res.render("products/cBmx", {
-            bmx
-        });
+
+    urbano: (req, res) => {
+        db.Product.findAll({
+            where: {
+                categoriaId: 3
+            }
+        })
+        .then(urbano => {
+            res.render("products/cUrbana", {
+                    urbano
+            })
+        })
     },
-    urbana: (req, res)=>{
-        const urbana = mostrarCategoria("Urbana");
-        res.render("products/cUrbana", {
-            
-            urbana
-        });
+
+    bmx: (req, res) => {
+        db.Product.findAll({
+            where: {
+                categoriaId: 4
+            }
+        })
+        .then(bmx => {
+            res.render("products/cBMX", {
+                    bmx
+            })
+        })
     },
-    oferta: (req,res)=>{
-        res.render("products/oferta", {
-            products
-        });
+    oferta: async (req, res) => {
+        const oferta = await db.Product.findAll({
+            where: {
+                descuento: {
+                    [Op.gte]: 15
+                }
+            }
+        })        
+        return res.render("products/oferta", {
+                oferta
+        })
     }
 }
 

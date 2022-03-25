@@ -1,46 +1,53 @@
-/* const res = require("express/lib/response"); */
-/* const { redirect } = require('express/lib/response'); */
 const fs = require('fs');
 const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.JSON');
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+// Base de datos
+const db = require("../database/models/index.js");
 
 const controller = {
-    store: (req, res) => {
-		let image = req.file ? req.file.filename : "default-image.png";
-		let newProduct = {
-			id: products[products.length - 1].id + 1,
-			...req.body,
-			image: image
-		};
-
-		products.push(newProduct);
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
-
-		res.redirect('/');
-	},
-
-    vista: (req,res)=>{
-        res.render(("admin/create"));
-    },
-	
-    index:(req,res)=>{
-        res.render("admin/index",{
-			products,
-			toThousand
+	index: async (req, res)=>{
+		const products = await db.Product.findAll()
+		res.render("admin/index", {
+			products
 		})
     },
+
+	createForm: (req,res)=>{
+		res.render(("admin/create"));
+	},
+
+    create: async (req, res) => {
+		try {
+			const { nombre, precio, color, genre, descuento, descripcion, material, numDeCambios,
+					tipoFreno, suspension, stock, categoriaId} = req.body;
+			await db.Product.create({
+				nombre: req.body.nombre,
+				precio: req.body.precio,
+				color: req.body.color,
+				genre: req.body.genre,
+				descuento: req.body.descuento,
+				descripcion: req.body.descripcion,
+				material: req.body.material,
+				numDeCambios: req.body.numDeCambios,
+				tipoFreno: req.body.tipoFreno,
+				suspension: req.body.suspension,
+				stock: req.body.stock,
+			})	
+			res.redirect('/admin');
+		} catch (error) {
+			return res.send(error)
+		}
+	},
     
-    edit:(req, res)=>{
-        let id = req.params.id;		//conocer el id del product
-		let productToEdit = products.find(product => product.id == id);
+    edit: async (req, res)=>{
+        let productoId = req.params.id;		//conocer el id del product
+		let productToEdit = await db.Product.findByPk(productoId);
 
         res.render("admin/editar", {
-            productToEdit,
-			products
+            productToEdit
         });
     },
 

@@ -16,18 +16,18 @@
                         <p>Eliminar</p>
                     </div>
                     <div class="items">
-                        <% users.forEach(product => {  %>
+                        <% users.forEach(user => {  %>
                         <table class="table">
                         <tr class="products">
-                            <td><%=product.id %></td>
-                            <td><%=product.nombre %></td>
+                            <td><%=user.id %></td>
+                            <td><%=user.nombre %></td>
                             <td>
-                                <form action="/users/editar/<%= product.id %>" method="get" >
+                                <form action="/users/editar/<%= user.id %>" method="get" >
                                     <input type="submit" value="Editar" >
                                 </form>
                             </td>
                             <td>
-                                <form action="/users/delete/<%= product.id %>?_method=delete" method="POST">
+                                <form action="/users/delete/<%= user.id %>?_method=delete" method="POST">
                                     <button type="submit">Eliminar</button>
                                 </form>  
                             </td>  

@@ -19,28 +19,28 @@
                 <form action="/admin" method="POST" enctype="multipart/form-data">
                    
                     <div>
-                        <label for="name">Nombre producto:</label>  
-                        <input type="text" name="name" placeholder="Nombre del producto" required>
+                        <label for="nombre">Nombre producto:</label>  
+                        <input type="text" name="nombre" placeholder="Nombre del producto" required>
                     </div>
                     <div>
-                        <label for="price">Valor del producto:</label>
-                        <input type="number" name="price" placeholder="Precio" required>
+                        <label for="precio">Valor del producto:</label>
+                        <input type="number" name="precio" placeholder="Precio" required>
                     </div>
                     <div>
                         <label for="color">Color:</label>
                         <input type="text" name="color" placeholder="Color" required>
                     </div>
                     <div>
-                        <label for="discount">Descuento:</label>
-                        <input type="text" name="discount" placeholder="Descuento" required>
+                        <label for="descuento">Descuento:</label>
+                        <input type="text" name="descuento" placeholder="Descuento" required>
                     </div>
                     <div>
                         <label for="stock">Stock:</label>
                         <input type="number" name="stock" placeholder="Stock" required>
                     </div>
                     <div>
-                        <label for="category">Categoria:</label>
-                        <select name="category" required>
+                        <label for="categoriaId">Categoria:</label>
+                        <select name="categoriaId" required>
                             <option>Elige una categoria</option>
                             <option>Ruta</option>
                             <option>BMX</option>
@@ -49,16 +49,8 @@
                         </select>
                     </div>
                     <div>
-                        <label for="tipo">Tipo:</label>
-                        <select name="tipo" required>
-                            <option>Mas Vendido</option>
-                            <option>Promocion</option>
-                            <option selected disabled>Nueva</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="genero">Genero:</label>
-                        <select name="genero" required>
+                        <label for="genre">Genero:</label>
+                        <select name="genre" required>
                             <option value="" selected disabled>Elige un genero</option>
                             <option>Hombre</option>
                             <option>Mujer</option>
@@ -66,22 +58,22 @@
                         </select>
                     </div>
                     <div>
-                        <label for="image">Cargar imagen</label>
-                        <input type="file" name="image" id="image" required>
+                        <label for="imagen">Cargar imagen</label>
+                        <input type="file" name="imagen" id="image">
                     </div>
                     <div>
-                        <label for="description">Descripcion del producto:</label>
-                        <textarea name="description" cols="10" rows="3" placeholder="Añade la descripción:" required></textarea>
+                        <label for="descripcion">Descripcion del producto:</label>
+                        <input type="text" name="descripcion" required>
                     </div>
                     <div>
-                        <label for="file" class="caracteristicas">Caracteristicas</label>
+                        <label class="caracteristicas">Caracteristicas</label>
                         <div>
                             <label for="material">Material marco:</label>
                             <input type="text" name="material" required>
                         </div>
                         <div>
-                            <label for="numeroCambios">Numero de cambios:</label>
-                            <input type="number" name="numeroCambios" required>
+                            <label for="numDeCambios">Numero de cambios:</label>
+                            <input type="number" name="numDeCambios" required>
                         </div>
                         <div>
                             <label for="tipoFreno">Tipo de freno:</label>
