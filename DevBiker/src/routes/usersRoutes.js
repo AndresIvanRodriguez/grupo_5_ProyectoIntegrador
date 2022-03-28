@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const userscontrollerdd=require("../controllers/usercontrollerdd");
 const multer = require('multer');
 const { body } = require("express-validator");  //Validar lo que viene por body
 const usersController = require("../controllers/usersController");
@@ -27,13 +28,13 @@ const validationUser = [
 router.get('/login', guestMiddleware, usersController.login);
 
 //Formulario del login
-router.post('/login', validationUser, usersController.loginProcess);
+router.post('/login', validationUser, userscontrollerdd.loginProcess);
 
 //Formulario de registro
-router.get('/register', guestMiddleware, usersController.register);
+router.get('/register', guestMiddleware, userscontrollerdd.register);
 
 //Procesar el registro
-router.post('/', upload.single("image"), validationsRegister, usersController.processRegister); 
+router.post('/', upload.single("imagen"), validationsRegister, userscontrollerdd.processRegister); 
 
 //Procesar login
 router.get("/perfil", authMiddleware, usersController.profile);
@@ -42,13 +43,13 @@ router.get("/perfil", authMiddleware, usersController.profile);
 router.get("/logout", usersController.logout);
 
 //ruta index
-router.get("/", authMiddleware, usersController.index);
+router.get("/", authMiddleware, userscontrollerdd.users);
 
 //Rutas editar
-router.get("/editar/:id", authMiddleware, usersController.edit);
-router.patch("/editar/:id", upload.single("image"), usersController.update);
+router.get("/editar/:id", authMiddleware, userscontrollerdd.edit);// cambiar cuando se arregle las validaciones
+router.patch("/editar/:id", upload.single("image"), userscontrollerdd.update);
 
 //Ruta eliminar producto
-router.delete('/delete/:id', authMiddleware, usersController.destroy);
+router.delete('/delete/:id', authMiddleware, userscontrollerdd.destroy);
 
 module.exports = router;

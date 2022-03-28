@@ -28,8 +28,8 @@
                     <% } %>
 
                     <div class="div">
-                        <label for="apellidos" class="label">Apellidos:</label><br>
-                        <input type="text" name="apellidos" class="input" value="<%= locals.oldData ? oldData.apellidos : null %>">
+                        <label for="apellido" class="label">Apellidos:</label><br>
+                        <input type="text" name="apellido" class="input" value="<%= locals.oldData ? oldData.apellido : null %>">
                     </div>
                     <% if(locals.errors && errors.apellidos){ %>
                         <p style="color: red;"><%= errors.apellidos.msg %></p>
@@ -44,16 +44,16 @@
                     <% } %>
                     
                     <div class="div">
-                        <label for="adress" class="label">Domicilio:</label><br>
-                        <input type="text" name="adress" class="input" value="<%= locals.oldData ? oldData.adress : null %>">
+                        <label for="direccion" class="label">Domicilio:</label><br>
+                        <input type="text" name="direccion" class="input" value="<%= locals.oldData ? oldData.direccion : null %>">
                     </div>
                     <% if(locals.errors && errors.adress){ %>
                         <p style="color: red;"><%= errors.adress.msg %></p>
                     <% } %>
 
                     <div class="div">
-                        <label for="fecha" class="label">Fecha nacimiento:</label><br>
-                        <input type="date" name="fecha" class="input" value="<%= locals.oldData ? oldData.fecha : null %>">
+                        <label for="fechaNacimiento" class="label">Fecha nacimiento:</label><br>
+                        <input type="date" name="fechaNacimiento" class="input" value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
                     </div>
 
                     <% if(locals.errors && errors.fecha){ %>
@@ -69,11 +69,11 @@
                     <% } %>
 
                     <div class="div">
-                        <label for="image" class="label">Agregar imagen:</label><br>
-                        <input type="file" name="image" class="input" value="<%= locals.oldData ? oldData.image : null %>">
+                        <label for="imagen" class="label">Agregar imagen:</label><br>
+                        <input type="file" name="imagen" class="input" value="<%= locals.oldData ? oldData.imagen : null %>">
                     </div>
                     <% if(locals.errors && errors.image){ %>
-                        <p style="color: red;"><%= errors.image.msg %></p>
+                        <p style="color: red;"><%= errors.imagen.msg %></p>
                     <% } %>
 
                     <div class="check">

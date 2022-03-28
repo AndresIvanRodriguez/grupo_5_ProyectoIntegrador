@@ -24,17 +24,8 @@ const controller = {
 			const { nombre, precio, color, genre, descuento, descripcion, material, numDeCambios,
 					tipoFreno, suspension, stock, categoriaId} = req.body;
 			await db.Product.create({
-				nombre: req.body.nombre,
-				precio: req.body.precio,
-				color: req.body.color,
-				genre: req.body.genre,
-				descuento: req.body.descuento,
-				descripcion: req.body.descripcion,
-				material: req.body.material,
-				numDeCambios: req.body.numDeCambios,
-				tipoFreno: req.body.tipoFreno,
-				suspension: req.body.suspension,
-				stock: req.body.stock,
+				 nombre,precio,color,genre,descuento,descripcion,material,numDeCambios,tipoFreno,suspension,
+stock,
 			})	
 			res.redirect('/admin');
 		} catch (error) {
@@ -42,45 +33,43 @@ const controller = {
 		}
 	},
     
-    edit: async (req, res)=>{
-        let productoId = req.params.id;		//conocer el id del product
-		let productToEdit = await db.Product.findByPk(productoId);
+    edit : (req,res)=>{
+        db.Product.findByPk(req.params.id)
+        .then((productToEdit)=>{
+            res.render("admin/editar",{productToEdit})
+        })
 
-        res.render("admin/editar", {
-            productToEdit
-        });
+
     },
 
-    update: (req, res) => {
-		let id = req.params.id;
-		let productToEdit = products.find(product => product.id == id);
-
-		productToEdit = {
-            id: productToEdit.id,
-			...req.body,
-            image: productToEdit.image
-		};
-
-		let newProducts = products.map(product => {
-			if(product.id == productToEdit.id){
-				product = {...productToEdit}
-			}
-			return product;
-		})
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
-		products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-		res.redirect("/admin");
-	},
+    update:async (req,res)=>{
+		try {
+        const { nombre, precio, color, genre, descuento, descripcion, material, numDeCambios,
+			tipoFreno, suspension, stock, categoriaId} = req.body;
+        db.Product.update({
+			nombre,precio,color,genre,descuento,descripcion,material,numDeCambios,tipoFreno,suspension,
+			stock,
+        },{ where:{
+            id:req.params.id
+        },
+    
+        })
+        
+        res.redirect("/admin");
+	} catch (error) {
+		return res.send(error)
+	}
+    },
 
     destroy : (req, res) => {
-		let id = req.params.id;
-		let finalProducts = products.filter(product => product.id != id);
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, " "));
-		products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-		res.redirect("/admin");
-	}
+		db.Product.destroy({
+			where:{
+				id: req.params.id
+			}
+		})
+		
+		return res.redirect('/admin' )
+	 },
 }
 
 module.exports = controller;
