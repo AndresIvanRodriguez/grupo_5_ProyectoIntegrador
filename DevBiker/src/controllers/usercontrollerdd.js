@@ -6,11 +6,20 @@ const bcryptjs = require('bcryptjs');
 const multer = require('multer');
 const User = require("../models/User");	
 const { update } = require('./usersController');
+const { brotliDecompress } = require('zlib');
+const { validationResult } = require("express-validator");
 const controller = {
     register:(req,res)=>{
         return res.render("users/register");
     },
      processRegister: async (req,res)=>{
+        /* const resultValidation = validationResult(req);
+        if(resultValidation.errors.length > 0){
+            return res.render("users/register", {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
+        } */
         try {
             const {nombre,apellido,email,direccion,fechaNacimiento,password,imagen}=req.body;
             await db.Users.create({
@@ -19,7 +28,7 @@ const controller = {
                 email,
                 direccion,
                 fechaNacimiento,
-                password,
+                password:bcryptjs.hashSync(req.body.password, 10),
                 imagen
             }
             );
@@ -46,7 +55,7 @@ const controller = {
     },
     update:async (req,res)=>{
         
-        db.Users.update({
+        await db.Users.update({
             nombre:req.body.nombre,
             apellido:req.body.apellido,
             email:req.body.email,
@@ -59,11 +68,13 @@ const controller = {
         },
     
         })
+       
         let  users = await db.Users.findAll();
         res.render("users", {
             users
         });
     },
+   
     destroy : (req, res) => {
        db.Users.destroy({
            where:{
@@ -73,21 +84,32 @@ const controller = {
        
        return res.redirect('/users' )
 	},
-    loginProcess: (req, res) => {
-		let userToLogin = User.findByField('email', req.body.email);
-
-		if(userToLogin){
-			let passwordCorrecta = bcryptjs.compareSync(req.body.password, userToLogin.password)
+    loginProcess: async (req, res) => {
+        
+            let {email}=req.body
+        
+    let userToLogin = await db.Users.findOne({
+         where:{
+             email:email,
+           
+             
+         }
+         
+     })
+         if(userToLogin){
+            let passwordCorrecta = bcryptjs.compareSync(req.body.password, userToLogin.password)
+            console.log(passwordCorrecta);
 			if(passwordCorrecta){
-				delete userToLogin.password;
-				req.session.userLogged = userToLogin;
-				if(req.body.recordarme != undefined){	
-					console.log("Aqui va la cookie 1:",req.cookies);
-					res.cookie('recordarme', userToLogin.email,{maxAge: 600000});
-					}
-				res.redirect("/")
-			}
-			return res.render("users/login", {
+            delete userToLogin.password;
+            req.session.userLogged = userToLogin;
+            if(req.body.recordarme != undefined){	
+                console.log("Aqui va la cookie 1:",req.cookies);
+                res.cookie('recordarme', userToLogin.email,{maxAge: 600000});
+                }
+            
+            res.redirect("/")}
+            
+            return res.render("users/login", {
 				errors: {
 					email: {
 						msg: "Los datos ingresados son incorrectos"
@@ -103,7 +125,28 @@ const controller = {
 				}
 			}
 		});	
+		
+         
+     
+		
 	},
+    profile: (req, res) => {
+		res.render("users/perfil", {
+			user: req.session.userLogged			//La vista va a conocer esta variable
+		});
+	},
+    login: (req, res) => {
+		res.render("users/login");
+	},
+    profile: (req, res) => {
+		res.render("users/perfil", {
+			user: req.session.userLogged			//La vista va a conocer esta variable
+		});
+	},
+    logout: (req, res) => {
+		req.session.destroy();
+		return res.redirect("/");
+	}
     /* edit : async (req, res)=>{
         try{
             const userid=req.params.id;

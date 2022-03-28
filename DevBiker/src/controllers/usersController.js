@@ -1,4 +1,4 @@
-const fs = require('fs');
+/* const fs = require('fs');
 const path = require('path');
 const usersFilePath = path.join(__dirname, '../data/usuariosDB.JSON');
 let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -148,3 +148,4 @@ module.exports = controller;
 
 
     
+ */

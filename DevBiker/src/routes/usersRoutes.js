@@ -25,7 +25,7 @@ const validationUser = [
 ]
 
 //Formulario del login
-router.get('/login', guestMiddleware, usersController.login);
+router.get('/login', guestMiddleware, userscontrollerdd.login);
 
 //Formulario del login
 router.post('/login', validationUser, userscontrollerdd.loginProcess);
@@ -37,10 +37,10 @@ router.get('/register', guestMiddleware, userscontrollerdd.register);
 router.post('/', upload.single("imagen"), validationsRegister, userscontrollerdd.processRegister); 
 
 //Procesar login
-router.get("/perfil", authMiddleware, usersController.profile);
+router.get("/perfil", authMiddleware, userscontrollerdd.profile);
 
 //Procesar logout
-router.get("/logout", usersController.logout);
+router.get("/logout", userscontrollerdd.logout);
 
 //ruta index
 router.get("/", authMiddleware, userscontrollerdd.users);

@@ -1,7 +1,7 @@
 /* const path = require('path'); */
 const userscontrollerdd=require("../controllers/usercontrollerdd");
 const fs = require("fs");
-//const db=require("../database/models")
+
 const User = {                                  //.this se refiere a trabajar con un metodo
     fileName: './src/data/usuariosDB.json',
 

@@ -23,7 +23,7 @@ router.get('/create', /* authMiddleware, */ adminController.createForm);
 
 //Procesar registro
 //.single porque es un solo archivo y el nombre del for en el formulario
-router.post('/', upload.single("image"),adminController.create); 
+router.post('/', upload.single("imagen"),adminController.create); 
 
 //Rutas editar
 router.get("/editar/:id", /* authMiddleware, */ adminController.edit);
