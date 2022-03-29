@@ -19,20 +19,22 @@
                 <div class="card">
                     <% oferta.forEach(product => { %>
                     <article class="bikes">
-                        <section>
-                            <p class="nombre"><%=product.nombre%></p>
-                        </section>
-                        <section>
-                            <img src="/img/<%=product.imagen%>" alt="Prototipo <%=product.nombre%> ">
-                        </section>
-                        <section class="datos">
-                            <p class="descuento" id="descuento">%<%=product.descuento%> OFF
-                            <style></style></p>
-                            <p class="precio">$<%=product.precio%></p>
-                        </section>
-                        <section>
-                            <p class="descripcion"><%=product.descripcion%></p>
-                        </section>
+                        <a href="/products/detail/<%= product.id %>">
+                            <section>
+                                <p class="nombre"><%=product.nombre%></p>
+                            </section>
+                            <section>
+                                <img src="/img/<%=product.imagen%>" alt="Prototipo <%=product.nombre%> ">
+                            </section>
+                            <section class="datos">
+                                <p class="descuento" id="descuento">%<%=product.descuento%> OFF
+                                <style></style></p>
+                                <p class="precio">$<%=product.precio%></p>
+                            </section>
+                            <section>
+                                <p class="descripcion"><%=product.descripcion%></p>
+                            </section>
+                        </a>
                     </article>
                     <% }); %>
                 </div>

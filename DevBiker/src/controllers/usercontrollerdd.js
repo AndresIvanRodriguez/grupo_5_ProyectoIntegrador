@@ -1,27 +1,43 @@
-const path = require('path');
 const db = require('../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 const bcryptjs = require('bcryptjs');
 const multer = require('multer');
-const User = require("../models/User");	
-const { update } = require('./usersController');
-const { brotliDecompress } = require('zlib');
 const { validationResult } = require("express-validator");
+
 const controller = {
+
     register:(req,res)=>{
         return res.render("users/register");
     },
-     processRegister: async (req,res)=>{
-        /* const resultValidation = validationResult(req);
+
+    processRegister: async (req,res)=>{
+        const resultValidation = validationResult(req);
         if(resultValidation.errors.length > 0){
             return res.render("users/register", {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             })
-        } */
+        }
+        let {email} = req.body
+        let userInDB = await db.Users.findOne({
+            where:{
+                email:email,
+            }
+        })
+        if(userInDB){
+            return res.render("users/register", {
+                errors: {
+                    email: {
+                        msg: "Este email ya está registrado"
+                    }
+                },	
+                oldData: req.body
+            })
+        }
         try {
-            const {nombre,apellido,email,direccion,fechaNacimiento,password,imagen}=req.body;
+            const imagen = req.file ? req.file.filename : "default-image.png";
+            const {nombre,apellido,email,direccion,fechaNacimiento,password}=req.body;
             await db.Users.create({
                 nombre,
                 apellido,
@@ -29,12 +45,12 @@ const controller = {
                 direccion,
                 fechaNacimiento,
                 password:bcryptjs.hashSync(req.body.password, 10),
-                imagen
+                imagen:imagen
             }
             );
            
         } catch (error) {
-           
+           res.send(error)
         }
       
         return res.redirect('users/login');
@@ -75,8 +91,8 @@ const controller = {
         });
     },
    
-    destroy : (req, res) => {
-       db.Users.destroy({
+    destroy : async (req, res) => {
+        await db.Users.destroy({
            where:{
                id: req.params.id
            }
@@ -84,19 +100,18 @@ const controller = {
        
        return res.redirect('/users' )
 	},
+
     loginProcess: async (req, res) => {
         
-            let {email}=req.body
+        let {email} = req.body
         
-    let userToLogin = await db.Users.findOne({
-         where:{
-             email:email,
-           
-             
-         }
-         
-     })
-         if(userToLogin){
+        let userToLogin = await db.Users.findOne({
+            where:{
+                email:email,
+            }
+        })
+
+        if(userToLogin){
             let passwordCorrecta = bcryptjs.compareSync(req.body.password, userToLogin.password)
             console.log(passwordCorrecta);
 			if(passwordCorrecta){
@@ -124,63 +139,22 @@ const controller = {
 					msg: "Correo electronico no registrado"
 				}
 			}
-		});	
-		
-         
-     
-		
+		});		
 	},
+
     profile: (req, res) => {
 		res.render("users/perfil", {
 			user: req.session.userLogged			//La vista va a conocer esta variable
 		});
 	},
+
     login: (req, res) => {
 		res.render("users/login");
 	},
-    profile: (req, res) => {
-		res.render("users/perfil", {
-			user: req.session.userLogged			//La vista va a conocer esta variable
-		});
-	},
+
     logout: (req, res) => {
 		req.session.destroy();
 		return res.redirect("/");
 	}
-    /* edit : async (req, res)=>{
-        try{
-            const userid=req.params.id;
-            const User=await db.User.findByPk(userid);
-            return res.render("editar.ejs");
-
-        }
-         catch(error){
-            return res.send(error)
-        }
-    } */
-
-    /* profile: (req, res) => {
-		res.render("users/perfil", {
-			user: req.session.userLogged			//La vista va a conocer esta variable
-		});
-	},
-    
-   
-    login: (req, res) => {
-		res.render("users/login");
-	}, */
-     /*  processRegister:(req,res)=>{
-        console.log(req.body);
-        db.Users.create({
-            nombre:req.body.nombre,
-            apellido:req.body.apellido,
-            email:req.body.email,
-            direccion:req.body.direccion,
-            fechaNacimiento:req.body.fechaNacimiento,
-            password:req.body.password,
-            imagen:req.body.imagen
-        });
-        return res.redirect('users/login');
-    }*/
 }
 module.exports=controller;

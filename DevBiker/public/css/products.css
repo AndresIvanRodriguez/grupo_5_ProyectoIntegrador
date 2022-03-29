@@ -22,14 +22,6 @@ main{
     width: 100%;
     display: flex;
 }
-.margin-left{
-    width: 5%;
-    background-color: #b3b3ff;
-}
-.margin-right{
-    background-color: #b3b3ff;
-    width: 5%;
-}
 .principal{
     display: flex;
     width: 90%;
@@ -38,7 +30,7 @@ main{
 h2{
     margin-left: 10px;
     margin: 5px 5px;
-    background-color: #b3b3ff;
+    background-color: #828598;
     color: black;
     padding: 3px 6px;
     border-radius: 5px;
@@ -53,7 +45,7 @@ h2{
     font-family: 'Quintessential', cursive;
 }
 #titulo{
-    color: red
+    color: #008C1C
 }
 .card{
     width: 100%;
@@ -72,7 +64,7 @@ h2{
     justify-content: center;
     width: 90%;
     padding: 10px;
-    background-color: #e6e6ff;
+    background-color: #bad4e4;
     box-shadow: 1px 1px 1px 1px #ccccff;
     border-radius: 5px;
     margin: auto;
@@ -103,7 +95,7 @@ h2{
     text-align: center;
 }
 #descuento{
-    color: red;
+    color: #008C1C;
 }
 .datos{
     display: flex;

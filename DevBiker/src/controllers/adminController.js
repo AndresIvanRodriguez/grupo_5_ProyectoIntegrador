@@ -57,8 +57,10 @@ const controller = {
         db.Product.update({
 			nombre,precio,color,genre,descuento,descripcion,material,numDeCambios,tipoFreno,suspension,
 			stock,imagen
-        },{ where:{
-            id:req.params.id
+        },
+		{ 
+			where:{
+            	id:req.params.id
         },
     
         })

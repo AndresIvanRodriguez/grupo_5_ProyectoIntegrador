@@ -44,7 +44,7 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     display: flex;
     flex-direction: column;
     width: 70%;
-    background-color: #ccccff;
+    background-color: #e6e7ea;
     border-radius: 8px;
     padding: 20px;
     opacity: 0.9;

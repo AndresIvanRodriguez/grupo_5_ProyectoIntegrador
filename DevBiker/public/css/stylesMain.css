@@ -40,10 +40,10 @@ main{
 }
 .margin-left{
     width: 4%;
-    background-color: #b3b3ff;
+    background-color: #b4b6c1;
 }
 .margin-right{
-    background-color: #b3b3ff;
+    background-color: #b4b6c1;
     width: 4%;
 }
 .principal{
@@ -77,7 +77,7 @@ header{
 .login{
     width: 23%;
     font-family: 'Roboto', sans-serif;
-    background-color: #8080ff;
+    background-color: #68767f;
     text-align: center;
     font-weight: bold;
     padding: 5px 3px;
@@ -86,7 +86,7 @@ header{
     text-decoration: none;
 }
 .login:hover{
-    box-shadow: 0px 0px 12px white;
+    box-shadow: 0px 0px 12px #e6e7ea;
 }
 .login a{
     color: #050A30;
@@ -96,7 +96,7 @@ header{
     display: flex;
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
-    background-color: #8080ff;
+    background-color: #68767f;
     font-weight: bold;
     font-size: var(--text1-1);
     padding: 8px 0px;
@@ -120,7 +120,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: solid 1px #b3b3ff;
+    border-top: solid 1px #e6e7ea;
 }
 .logo{
     width: 30%;
@@ -162,7 +162,7 @@ header .nav ul li:hover{
     padding: 0px 1px;
 }
 .icons i:hover{
-    color: #b3b3ff;
+    color: #1a1aff;
     font-size: 30px;
 }
 .burger-menu{
@@ -206,7 +206,7 @@ footer img{
 }
 .social-media i{
     justify-content: center;
-    color: #ccccff;
+    color: #e6e7ea;
     margin: 3px;
     margin: 5px;
 }
@@ -217,7 +217,7 @@ footer img{
     list-style-type: none;
     line-height: 16px;
     font-size: var(--text1);
-    color: #ccccff;
+    color: #e6e7ea;
     text-align: center;
 }
 .copyright{

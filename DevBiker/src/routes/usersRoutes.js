@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const userscontrollerdd=require("../controllers/usercontrollerdd");
+const userscontrollerdd = require("../controllers/usercontrollerdd");
 const multer = require('multer');
 const { body } = require("express-validator");  //Validar lo que viene por body
-const usersController = require("../controllers/usersController");
 
 const validationsRegister = require("../middlewares/validationsRMiddlewares");
 
@@ -47,7 +46,7 @@ router.get("/", authMiddleware, userscontrollerdd.users);
 
 //Rutas editar
 router.get("/editar/:id", authMiddleware, userscontrollerdd.edit);// cambiar cuando se arregle las validaciones
-router.patch("/editar/:id", upload.single("image"), userscontrollerdd.update);
+router.patch("/editar/:id", upload.single("imagen"), userscontrollerdd.update);
 
 //Ruta eliminar producto
 router.delete('/delete/:id', authMiddleware, userscontrollerdd.destroy);

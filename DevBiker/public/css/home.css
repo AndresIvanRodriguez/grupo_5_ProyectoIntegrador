@@ -35,14 +35,6 @@ main{
     width: 100%;
     display: flex;
 }
-.margin-left{
-    width: 5%;
-    background-color: #b3b3ff;
-}
-.margin-right{
-    background-color: #b3b3ff;
-    width: 5%;
-}
 .principal{
     display: flex;
     flex-wrap: wrap;
@@ -78,21 +70,23 @@ main{
 }
 .banner{
     display: flex;
-    border: 3px solid #b3b3ff;
+    border: 3px solid #b4b6c1;
 }
 .banner img{
     width: 100%;
 }
 .bestPrice{
-    width: 95%;
+    width: 90%;
     margin: auto;
     margin-bottom: 10px;
+    text-align: justify;
+    padding: 10px;
 }
 .principal-redes{
     width: 35%;
     margin: auto;   
     text-align: center;
-    background-color: #b3b3ff;
+    background-color: #cdced6;
     padding: 1px;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -122,7 +116,7 @@ main{
     width: 90%;
     display: flex;
     flex-direction: column;
-    background-color: #e6e6ff;
+    background-color: #bad4e4;
     margin: 8px;
     padding: 2px;
     box-shadow: 1px 1px 1px 1px #ccccff;
@@ -135,7 +129,7 @@ main{
     height: 100%;
     display: flex;
     margin: auto;
-    border: solid 1px #ffffff;
+    border: solid 1px #e7f5fe;
     border-radius: 50%;
 }
 .price-descripcion{
@@ -153,7 +147,7 @@ main{
 }
 .precio{
     font-size: 13px;
-    background-color: #9999ff;
+    background-color: #cdced6;
     padding: 3px;
     margin: 3px;
     font-weight: bold;
@@ -178,21 +172,21 @@ main{
     margin: auto;
     margin-top: 10px;
     padding: 0px 8px 8px 8px;
-    border: solid 2px #000080;
-    background-color: #b3b3ff;
+    border: solid 2px #3e464c;
+    background-color: #a6bcca;
     border-radius: 10px;
     font-size: var(--text1);
 }
 .categories{
-    margin: 50px 0px 30px 0px;
-    padding: 10px 20px;
-    width: 100%;
-    background-color: #e6e6ff;
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+    padding: 20px 0px;
 }
 .titulo-categories{
     text-align: center;
     color: black;
-    margin: 5px;
+    margin: 5px 0px;
 }
 .list-catogories{
     width: 100%;

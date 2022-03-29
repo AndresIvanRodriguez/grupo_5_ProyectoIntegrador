@@ -31,8 +31,8 @@
                         <label for="apellido" class="label">Apellidos:</label><br>
                         <input type="text" name="apellido" class="input" value="<%= locals.oldData ? oldData.apellido : null %>">
                     </div>
-                    <% if(locals.errors && errors.apellidos){ %>
-                        <p style="color: red;"><%= errors.apellidos.msg %></p>
+                    <% if(locals.errors && errors.apellido){ %>
+                        <p style="color: red;"><%= errors.apellido.msg %></p>
                     <% } %>
 
                     <div class="div">
@@ -47,8 +47,8 @@
                         <label for="direccion" class="label">Domicilio:</label><br>
                         <input type="text" name="direccion" class="input" value="<%= locals.oldData ? oldData.direccion : null %>">
                     </div>
-                    <% if(locals.errors && errors.adress){ %>
-                        <p style="color: red;"><%= errors.adress.msg %></p>
+                    <% if(locals.errors && errors.direccion){ %>
+                        <p style="color: red;"><%= errors.direccion.msg %></p>
                     <% } %>
 
                     <div class="div">
@@ -56,8 +56,8 @@
                         <input type="date" name="fechaNacimiento" class="input" value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
                     </div>
 
-                    <% if(locals.errors && errors.fecha){ %>
-                        <p style="color: red;"><%= errors.fecha.msg %></p>
+                    <% if(locals.errors && errors.fechaNacimiento){ %>
+                        <p style="color: red;"><%= errors.fechaNacimiento.msg %></p>
                     <% } %>
 
                     <div class="div">
@@ -72,7 +72,7 @@
                         <label for="imagen" class="label">Agregar imagen:</label><br>
                         <input type="file" name="imagen" class="input" value="<%= locals.oldData ? oldData.imagen : null %>">
                     </div>
-                    <% if(locals.errors && errors.image){ %>
+                    <% if(locals.errors && errors.imagen){ %>
                         <p style="color: red;"><%= errors.imagen.msg %></p>
                     <% } %>
 
