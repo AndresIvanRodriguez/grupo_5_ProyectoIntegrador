@@ -16,31 +16,31 @@
                 <div>
                     <h2 class="titulo">Crea tu producto</h2>
                 </div>
-                <form action="/admin" method="POST" enctype="multipart/form-data">
+                <form id="create" action="/admin" method="POST" enctype="multipart/form-data">
                    
                     <div>
                         <label for="nombre">Nombre producto:</label>  
-                        <input type="text" name="nombre" placeholder="Nombre del producto" required>
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre del producto" required>
                     </div>
                     <div>
                         <label for="precio">Valor del producto:</label>
-                        <input type="number" name="precio" placeholder="Precio" required>
+                        <input id="valor" type="number" name="precio" placeholder="Precio" required>
                     </div>
                     <div>
                         <label for="color">Color:</label>
-                        <input type="text" name="color" placeholder="Color" required>
+                        <input id="color" type="text" name="color" placeholder="Color" required>
                     </div>
                     <div>
                         <label for="descuento">Descuento:</label>
-                        <input type="text" name="descuento" placeholder="Descuento" required>
+                        <input id="descuento" type="text" name="descuento" placeholder="Descuento" required>
                     </div>
                     <div>
                         <label for="stock">Stock:</label>
-                        <input type="number" name="stock" placeholder="Stock" required>
+                        <input id="stock" type="number" name="stock" placeholder="Stock" required>
                     </div>
                     <div>
                         <label for="categoriaId">Categoria:</label>
-                        <select name="categoriaId" required>
+                        <select id="categoria" name="categoriaId" required>
                             <option>Elige una categoria</option>
                             <option>Ruta</option>
                             <option>BMX</option>
@@ -50,7 +50,7 @@
                     </div>
                     <div>
                         <label for="genre">Genero:</label>
-                        <select name="genre" required>
+                        <select id="genero" name="genre" required>
                             <option value="" selected disabled>Elige un genero</option>
                             <option>Hombre</option>
                             <option>Mujer</option>
@@ -59,32 +59,32 @@
                     </div>
                     <div>
                         <label for="imagen">Cargar imagen</label>
-                        <input type="file" name="imagen" id="image">
+                        <input  id="imagen" type="file" name="imagen" id="image">
                     </div>
                     <div>
                         <label for="descripcion">Descripcion del producto:</label>
-                        <input type="text" name="descripcion" required>
+                        <input id="descripcion" type="text" name="descripcion" required>
                     </div>
                     <div>
                         <label class="caracteristicas">Caracteristicas</label>
                         <div>
                             <label for="material">Material marco:</label>
-                            <input type="text" name="material" required>
+                            <input id="marco" type="text" name="material" required>
                         </div>
                         <div>
                             <label for="numDeCambios">Numero de cambios:</label>
-                            <input type="number" name="numDeCambios" required>
+                            <input id="camibios" type="number" name="numDeCambios" required>
                         </div>
                         <div>
                             <label for="tipoFreno">Tipo de freno:</label>
-                            <input type="text" name="tipoFreno" required>
+                            <input id="frenos" type="text" name="tipoFreno" required>
                         </div>
                         <div>
                             <label for="suspension">Suspención:</label>
-                            <input type="text" name="suspension" required>
+                            <input id="suspension" type="text" name="suspension" required>
                         </div>
                     </div>
-
+                    <ul id="nombr"> </ul>
                     <div>
                         <input class="button" type="submit" value="Crear Producto">
                     </div>
@@ -97,5 +97,6 @@
 
     </main>
     <%- include("../partials/footer.ejs") %>
+    <script src="/js/validationAdminCreateProducto.js"></script>
 </body>
 </html>

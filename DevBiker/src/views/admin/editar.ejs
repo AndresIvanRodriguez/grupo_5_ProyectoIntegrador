@@ -16,31 +16,31 @@
                 <div>
                     <h2 class="titulo">Editar producto</h2>
                 </div>
-                <form action="/admin/editar/<%= productToEdit.id%>?_method=PATCH" method="POST">
+                <form id="edit" action="/admin/editar/<%= productToEdit.id%>?_method=PATCH" method="POST">
                    
                     <div>
                         <label for="nombre">Nombre del producto:</label>  
-                        <input type="text" name="nombre" value="<%= productToEdit.nombre %>">
+                        <input id="nombre" type="text" name="nombre" value="<%= productToEdit.nombre %>">
                     </div>
                     <div>
                         <label for="precio">Valor del producto:</label>
-                        <input type="number" name="precio" value="<%= productToEdit.precio %>" >
+                        <input id="valor" type="number" name="precio" value="<%= productToEdit.precio %>" >
                     </div>
                     <div>
                         <label for="color">Color:</label>
-                        <input type="text" name="color" value="<%= productToEdit.color %>" >
+                        <input id="color" type="text" name="color" value="<%= productToEdit.color %>" >
                     </div>
                     <div>
                         <label for="descuento">Descuento:</label>
-                        <input type="text" name="descuento" value="<%= productToEdit.descuento %>" >
+                        <input id="descuento" type="text" name="descuento" value="<%= productToEdit.descuento %>" >
                     </div>
                     <div>
                         <label for="stock">Stock:</label>
-                        <input type="number" name="stock" value="<%= productToEdit.stock %>" >
+                        <input id="stock" type="number" name="stock" value="<%= productToEdit.stock %>" >
                     </div>
                     <div>
                         <label for="categoria">Categoria:</label>
-                        <select name="categoria" value="<%= productToEdit.categoria %>">
+                        <select id="categoria" name="categoria" value="<%= productToEdit.categoria %>">
                             <option>------------------</option>
                             <option value="<%= productToEdit.cetgoria %>" >Ruta</option>
                             <option value="<%= productToEdit.cetgoria %>" >BMX</option>
@@ -59,25 +59,25 @@
                     </div>
                     <div>
                         <label for="descripcion">Descripcion del producto:</label>
-                        <input type="text" name="descripcion" value="<%= productToEdit.descripcion %>" selected></input>
+                        <input id="descripcion" type="text" name="descripcion" value="<%= productToEdit.descripcion %>" selected></input>
                     </div>
                     <div>
                         <label class="caracteristicas">Caracteristicas</label>
                         <div>
                             <label for="material">Material marco:</label>
-                            <input type="text" name="material" value="<%= productToEdit.material %>">
+                            <input id="marco" type="text" name="material" value="<%= productToEdit.material %>">
                         </div>
                         <div>
                             <label for="numDeCambios">Numero de cambios:</label>
-                            <input type="text" name="numDeCambios" value="<%= productToEdit.numDeCambios %>">
+                            <input id="camibios" type="text" name="numDeCambios" value="<%= productToEdit.numDeCambios %>">
                         </div>
                         <div>
                             <label for="tipoFreno">Tipo de freno:</label>
-                            <input type="text" name="tipoFreno" value="<%= productToEdit.tipoFreno %>">
+                            <input id="frenos" type="text" name="tipoFreno" value="<%= productToEdit.tipoFreno %>">
                         </div>
                         <div>
                             <label for="suspension">Suspención:</label>
-                            <input type="text" name="suspension" value="<%= productToEdit.suspension %>">
+                            <input id="suspension" type="text" name="suspension" value="<%= productToEdit.suspension %>">
                         </div>
                         <div>
                             <label for="imagen">Cambiar imagen</label>

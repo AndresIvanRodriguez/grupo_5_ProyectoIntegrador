@@ -13,22 +13,23 @@
         <div class="principal">
             <div class="container_form">
                 <div class="user"><i class="fas fa-user"></i></div>
-                <form action="" method="POST">
+                <form id="login" action="" method="POST">
                     <section>
                         <div>
                             <label for="email" class="user">Ingrese su correo</label>
-                            <input class="input" type="text" name="email" required>
+                            <input id="email" class="input" type="text" name="email" required>
                         </div>
                         
                         <div>
                             <label for="password" class="pass">Contraseña</label>
-                            <input class="input" type="password" name="password" required>
+                            <input id="password" class="input" type="password" name="password" required>
                         </div>
                         <% if(locals.errors && errors.email){ %>
                             <p style="color: red;"><%= errors.email.msg %></p>
                         <% } %>
                         <input type="checkbox" name="recordarme">
                         <label for="">Recordarte</label>
+                        <div id="nombr" > </div>
                         <button class="boton" type="submit">Iniciar Sesion</button>
                     </section>
                     <div class="link">
@@ -44,5 +45,6 @@
     </main>
     
     <%- include("../partials/footer.ejs") %>
+    <script src="/js/validationLogin.js"></script>
 </body>
 </html>

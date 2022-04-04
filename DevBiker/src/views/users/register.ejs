@@ -2,9 +2,13 @@
 <%- include("../partials/head.ejs") %>
 
     <title>Registro</title>
+
     <link rel="stylesheet" href="/css/register.css" type="text/css">
+
+
 </head>
 <body>
+
     <!--header-->
     <%- include("../partials/header.ejs") %>
 
@@ -18,10 +22,10 @@
                     <i class="fas fa-user-plus"></i>
                 </div>                
 
-                <form action="/users" method="POST" enctype="multipart/form-data">
+                <form id="register" action="/users" method="POST" enctype="multipart/form-data">
                     <div class="div">
                         <label for="nombre" class="label">Nombre:</label><br>
-                        <input type="text" name="nombre" class="input" value="<%= locals.oldData ? oldData.nombre : null %>">
+                        <input id="nombre" type="text" name="nombre" class="input" value="<%= locals.oldData ? oldData.nombre : null %>">
                     </div>
                     <% if(locals.errors && errors.nombre){ %>
                         <p style="color: red;"><%= errors.nombre.msg %></p>
@@ -29,7 +33,7 @@
 
                     <div class="div">
                         <label for="apellido" class="label">Apellidos:</label><br>
-                        <input type="text" name="apellido" class="input" value="<%= locals.oldData ? oldData.apellido : null %>">
+                        <input id="apellido" type="text" name="apellido" class="input" value="<%= locals.oldData ? oldData.apellido : null %>">
                     </div>
                     <% if(locals.errors && errors.apellido){ %>
                         <p style="color: red;"><%= errors.apellido.msg %></p>
@@ -37,7 +41,7 @@
 
                     <div class="div">
                         <label for="email" class="label">Email:</label><br>
-                        <input type="email" name="email" class="input" value="<%= locals.oldData ? oldData.email : null %>">
+                        <input id="email" type="email" name="email" class="input" value="<%= locals.oldData ? oldData.email : null %>">
                     </div>
                     <% if(locals.errors && errors.email){ %>
                         <p style="color: red;"><%= errors.email.msg %></p>
@@ -45,7 +49,7 @@
                     
                     <div class="div">
                         <label for="direccion" class="label">Domicilio:</label><br>
-                        <input type="text" name="direccion" class="input" value="<%= locals.oldData ? oldData.direccion : null %>">
+                        <input id="direccion" type="text" name="direccion" class="input" value="<%= locals.oldData ? oldData.direccion : null %>">
                     </div>
                     <% if(locals.errors && errors.direccion){ %>
                         <p style="color: red;"><%= errors.direccion.msg %></p>
@@ -53,7 +57,7 @@
 
                     <div class="div">
                         <label for="fechaNacimiento" class="label">Fecha nacimiento:</label><br>
-                        <input type="date" name="fechaNacimiento" class="input" value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
+                        <input id="fechaNacimiento" type="date" name="fechaNacimiento" class="input" value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
                     </div>
 
                     <% if(locals.errors && errors.fechaNacimiento){ %>
@@ -62,7 +66,7 @@
 
                     <div class="div">
                         <label for="password" class="label">Contraseña:</label><br>
-                        <input type="password" name="password" class="input" value="<%= locals.oldData ? oldData.password : null %>">
+                        <input id="password" type="password" name="password" class="input" value="<%= locals.oldData ? oldData.password : null %>">
                     </div>
                     <% if(locals.errors && errors.password){ %>
                         <p style="color: red;"><%= errors.password.msg %></p>
@@ -91,6 +95,10 @@
                         <p>Campos son obligatorios*</p>
                     </div>
                     
+                    
+                    <ul id="nombr"> </ul>
+
+
                     <div class="div-button">
                         <button type="submit" class="button">Crear cuenta</button>
                         <button type="reset" class="button">Restablecer</button>
@@ -104,5 +112,7 @@
 
     <!--footer-->
     <%- include("../partials/footer.ejs") %>
+    <script src="/js/validationRegister.js"></script>
+
 </body>
 </html>
