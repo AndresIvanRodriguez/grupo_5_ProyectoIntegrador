@@ -94,6 +94,15 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     font-size: 12px;
     margin: 20px 0px;
 }
+.isInvalid{
+    border: #4a74fd 1px solid;
+}
+.isValid{
+    border: #1a8d1a 1px solid;
+}
+.input{
+    padding: 1px;
+}
 
 /*@media------------------------------------------------------------------------*/
 @media (min-width: 769px){

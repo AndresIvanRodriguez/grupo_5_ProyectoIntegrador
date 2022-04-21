@@ -10,12 +10,16 @@ window.addEventListener("load", function(){
 
         if(campoNombre.value == ""){
             e.preventDefault();
+            campoNombre.classList.add("isInvalid")
             campoN.innerHTML = "Debes completar este campo";
         } else if(campoNombre.value.length == 1){
             e.preventDefault();
             campoN.innerHTML = "El campo debe contener minimo 2 caracteres";
+            campoNombre.classList.add("isInvalid")
         } else {
             campoN.style.display = "none";
+            campoNombre.classList.remove("isInvalid")
+            campoNombre.classList.add("isValid")
         } 
         
         // Validacion campo apellidos
@@ -24,13 +28,17 @@ window.addEventListener("load", function(){
 
         if(campoApellido.value == ""){
             e.preventDefault();
+            campoApellido.classList.add("isInvalid")
             campoA.innerHTML = "Debes completar este campo";
         }
         else if(campoApellido.value.length == 1){
             e.preventDefault();
+            campoApellido.classList.add("isInvalid")
             campoA.innerHTML = "El campo debe contener minimo 2 caracteres";
         } else {
             campoA.style.display = "none";
+            campoApellido.classList.remove("isInvalid")
+            campoApellido.classList.add("isValid")
         }
 
         // Validacion campo email
@@ -40,12 +48,16 @@ window.addEventListener("load", function(){
             
         if(campoEmail.value == ""){
             e.preventDefault();
+            campoEmail.classList.add("isInvalid")
             campoE.innerHTML = "Debes completar este campo"
         } else if(array == -1){
             e.preventDefault();
+            campoEmail.classList.add("isInvalid")
             campoE.innerHTML = "Correo no válido";          
         } else {
             campoE.style.display = "none";
+            campoEmail.classList.remove("isInvalid")
+            campoEmail.classList.add("isValid")
         }
         
         // Validacion campo dirección
@@ -53,9 +65,12 @@ window.addEventListener("load", function(){
         let campoD = document.getElementById("campoD");
         if(campoDireccion.value == ""){
             e.preventDefault();
+            campoDireccion.classList.add("isInvalid")
             campoD.innerHTML = "Debes completar este campo";
         } else {
             campoD.style.display = "none";
+            campoDireccion.classList.remove("isInvalid")
+            campoDireccion.classList.add("isValid")
         }
 
         // Validación campo fecha
@@ -63,9 +78,12 @@ window.addEventListener("load", function(){
         let campoF = document.getElementById("campoF");
         if(campofechaNacimiento.value == ""){
             e.preventDefault();
+            campofechaNacimiento.classList.add("isInvalid")
             campoF.innerHTML = "Debes completar este campo";
         } else {
             campoF.style.display = "none";
+            campofechaNacimiento.classList.remove("isInvalid")
+            campofechaNacimiento.classList.add("isValid")
         }
 
         // Validación campo contraseña
@@ -73,12 +91,16 @@ window.addEventListener("load", function(){
         let campoP = document.getElementById("campoP");
         if(campoPassword.value == ""){
             e.preventDefault();
+            campoPassword.classList.add("isInvalid")
             campoP.innerHTML = "Debes completar este campo";
         } else if(campoPassword.value <= 8){
             e.preventDefault();
+            campoPassword.classList.add("isInvalid")
             campoP.innerHTML = "La contraseña debe contener minimo 8 carcteres";          
         } else {
             campoP.style.display = "none";
+            campoPassword.classList.remove("isInvalid")
+            campoPassword.classList.add("isValid")
         }
 
         // Validación campo imagen
@@ -94,7 +116,20 @@ window.addEventListener("load", function(){
             campoI.innerHTML = "El tipo de imagen no es válido";          
         } else {
             campoI.style.display = "none";
+            campoImagen.classList.add("isValid")
+
         }
+
+        const removeIsInvalid = (e) => {
+            e.target.classList.remove("isInvalid")
+        }
+
+        campoNombre.onkeydown = removeIsInvalid;
+        campoApellido.onkeydown = removeIsInvalid;
+        campoEmail.onkeydown = removeIsInvalid;
+        campoDireccion.onkeydown = removeIsInvalid;
+        campofechaNacimiento.onkeydown = removeIsInvalid;
+        campoPassword.onkeydown = removeIsInvalid;
     })
 
 });

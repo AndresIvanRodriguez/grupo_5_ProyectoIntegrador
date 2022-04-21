@@ -132,7 +132,7 @@ const controller = {
 	},
 
     update: async(req,res)=>{
-        const { nombre, apellido, email, direccion, fechaNacimiento, password,imagen} = await req.body;
+        const { nombre, apellido, email, direccion, fechaNacimiento, password, imagen} = await req.body;
 
         db.Users.update({
             nombre,
@@ -150,7 +150,7 @@ const controller = {
     
         })
        
-        res.render("users/perfil", {
+        return res.render("users/perfil", {
 			user: req.session.userLogged			//La vista va a conocer esta variable
 		});
     },

@@ -1,11 +1,11 @@
 window.addEventListener("load", function () {
-    let formulario = document.getElementById("login");
-    formulario.addEventListener("submit", function (e) {
-        let errores = [];
-        //let aviso="";
 
+    let formulario = document.getElementById("login");
+    
+    formulario.addEventListener("submit", function (e) {
+        
         // Validacion campo email
-        let campoEmail = document.getElementById("email");
+        const campoEmail = document.getElementById("email");
         let array = campoEmail.value.indexOf("@",0);
         let campoE = document.getElementById("campoE");
             
