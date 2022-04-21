@@ -17,13 +17,15 @@
                     <section>
                         <div>
                             <label for="email" class="user">Ingrese su correo</label>
-                            <input id="email" class="input" type="text" name="email" required>
+                            <input id="email" class="input" type="text" name="email" >
                         </div>
+                        <p id="campoE" style="color: blue;"></p>
                         
                         <div>
                             <label for="password" class="pass">Contraseña</label>
-                            <input id="password" class="input" type="password" name="password" required>
+                            <input id="password" class="input" type="password" name="password" >
                         </div>
+                        <p id="campoP" style="color: blue;"></p>
                         <% if(locals.errors && errors.email){ %>
                             <p style="color: red;"><%= errors.email.msg %></p>
                         <% } %>

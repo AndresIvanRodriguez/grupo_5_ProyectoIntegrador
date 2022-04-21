@@ -5,7 +5,6 @@
 
     <link rel="stylesheet" href="/css/register.css" type="text/css">
 
-
 </head>
 <body>
 
@@ -27,6 +26,7 @@
                         <label for="nombre" class="label">Nombre:</label><br>
                         <input id="nombre" type="text" name="nombre" class="input" value="<%= locals.oldData ? oldData.nombre : null %>">
                     </div>
+                    <p id="campoN" style="color: blue;"></p>
                     <% if(locals.errors && errors.nombre){ %>
                         <p style="color: red;"><%= errors.nombre.msg %></p>
                     <% } %>
@@ -35,6 +35,7 @@
                         <label for="apellido" class="label">Apellidos:</label><br>
                         <input id="apellido" type="text" name="apellido" class="input" value="<%= locals.oldData ? oldData.apellido : null %>">
                     </div>
+                    <p id="campoA" style="color: blue;"></p>
                     <% if(locals.errors && errors.apellido){ %>
                         <p style="color: red;"><%= errors.apellido.msg %></p>
                     <% } %>
@@ -43,6 +44,7 @@
                         <label for="email" class="label">Email:</label><br>
                         <input id="email" type="email" name="email" class="input" value="<%= locals.oldData ? oldData.email : null %>">
                     </div>
+                    <p id="campoE" style="color: blue;"></p>
                     <% if(locals.errors && errors.email){ %>
                         <p style="color: red;"><%= errors.email.msg %></p>
                     <% } %>
@@ -51,6 +53,7 @@
                         <label for="direccion" class="label">Domicilio:</label><br>
                         <input id="direccion" type="text" name="direccion" class="input" value="<%= locals.oldData ? oldData.direccion : null %>">
                     </div>
+                    <p id="campoD" style="color: blue;"></p>
                     <% if(locals.errors && errors.direccion){ %>
                         <p style="color: red;"><%= errors.direccion.msg %></p>
                     <% } %>
@@ -59,7 +62,7 @@
                         <label for="fechaNacimiento" class="label">Fecha nacimiento:</label><br>
                         <input id="fechaNacimiento" type="date" name="fechaNacimiento" class="input" value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
                     </div>
-
+                    <p id="campoF" style="color: blue;"></p>
                     <% if(locals.errors && errors.fechaNacimiento){ %>
                         <p style="color: red;"><%= errors.fechaNacimiento.msg %></p>
                     <% } %>
@@ -68,14 +71,16 @@
                         <label for="password" class="label">Contraseña:</label><br>
                         <input id="password" type="password" name="password" class="input" value="<%= locals.oldData ? oldData.password : null %>">
                     </div>
+                    <p id="campoP" style="color: blue;"></p>
                     <% if(locals.errors && errors.password){ %>
                         <p style="color: red;"><%= errors.password.msg %></p>
                     <% } %>
 
                     <div class="div">
                         <label for="imagen" class="label">Agregar imagen:</label><br>
-                        <input type="file" name="imagen" class="input" value="<%= locals.oldData ? oldData.imagen : null %>">
+                        <input id="imagen" type="file" name="imagen" class="input" value="<%= locals.oldData ? oldData.imagen : null %>">
                     </div>
+                    <p id="campoI" style="color: blue;"></p>
                     <% if(locals.errors && errors.imagen){ %>
                         <p style="color: red;"><%= errors.imagen.msg %></p>
                     <% } %>

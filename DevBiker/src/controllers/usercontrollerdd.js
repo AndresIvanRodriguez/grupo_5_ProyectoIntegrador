@@ -37,7 +37,7 @@ const controller = {
         }
         try {
             const imagen = req.file ? req.file.filename : "default-image.png";
-            const {nombre,apellido,email,direccion,fechaNacimiento,password}=req.body;
+            const {nombre,apellido,email,direccion,fechaNacimiento,password,}=req.body;
             await db.Users.create({
                 nombre,
                 apellido,
@@ -66,27 +66,6 @@ const controller = {
     users: async (req, res)=>{
         let  users = await db.Users.findAll();
         res.render("users/index", {
-            users
-        });
-    },
-    update:async (req,res)=>{
-        
-        await db.Users.update({
-            nombre:req.body.nombre,
-            apellido:req.body.apellido,
-            email:req.body.email,
-            direccion:req.body.direccion,
-            fechaNacimiento:req.body.fechaNacimiento,
-            password:req.body.password,
-            imagen:req.body.imagen
-        },{ where:{
-            id:req.params.id
-        },
-    
-        })
-       
-        let  users = await db.Users.findAll();
-        res.render("users", {
             users
         });
     },
@@ -151,6 +130,30 @@ const controller = {
     login: (req, res) => {
 		res.render("users/login");
 	},
+
+    update: async(req,res)=>{
+        const { nombre, apellido, email, direccion, fechaNacimiento, password,imagen} = await req.body;
+
+        db.Users.update({
+            nombre,
+            apellido,
+            email,
+            direccion,
+            fechaNacimiento,
+            password,
+            imagen
+        },
+        { 
+            where: {
+                id:req.params.id
+        },
+    
+        })
+       
+        res.render("users/perfil", {
+			user: req.session.userLogged			//La vista va a conocer esta variable
+		});
+    },
 
     logout: (req, res) => {
 		req.session.destroy();

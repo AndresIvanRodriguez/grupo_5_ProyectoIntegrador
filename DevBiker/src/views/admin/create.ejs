@@ -16,31 +16,42 @@
                 <div>
                     <h2 class="titulo">Crea tu producto</h2>
                 </div>
+
                 <form id="create" action="/admin" method="POST" enctype="multipart/form-data">
                    
                     <div>
                         <label for="nombre">Nombre producto:</label>  
-                        <input id="nombre" type="text" name="nombre" placeholder="Nombre del producto" required>
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre del producto" >
                     </div>
+                    <p id="campoN" style="color: blue;"></p>
+
                     <div>
                         <label for="precio">Valor del producto:</label>
-                        <input id="valor" type="number" name="precio" placeholder="Precio" required>
+                        <input id="valor" type="number" name="precio" placeholder="Precio" >
                     </div>
+                    <p id="campoV" style="color: blue;"></p>
+
                     <div>
                         <label for="color">Color:</label>
-                        <input id="color" type="text" name="color" placeholder="Color" required>
+                        <input id="color" type="text" name="color" placeholder="Color" >
                     </div>
+                    <p id="campoC" style="color: blue;"></p>
+
                     <div>
                         <label for="descuento">Descuento:</label>
-                        <input id="descuento" type="text" name="descuento" placeholder="Descuento" required>
+                        <input id="descuento" type="text" name="descuento" placeholder="Descuento" >
                     </div>
+                    <p id="campoD" style="color: blue;"></p>
+
                     <div>
                         <label for="stock">Stock:</label>
-                        <input id="stock" type="number" name="stock" placeholder="Stock" required>
+                        <input id="stock" type="number" name="stock" placeholder="Stock" >
                     </div>
+                    <p id="campoS" style="color: blue;"></p>
+
                     <div>
                         <label for="categoriaId">Categoria:</label>
-                        <select id="categoria" name="categoriaId" required>
+                        <select id="categoria" name="categoriaId" >
                             <option>Elige una categoria</option>
                             <option>Ruta</option>
                             <option>BMX</option>
@@ -48,43 +59,55 @@
                             <option>Montaña</option>
                         </select>
                     </div>
+                    <p id="campoCat" style="color: blue;"></p>
+
                     <div>
                         <label for="genre">Genero:</label>
-                        <select id="genero" name="genre" required>
+                        <select id="genero" name="genre" >
                             <option value="" selected disabled>Elige un genero</option>
                             <option>Hombre</option>
                             <option>Mujer</option>
                             <option>Unisex</option>
                         </select>
                     </div>
+                    <p id="campoG" style="color: blue;"></p>
+
                     <div>
                         <label for="imagen">Cargar imagen</label>
                         <input  id="imagen" type="file" name="imagen" id="image">
                     </div>
+                    <p id="campoI" style="color: blue;"></p>
+
                     <div>
                         <label for="descripcion">Descripcion del producto:</label>
-                        <input id="descripcion" type="text" name="descripcion" required>
+                        <input id="descripcion" type="text" name="descripcion" >
                     </div>
+                    <p id="campoDesc" style="color: blue;"></p>
+
                     <div>
                         <label class="caracteristicas">Caracteristicas</label>
                         <div>
                             <label for="material">Material marco:</label>
-                            <input id="marco" type="text" name="material" required>
+                            <input id="marco" type="text" name="material" >
                         </div>
+                        <p id="campoM" style="color: blue;"></p>
                         <div>
                             <label for="numDeCambios">Numero de cambios:</label>
-                            <input id="camibios" type="number" name="numDeCambios" required>
+                            <input id="camibios" type="number" name="numDeCambios" >
                         </div>
+                        <p id="campoNum" style="color: blue;"></p>
                         <div>
                             <label for="tipoFreno">Tipo de freno:</label>
-                            <input id="frenos" type="text" name="tipoFreno" required>
+                            <input id="frenos" type="text" name="tipoFreno" >
                         </div>
+                        <p id="campoT" style="color: blue;"></p>
                         <div>
                             <label for="suspension">Suspención:</label>
-                            <input id="suspension" type="text" name="suspension" required>
+                            <input id="suspension" type="text" name="suspension" >
                         </div>
+                        <p id="campoSus" style="color: blue;"></p>
                     </div>
-                    <ul id="nombr"> </ul>
+                    
                     <div>
                         <input class="button" type="submit" value="Crear Producto">
                     </div>

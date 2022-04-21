@@ -1,70 +1,149 @@
 window.addEventListener("load", function(){
     // console.log('hola desde register' );
-     let formulario= document.getElementById("create");
+    
+     let formulario = document.getElementById("create");
      formulario.addEventListener("submit",function(e){
-         let errores=[];
-         //let aviso="";
-         let campoNombre=document.getElementById("nombre");
-         if((campoNombre.value.length <=2 && campoNombre.value.length>=1  )){
-             errores.push('El nombre debe tener mas de dos caracteres');
-         }
-         else if(campoNombre.value=="" ){
-             errores.push('El nombre no puedeser nulo');
-         }
-         let campoValor =document.getElementById("valor");
-         if(campoValor.value == " " ||campoValor.value =="" ) {
-             errores.push('El valor no puedeser nulo');
-         }
-         let campoColor=document.getElementById("color");
-         if(campoColor.value == " "  || campoColor.value == ""){
-             errores.push('El color no puedeser nulo');
-         }
-         let campoDescuento=document.getElementById("descuento");
-         if(campoDescuento.value == " " || campoDescuento.value==""){
-             errores.push('El descuento no puedeser nulo')
-         }
-         let campoStock=document.getElementById("stock");
-         if(campoStock.value == " " || campoStock.value==""){
-             errores.push('El stock no puedeser nulo')
-         }
-         let campoCategoria=document.getElementById("categoria");
-         if(campoCategoria.value == "Elige una categoria"){
-             errores.push('La categoria no puedeser nula')
-         }
-         let campoGenero=document.getElementById("genero");
-         if(campoGenero.value == "Elige un genero" || campoGenero.value ==""){
-             errores.push('El genero no puedeser nulo')
-         }
-         let campoImagen=document.getElementById("imagen");
-         if(campoImagen.value== "" || campoImagen.value==" "){
-            errores.push('La imagen no puede estar vacía')
-         }
-         let campoDescripcion=document.getElementById("descripcion");
-         if(campoDescripcion.value=="" || campoDescripcion.value==" "){
-             errores.push('La descripción no puede estar vacía')
-         }
-         let campoMarco=document.getElementById("marco");
-         if(campoMarco.value=="" || campoMarco.value==" "){
-             errores.push('El campo marco no puede estar vacío')
-         }
-         let campoCamibios=document.getElementById("camibios");
-         if(campoCamibios.value=="" || campoCamibios.value==" "){
-             errores.push('El campo no puede estar vacía')
-         }
-         let campoFrenos=document.getElementById("frenos");
-         if(campoFrenos.value==""  || campoFrenos.value==" "){
-             errores.push('El campo Frenos no puede estar vacío')
-         }
-         let campoSuspension=document.getElementById("suspension");
-         if(campoSuspension.value==""  || campoSuspension.value==" "){
-             errores.push('Indique el tipo de suspensión')
-         }
-         if (errores.length > 0){
-             e.preventDefault();
-             let nombr= document.getElementById("nombr");
-             for (let i=0 ; i<errores.length ; i++){
-                 nombr.innerHTML+= "<p>"+errores[i]+"</p>"
-             }
-         }
+        
+        // Validacion del campo nombre
+        let campoNombre = document.getElementById("nombre");
+        let campoN = document.getElementById("campoN");
+
+        if(campoNombre.value == ""){
+            e.preventDefault();
+            campoN.innerHTML = "Debes completar este campo";
+        } else if(campoNombre.value.length < 6){
+            e.preventDefault();
+            campoN.innerHTML = "El campo debe contener minimo 6 caracteres";
+        } else {
+            campoN.style.display = "none";
+        } 
+        
+        // Validacion campo Valor
+        let campoValor = document.getElementById("valor");
+        let campoV = document.getElementById("campoV");
+
+        if(campoValor.value == ""){
+            e.preventDefault();
+            campoV.innerHTML = "Debes completar este campo";
+        } else {
+            campoV.style.display = "none";
+        }
+
+        // Validacion campo Color
+        let campoColor = document.getElementById("color");
+        let campoC = document.getElementById("campoC");
+
+        if(campoColor.value == ""){
+            e.preventDefault();
+            campoC.innerHTML = "Debes completar este campo";
+        } else {
+            campoC.style.display = "none";
+        }
+        
+        // Validacion campo descuento
+        let campoDescuento = document.getElementById("descuento");
+        let campoD = document.getElementById("campoD");
+        if(campoDescuento.value == ""){
+            e.preventDefault();
+            campoD.innerHTML = "Debes completar este campo";
+        } else {
+            campoD.style.display = "none";
+        }
+
+        // Validación campo stock
+        let campoStock = document.getElementById("stock");
+        let campoS = document.getElementById("campoS");
+        if(campoStock.value == ""){
+            e.preventDefault();
+            campoS.innerHTML = "Debes completar este campo";
+        } else {
+            campoS.style.display = "none";
+        }
+
+        // Validación campo categoria
+        let campoCat = document.getElementById("categoria");
+        let campoCa = document.getElementById("campoCat");
+        if(campoCat.value == ""){
+            e.preventDefault();
+            campoCa.innerHTML = "Debes completar este campo";
+        } else {
+            campoCat.style.display = "none";
+        }
+
+        // Validación campo genero
+        let campoGenero = document.getElementById("genero");
+        let campoG = document.getElementById("campoG");
+        if(campoGenero.value == ""){
+            e.preventDefault();
+            campoG.innerHTML = "Debes completar este campo";
+        } else {
+            campoG.style.display = "none";
+        }
+
+        // Validación campo categoria
+        let campoImagen = document.getElementById("imagen");
+        let campoI = document.getElementById("campoI");
+        let extPermitidas = /(.png|.PNG|.jpg|.JPG|.JPEG|.jpeg|.GIF|.gif)$/i;
+
+        if(campoImagen.value == ""){
+            e.preventDefault();
+            campoI.innerHTML = "Debes completar este campo";
+        } else if(!extPermitidas.exec(campoImagen.value)){
+            e.preventDefault();
+            campoI.innerHTML = "El tipo de imagen no es válido";          
+        } else {
+            campoI.style.display = "none";
+        }
+
+        // Validación campo descripción
+        let campoDescripcion = document.getElementById("descripcion");
+        let campoDesc = document.getElementById("campoDesc");
+        if(campoDescripcion.value == ""){
+            e.preventDefault();
+            campoDesc.innerHTML = "Debes completar este campo";
+        } else {
+            campoDesc.style.display = "none";
+        }
+
+        // Validación campo material marco
+        let campoMarco = document.getElementById("marco");
+        let campoM = document.getElementById("campoM");
+        if(campoMarco.value == ""){
+            e.preventDefault();
+            campoM.innerHTML = "Debes completar este campo";
+        } else {
+            campoM.style.display = "none";
+        }
+
+        // Validación campo numero de cambios
+        let campoNumerosC = document.getElementById("camibios");
+        let campoNum = document.getElementById("campoNum");
+        if(campoNumerosC.value == ""){
+            e.preventDefault();
+            campoNum.innerHTML = "Debes completar este campo";
+        } else {
+            campoNum.style.display = "none";
+        }
+
+        // Validación campo tipo de freno
+        let campoFrenos = document.getElementById("frenos");
+        let campoT = document.getElementById("campoT");
+        if(campoFrenos.value == ""){
+            e.preventDefault();
+            campoT.innerHTML = "Debes completar este campo";
+        } else {
+            campoT.style.display = "none";
+        }
+
+        // Validación campo suspension
+        let campoSuspension = document.getElementById("suspension");
+        let campoSus = document.getElementById("campoSus");
+        if(campoSuspension.value == ""){
+            e.preventDefault();
+            campoSus.innerHTML = "Debes completar este campo";
+        } else {
+            campoSus.style.display = "none";
+        }
+        
      })
  });

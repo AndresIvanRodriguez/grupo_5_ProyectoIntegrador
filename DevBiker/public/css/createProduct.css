@@ -30,14 +30,6 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
 }
 
 /*main*/
-.margin-left{
-    width: 5%;
-    background-color: #b3b3ff;
-}
-.margin-right{
-    background-color: #b3b3ff;
-    width: 5%;
-}
 .principal{
     width: 90%;
     display: flex;
@@ -47,7 +39,7 @@ html{                        /*El tamaño de los navegadores por defecto son 16p
     display: flex;
     flex-direction: column;
     width: 80%;
-    background-color: #b3b3ff;
+    background-color: #C4C4C4;
     border-radius: 5px;
     padding: 20px;
     opacity: 0.9;

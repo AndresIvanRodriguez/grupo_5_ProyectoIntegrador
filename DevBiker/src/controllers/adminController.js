@@ -65,7 +65,7 @@ const controller = {
     
         })
         
-        res.redirect("/admin");
+        return res.redirect("/admin");
 	} catch (error) {
 		return res.send(error)
 	}
@@ -78,8 +78,8 @@ const controller = {
 			}
 		})
 		
-		return res.redirect('/admin' )
-	 }
+		return res.redirect('/admin');
+	}
 }
 
 module.exports = controller;

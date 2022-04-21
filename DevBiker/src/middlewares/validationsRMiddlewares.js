@@ -8,7 +8,7 @@ const validations = [
     body("email").isEmail().withMessage("El correo es invalido o ya esta registrado"),
     body("password").isLength( {min: 8} ).withMessage("La contraseña debe tener minimo 8 caracteres"),
  //body("adress").notEmpty().withMessage("Debes agregar tu direccion de residencia"),
-    body("fechaNacimiento").isBefore('2004-12-31').withMessage("Campo obligatorio"),
+    body("fechaNacimiento").isBefore('2004-12-31').withMessage("Debe tener la mayoria de edad"),
     body("imagen").custom(( value, { req }) => {
         let file = req.file;
         if(!file){
