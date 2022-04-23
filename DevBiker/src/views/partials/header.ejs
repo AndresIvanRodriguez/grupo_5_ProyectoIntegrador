@@ -3,11 +3,19 @@
 <header>
     <div class="top-header">
         <div class="barra"><p class="barra-text">"Lo que gastas en tu bicicleta, lo ahorras en salud"</p></div>
-            <% if(!locals.isLogged){ %>
-                <div class="login">
-                    <a href="/users/login">INICIAR SESIÓN</p></a>
+
+            <% if(locals.isLogged && locals.userLogged.roleId == 1){ %>
+                <div class="login3">
+                    <div class="perfilNav">
+                        <a href="/users/perfil"><p>Admin <%= locals.userLogged.nombre %></p></a>
+                    </div>
+                    <div class="logout">
+                        <a href="/users/logout"><p>CERRAR SESIÓN</p></a>
+                    </div>
                 </div>
-                <% } else { %>
+            <% } %> 
+
+            <% if(locals.isLogged && locals.userLogged.roleId !== 1){ %>
                 <div class="login2">
                     <div class="perfilNav">
                         <a href="/users/perfil"><p>
@@ -18,8 +26,15 @@
                         <a href="/users/logout"><p>CERRAR SESIÓN</p></a>
                     </div>
                 </div>
+            <% } 
+
+            if(!locals.isLogged) { %>
+                <div class="login">
+                    <a href="/users/login">INICIAR SESIÓN</p></a>
+                </div>
             <% } %>
         </div>
+
     <div class="nav">
         <div class="logo">
             <a href="/"><img src="/img/DevBiker1.png" alt="Logo-DevBiker"></a>
@@ -28,7 +43,11 @@
             <ul>
                 <a href="/products"><li>BICICLETAS</li></a>
                 <a href="/products/oferta"><li>OFERTAS</li></a>
-                <li>NOSOTROS</li>
+                <% if(locals.isLogged && locals.userLogged.roleId == 1){ %>
+                <a href="#"><li>DASHBOARD</li></a>
+                <% } else { %>
+                <li>NOSOTROS</li> 
+                <% } %>
             </ul>
         </div>
         <div class="burger-menu">

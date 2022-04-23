@@ -7,7 +7,7 @@
 
 module.exports = (sequelize, DataTypes) => {
     const User = sequelize.define(             //nombre del modelo en plural
-        "Users", 
+        "User", 
         {
             id:{
                 type: DataTypes.INTEGER,
@@ -27,5 +27,14 @@ module.exports = (sequelize, DataTypes) => {
             timestamps: false
         }
     );
+
+    User.associate = models => {
+        
+        User.belongsTo(models.Rol, {
+            as: "Rol",
+            foreignKey: "roleId"
+        });
+    }  
+
     return User;           //Debemos retornar el mismo objeto
 }

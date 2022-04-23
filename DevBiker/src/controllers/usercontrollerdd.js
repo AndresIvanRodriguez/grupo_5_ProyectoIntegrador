@@ -20,7 +20,7 @@ const controller = {
             })
         }
         let {email} = req.body
-        let userInDB = await db.Users.findOne({
+        let userInDB = await db.User.findOne({
             where:{
                 email:email,
             }
@@ -37,15 +37,16 @@ const controller = {
         }
         try {
             const imagen = req.file ? req.file.filename : "default-image.png";
-            const {nombre,apellido,email,direccion,fechaNacimiento,password,}=req.body;
-            await db.Users.create({
+            const {nombre,apellido,email,direccion,fechaNacimiento,password} = req.body;
+            await db.User.create({
                 nombre,
                 apellido,
                 email,
                 direccion,
                 fechaNacimiento,
                 password:bcryptjs.hashSync(req.body.password, 10),
-                imagen:imagen
+                imagen:imagen,
+                roleId:2 
             }
             );
            
@@ -55,23 +56,23 @@ const controller = {
       
         return res.redirect('users/login');
     }, 
+
     edit : (req,res)=>{
-        db.Users.findByPk(req.params.id)
+        db.User.findByPk(req.params.id)
         .then((usersToEdit)=>{
             res.render("users/editar",{usersToEdit})
         })
-
-
     },
+
     users: async (req, res)=>{
-        let  users = await db.Users.findAll();
+        let  users = await db.User.findAll();
         res.render("users/index", {
             users
         });
     },
    
     destroy : async (req, res) => {
-        await db.Users.destroy({
+        await db.User.destroy({
            where:{
                id: req.params.id
            }
@@ -84,7 +85,7 @@ const controller = {
         
         let {email} = req.body
         
-        let userToLogin = await db.Users.findOne({
+        let userToLogin = await db.User.findOne({
             where:{
                 email:email,
             }
@@ -92,24 +93,40 @@ const controller = {
 
         if(userToLogin){
             let passwordCorrecta = bcryptjs.compareSync(req.body.password, userToLogin.password)
-            console.log(passwordCorrecta);
-			if(passwordCorrecta){
-            delete userToLogin.password;
-            req.session.userLogged = userToLogin;
-            if(req.body.recordarme != undefined){	
-                console.log("Aqui va la cookie 1:",req.cookies);
-                res.cookie('recordarme', userToLogin.email,{maxAge: 600000});
-                }
-            
-            res.redirect("/")}
-            
+            let rolAdmin = userToLogin.roleId == 1;
+
+            const administrador = passwordCorrecta == rolAdmin;
+            console.log(userToLogin)
+            console.log(administrador)
+
+			if(passwordCorrecta && !administrador){
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+
+                if(req.body.recordarme != undefined){	
+                    console.log("Aqui va la cookie 1:",req.cookies);
+                    res.cookie('recordarme', userToLogin.email,{maxAge: 600000});
+                    }
+                
+                res.redirect("/")
+            }
+
+            if(administrador){
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+
+                res.redirect("/admin"/* , {
+                    userAdmin: req.session.userLogged
+                } */)
+            }
+                
             return res.render("users/login", {
-				errors: {
-					email: {
-						msg: "Los datos ingresados son incorrectos"
-					}
-				}
-			});
+                errors: {
+                    email: {
+                        msg: "Los datos ingresados son incorrectos"
+                    }
+                }
+            });
 		}
 
 		return res.render("users/login", {
@@ -121,20 +138,20 @@ const controller = {
 		});		
 	},
 
-    profile: (req, res) => {
-		res.render("users/perfil", {
+    profile: async (req, res) => {
+		return await res.render("users/perfil", {
 			user: req.session.userLogged			//La vista va a conocer esta variable
 		});
 	},
 
     login: (req, res) => {
-		res.render("users/login");
+		return res.render("users/login");
 	},
 
     update: async(req,res)=>{
         const { nombre, apellido, email, direccion, fechaNacimiento, password, imagen} = await req.body;
 
-        db.Users.update({
+        db.User.update({
             nombre,
             apellido,
             email,

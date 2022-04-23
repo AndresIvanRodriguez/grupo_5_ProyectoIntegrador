@@ -9,6 +9,7 @@ const validationsRegister = require("../middlewares/validationsRMiddlewares");
 //Con este middleware el usuaraio logueado no podra ingresar a las rutas que sea pasado
 const guestMiddleware = require("../middlewares/guestMiddleware");
 const authMiddleware = require("../middlewares/authMiddleware");
+const adminMiddleware = require("../middlewares/adminMiddleware");
 
 //Donde se va almacenar las imagenes
 let storage = multer.diskStorage({
@@ -42,7 +43,7 @@ router.get("/perfil", authMiddleware, userscontrollerdd.profile);
 router.get("/logout", userscontrollerdd.logout);
 
 //ruta index
-router.get("/", authMiddleware, userscontrollerdd.users);
+router.get("/", authMiddleware, adminMiddleware, userscontrollerdd.users);
 
 //Rutas editar
 router.get("/editar/:id", authMiddleware, userscontrollerdd.edit);// cambiar cuando se arregle las validaciones

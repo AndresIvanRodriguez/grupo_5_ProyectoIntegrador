@@ -9,6 +9,4 @@ function recordarmeMiddleware(req,res,next){
 }
 
 
-
-
 module.exports= recordarmeMiddleware; 

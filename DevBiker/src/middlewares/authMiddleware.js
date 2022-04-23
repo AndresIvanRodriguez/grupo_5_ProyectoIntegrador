@@ -1,4 +1,4 @@
-//Sí no hay nadie logueado no me muestra la vista de perfil y me redirije a login
+//Sí no hay nadie logueado no me muestra las vistas perfil
 
 function authMiddleware (req, res, next){
     if(!req.session.userLogged){

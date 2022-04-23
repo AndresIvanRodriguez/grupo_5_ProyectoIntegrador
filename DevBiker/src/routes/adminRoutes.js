@@ -7,6 +7,7 @@ const adminController = require("../controllers/adminController");
 
 // Middleware
 const authMiddleware = require("../middlewares/authMiddleware");
+const adminMiddleware = require("../middlewares/adminMiddleware");
 
 //Donde se va almacenar las imagenes
 let storage = multer.diskStorage({
@@ -15,22 +16,22 @@ let storage = multer.diskStorage({
 });
 let upload = multer ({storage})
 
-//Home admin
-router.get("/", /* authMiddleware, */ adminController.index);
+//admin
+router.get("/", adminMiddleware, authMiddleware, adminController.index);
 
 //Rutas Agregar producto
-router.get('/create', /* authMiddleware, */ adminController.createForm);
+router.get('/create', adminMiddleware, adminController.createForm);
 
 //Procesar registro
 //.single porque es un solo archivo y el nombre del for en el formulario
 router.post('/', upload.single("imagen"),adminController.create); 
 
 //Rutas editar
-router.get("/editar/:id", /* authMiddleware, */ adminController.edit);
+router.get("/editar/:id", adminMiddleware, adminController.edit);
 router.patch("/editar/:id", adminController.update);
 
 //Ruta eliminar producto
-router.delete('/delete/:id', /* authMiddleware, */ adminController.destroy); 
+router.delete('/delete/:id', adminMiddleware, adminController.destroy); 
 
 module.exports = router;
 
