@@ -60,7 +60,9 @@ const controller = {
     edit : (req,res) => {
         db.User.findByPk(req.params.id)
         .then((usersToEdit)=>{
-            res.render("users/editar",{usersToEdit})
+            res.render("users/editar",{
+                usersToEdit
+            })
         })
     },
 
