@@ -41,6 +41,12 @@ app.use("/", mainRoutes);
 app.use("/admin", adminRoutes);
 app.use("/users", usersRoutes);
 
+//Apis
+const productRouterApi = require("./routes/apis/productRoutesApi");
+const userRouterApi = require("./routes/apis/userRoutesApi");
+app.use("/api/product", productRouterApi );
+app.use("/api/user", userRouterApi);
+
 //Servidor
 app.listen(process.env.PORT || 3000, () =>console.log("Servidor Corriendo en Puerto 3000"));
 

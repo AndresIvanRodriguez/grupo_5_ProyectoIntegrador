@@ -16,13 +16,13 @@ let storage = multer.diskStorage({
     destination: (req,file,cb) => cb(null, "public/img/usersImagen"),   //Donde guarda imagenes
     filename : (req, file , cb) => cb(null,Date.now()+ "-" +file.originalname) //Le pasamos un nombre
 });
-let upload = multer ({storage})
+let upload = multer ({storage});
 
 //Validaciones para el login
 const validationUser = [                    
 	body("email").isEmail().withMessage("El usuario no es valido"),
 	body("password").isEmpty().withMessage("La contraseña no es correcta")
-]
+];
 
 //Formulario del login
 router.get('/login', guestMiddleware, userscontrollerdd.login);

@@ -7,11 +7,11 @@ const { validationResult } = require("express-validator");
 
 const controller = {
 
-    register:(req,res)=>{
+    register: (req,res) => {
         return res.render("users/register");
     },
 
-    processRegister: async (req,res)=>{
+    processRegister: async (req,res) => {
         const resultValidation = validationResult(req);
         if(resultValidation.errors.length > 0){
             return res.render("users/register", {
@@ -57,14 +57,14 @@ const controller = {
         return res.redirect('users/login');
     }, 
 
-    edit : (req,res)=>{
+    edit : (req,res) => {
         db.User.findByPk(req.params.id)
         .then((usersToEdit)=>{
             res.render("users/editar",{usersToEdit})
         })
     },
 
-    users: async (req, res)=>{
+    users: async (req, res) => {
         let  users = await db.User.findAll();
         res.render("users/index", {
             users
@@ -177,4 +177,5 @@ const controller = {
 		return res.redirect("/");
 	}
 }
-module.exports=controller;
+
+module.exports = controller;

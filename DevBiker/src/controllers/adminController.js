@@ -5,15 +5,19 @@ const path = require('path');
 const db = require("../database/models/index.js");
 
 const controller = {
-	index: async (req, res)=>{
+	admin: (req, res) => {
+		res.render("admin/admin")
+	},
+
+	index: async (req, res) => {
 		const products = await db.Product.findAll()
 		res.render("admin/index", {
 			products
 		})
     },
 
-	createForm: (req,res)=>{
-		res.render(("admin/create"));
+	createForm: (req, res) => {
+		res.render("admin/create");
 	},
 
     create: async (req, res) => {

@@ -7,7 +7,7 @@ function adminMiddleware (req, res, next){
         res.locals.isLogged = true;
         res.locals.userLogged = req.session.userLogged;
 
-        if(!res.locals.userLogged.roleId == 1){
+        if(res.locals.userLogged.roleId == 2 || res.locals.userLogged.roleId == null){
             return res.redirect("/")
         }
         
