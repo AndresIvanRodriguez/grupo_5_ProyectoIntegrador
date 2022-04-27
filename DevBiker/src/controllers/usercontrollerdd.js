@@ -150,17 +150,15 @@ const controller = {
 		return res.render("users/login");
 	},
 
-    update: async(req,res)=>{
+    update: async(req,res) => {
+        let userLogged = await db.User.findByPk(req.params.id)
+        if(userLogged){
+            
+        }
         const { nombre, apellido, email, direccion, fechaNacimiento, password, imagen} = await req.body;
 
         db.User.update({
-            nombre,
-            apellido,
-            email,
-            direccion,
-            fechaNacimiento,
-            password,
-            imagen
+            nombre, apellido, email, direccion, fechaNacimiento, password, imagen
         },
         { 
             where: {

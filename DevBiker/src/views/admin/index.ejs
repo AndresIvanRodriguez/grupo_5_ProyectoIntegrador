@@ -1,60 +1,71 @@
-<%- include("../partials/head.ejs") %> 
+<%- include("../partials/head.ejs") %>
     <title>Admin-index</title>
     <link rel="stylesheet" href="/css/index.css">
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <%- include("../partials/header.ejs") %> 
-    
-    <main>
-        <div class="principal">
+        <%- include("../partials/header.ejs") %>
 
-            <h1>Index de los productos</h1>
+            <main>
+                <div class="principal">
 
-            <label for="">
-                <div class="row">
-                    <div class="titulo">
-                        <p>ID</p>
-                        <p>Producto</p> 
-                        <p>Editar</p>
-                        <p>Eliminar</p>
-                    </div>
+                    <h1>Index de los productos</h1>
 
-                    <div class="items">
-                        <% products.forEach(product => {  %> 
-                        <table class="table">
-                        <tr class="products">
-                            <td><%=product.id %></td>
-                            <td><%=product.nombre %></td>
-                            <td>
-                                <form action="/admin/editar/<%= product.id %>" method="get" >
-                                    <input class="submit" type="submit" value="Editar" >
+                    <label for="">
+                        <div class="row">
+                            <div class="titulo">
+                                <p>ID</p>
+                                <p>Producto</p>
+                                <p>Editar</p>
+                                <p>Eliminar</p>
+                            </div>
+
+                            <div class="items">
+                                <% products.forEach(product=> { %>
+                                    <table class="table">
+                                        <tr class="products">
+                                            <td>
+                                                <%=product.id %>
+                                            </td>
+                                            <td>
+                                                <%=product.nombre %>
+                                            </td>
+                                            <td>
+                                                <form class="formEditar" action="/admin/editar/<%= product.id %>"
+                                                    method="get">
+                                                    <button class="submit" type="submit">Editar</button>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form class="formDelete"
+                                                    action="/admin/delete/<%= product.id %>?_method=delete"
+                                                    method="POST">
+                                                    <button id="enviar" class="submit" type="submit">Eliminar</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <% }); %>
+                            </div>
+                        </div>
+
+                        <div class="create">
+                            <h4>¿Quieres Crear Un Producto?</h3>
+                                <form action="">
+                                    <a href="/admin/create">
+                                        <input class="button" type="button" value="Crear">
+                                    </a>
                                 </form>
-                            </td>
-                            <td>
-                                <form action="/admin/delete/<%= product.id %>?_method=delete" method="POST">
-                                    <button class="submit" type="submit">Eliminar</button>
-                                </form>  
-                            </td>  
-                        </tr>
-                        </table>
-                        <% }); %>
-                    </div>
+                        </div>
                 </div>
+            </main>
 
-            <div class="create">
-                <h4>¿Quieres Crear Un Producto?</h3>
-                <form action="">
-                    <a href="/admin/create">
-                        <input class="button" type="button" value="Crear">
-                    </a>
-                </form> 
-            </div>
-        </div>
-    </main>
-    <!--footer-->
-    <%- include("../partials/footer.ejs") %>
-</body>
+            <!--footer-->
+            <%- include("../partials/footer.ejs") %>
 
-</html>
+                <script src="/js/indexProducts.js"></script>
+
+    </body>
+
+    </html>

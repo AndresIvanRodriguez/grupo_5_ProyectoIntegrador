@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
             descripcion: { type:DataTypes.STRING(255)},
             material: { type:DataTypes.STRING(255)},
             numDeCambios: { type:DataTypes.INTEGER},
+            stock: { type:DataTypes.INTEGER},
             tipoFreno: { type:DataTypes.STRING(255)},
             suspension: { type:DataTypes.STRING(255)},
             imagen: { type:DataTypes.STRING(255)},

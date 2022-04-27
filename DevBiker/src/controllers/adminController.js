@@ -24,7 +24,7 @@ const controller = {
 		let imagen = req.file ? req.file.filename : "default-image.png";
 		try {
 			const { nombre, precio, color, genre, descuento, descripcion, material, numDeCambios,
-					tipoFreno, suspension, stock, categoriaId} = req.body;
+					tipoFreno, suspension, stock, categoriaId } = req.body;
 			await db.Product.create({
 				nombre: req.body.nombre,
 				precio: req.body.precio,
@@ -45,7 +45,7 @@ const controller = {
 		}
 	},
     
-    edit: async (req, res)=>{
+    edit: async (req, res) => {
         let productoId = req.params.id;		//conocer el id del product
 		let productToEdit = await db.Product.findByPk(productoId);
 
@@ -54,10 +54,11 @@ const controller = {
         });
     },
 
-    update: async (req,res)=>{
+    update: async (req,res) => {
 		try {
-        const { nombre, precio, color, genre, descuento, descripcion, material, numDeCambios,
-			tipoFreno, suspension, stock,imagen, categoriaId,} = await req.body;
+		const { nombre, precio, color, genre, descuento, descripcion, material, numDeCambios,
+			tipoFreno, suspension, stock, imagen, categoriaId } = await req.body;
+
         db.Product.update({
 			nombre,precio,color,genre,descuento,descripcion,material,numDeCambios,tipoFreno,suspension,
 			stock,imagen

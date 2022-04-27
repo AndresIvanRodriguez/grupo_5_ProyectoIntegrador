@@ -53,8 +53,8 @@
 
                     <div class="div">
                         <label for="imagen" class="label">Foto de perfil:</label><br>
-                        <img src="/img/usersImagen/<%=usersToEdit.imagen%>" alt="Prototipo <%=usersToEdit.name%> ">
-                        <input type="file" name="imagen" class="input" value="">
+                        <img src="/img/usersImagen/<%= usersToEdit.imagen %>" alt="Usuario <%=usersToEdit.name%> ">
+                        <input type="file" name="imagen" class="input" value="<%= usersToEdit.imagen %>">
                     </div>
                     <p id="campoI" style="color: blue;"></p>
                     
