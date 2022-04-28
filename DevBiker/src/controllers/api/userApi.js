@@ -8,17 +8,19 @@ module.exports = {
         const datos = await db.User.findAll()
         const respuesta = {
             meta: { 
+                total: datos.length,
                 status: 200,
-                total: datos.longth,
-                url: "/api/product"
+                url: "/api/users"
             },
-            data:datos
+            data: {
+                nombre: datos.nombre
+            } 
         }
         res.json(respuesta);
    },
 
-    'detalil': async (req,res) => {
-        const producto = await db.User.findByPk(req.params.id);
-        res.json(producto);
+    'detail': async (req,res) => {
+        const usuario = await db.User.findByPk(req.params.id);
+        res.json(usuario);
     }
 }
