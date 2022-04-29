@@ -6,12 +6,12 @@ module.exports = {
 
     'lista': async (req, res) => {
         const datos = await db.Product.findAll(
-            /* {
+            {
                 include: ['Categorie']
-            } */
+            }
             /* {
             include:[{
-                model:Categorie
+                model:"Categorie"
             }],
             attributes: ['id', 'nombre', 'precio']
         } */)

@@ -1,0 +1,149 @@
+/*Normalización*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos Comunes*/
+html{                        /*El tamaño de los navegadores por defecto son 16px*/
+    font-size: 65%;          /*De esta manera el valor del navegador es de 10px*/
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* <!--Body general--> */
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* <!--SideBar--> */
+#div1{
+    width: 20%;
+    background-color: #2D2D2D;
+}
+
+#menu{
+    width: 100%;
+}
+#titleMenu{
+    padding: 10px;
+    text-align: center;
+    background-color: #00ABE0;
+    font-size: 20px;
+}
+#imgMenu img{
+    width: 90%;
+    margin: 0% 4%;
+}
+#nombre{
+    padding: 10px;
+}
+#nombre p{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+}
+#imgProfile img{
+    width: 70%;
+    margin: 0% 14%;
+}
+#navBar{
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: #C4C4C4;
+}
+#navBar p{
+    font-weight: bold;
+    padding: 8px;
+    border-bottom: 1px solid #2D2D2D;
+}
+
+#div2{
+    width: 80%;
+}
+
+/* <!--HEADER--> */
+#header{
+    display: flex;
+    flex-direction: row;
+    background-color: #050A30;
+}
+#titulo{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+#logo{
+    width: 25%;
+}
+#logo img{
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+}
+#dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 50px;
+    background-color: #2D2D2D;
+    gap: 6%;
+}
+#container{
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to top, #2D2D2D, white);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px;
+}
+#container i{
+    font-size: 50px;
+    color: #050A30;
+}
+.numero{
+    font-size: 30px;
+    color: #00ABE0;
+}
+
+#mainDinamico img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!--Main--> */
