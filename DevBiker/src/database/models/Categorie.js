@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
                 primaryKey: true,
                 autoIncrement: true
             },
-            nombre: { 
+            nombreCategoria: { 
                 type: DataTypes.STRING(255) 
             }
         },
