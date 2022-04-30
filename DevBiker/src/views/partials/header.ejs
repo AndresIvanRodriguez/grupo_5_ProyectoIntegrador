@@ -50,13 +50,28 @@
                 <% } %>
             </ul>
         </div>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="icons">
+        <div class="burger-menu" > 
+            <nav>
+               
+                <input type="checkbox" id="menu">
+                <label for="menu"> ☰ </label>
+                <ul class="nav-menu">
+                  <li> <a class="active" href="/products"> BICICLETAS</a></li>
+                  <li><a href="/products/oferta">OFERTAS </a></li>
+                  <% if(locals.isLogged && locals.userLogged.roleId == 1){ %>
+                    <a href="#"><li>DASHBOARD</li></a>
+                    <% } else { %>
+                    <li>NOSOTROS</li> 
+                    <% } %>
+                </ul>
+              </nav>
+              
+    </div>
+<div class="icons">
             <i class="fas fa-search"></i>
             <i class="far fa-heart"></i>
             <a href="/carrito"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </div>
+ 
 </header>

@@ -122,12 +122,14 @@ header{
     color: #050A30;
 }
 .perfilNav{
+    display: flex;
     width: 50%;
     text-align: center;
     border-right: 2px solid #050A30;
     text-align: center;
 }
 .logout{
+    display: flex;
     width: 50%;
     text-align: center;
 }
@@ -182,17 +184,42 @@ header .nav ul li:hover{
     font-size: 30px;
 }
 .burger-menu{
+    
     display: flex;
     padding: 4px;
-    border: solid 2px white;
     border-radius: 4px;
     margin: 10px 20px 10px 0px;
+    
 }
-.burger-menu i{
-    font-size: 22px;
-}
-
-
+ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+  input {
+    display: none;
+  }
+ 
+  .nav-menu{
+    position:relative;
+    width: 5%;
+    margin-left: 15px;
+    height: 5vh;
+    background: rgba(0,0,0,0.95);
+    text-align: center;
+    }
+    .nav-menu li{
+        display: block;
+        line-height: 5px;
+        margin: 5px;
+        transition: all .5s;
+    }
+    .nav-menu li a.active,.nav-menu li a :hover{
+      
+        transition: 0.3s;
+    }
 /*Footer-------------------------------------------*/
 footer{
     background-color: #050A30;
