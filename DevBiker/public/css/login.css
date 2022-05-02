@@ -99,7 +99,7 @@ section{
 /*@media------------------------------------------------------------------------*/
 @media (min-width: 769px){
     .container_form{
-        width: 30%;
+        width: 40%;
         border-radius: 8px;
         padding: 20px;
         opacity: 0.9;
