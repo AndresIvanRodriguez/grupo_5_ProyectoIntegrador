@@ -191,18 +191,32 @@ header .nav ul li:hover{
     margin: 10px 20px 10px 0px;
     
 }
-ul{
+.burger-menu{
+    
+    display: flex;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 10px 20px 10px 0px;
+    
+}
+
+.nav-menu{
     display: none;
-  }
+    position:relative;
+    width: 5%;
+    margin-left: 15px;
+    height: 5vh;
+    background: rgba(0,0,0,0.95);
+    text-align: center;
+    }
   
   input:checked  ~ ul{
     display:block;
   }
-  input {
+  input[type="checkbox"]{
     display: none;
-  }
- 
-  .nav-menu{
+}
+.nav-menu{
     position:relative;
     width: 5%;
     margin-left: 15px;
@@ -220,6 +234,7 @@ ul{
       
         transition: 0.3s;
     }
+
 /*Footer-------------------------------------------*/
 footer{
     background-color: #050A30;
@@ -367,6 +382,9 @@ footer img{
         gap: 15px;
     }
     /*footer-------------------------------------------------------*/
+    ul{
+        display: block;
+      }
     h4{
         font-size: 20px;
         margin: 15px
