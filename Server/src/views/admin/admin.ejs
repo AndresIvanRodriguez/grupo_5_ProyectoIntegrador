@@ -1,0 +1,19 @@
+<%- include("../partials/head.ejs") %>
+
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <%- include("../partials/header.ejs") %> 
+
+    <h1>Administrar productos y usuarios</h1>
+    <div class="admin">
+        <a href="/admin/products">Index productos<i class="fa-solid fa-arrow-right-long-to-line"></i></a>
+        <a href="/admin/users">Index usuarios<i class="fa-solid fa-arrow-right-long-to-line"></i></a>
+    </div>
+    
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>

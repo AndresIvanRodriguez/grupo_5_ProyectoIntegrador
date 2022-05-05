@@ -1,0 +1,132 @@
+<!--head-->
+<%- include("../partials/head.ejs") %>
+
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/createProduct.css" type="text/css">
+</head>
+<body>
+    <%- include("../partials/header.ejs") %> 
+    <main>
+
+        <div class="margin-left"></div>
+
+        <div class="principal">
+
+            <div class="container-form">
+                <div>
+                    <h2 class="titulo">Editar producto</h2>
+                </div>
+                
+                <form id="edit" action="/admin/editar/<%= productToEdit.id%>?_method=PATCH" method="POST" enctype="multipart/form-data">
+                   
+                    <div>
+                        <label for="nombre">Nombre del producto:</label>  
+                        <input class="input" id="nombre" type="text" name="nombre" value="<%= productToEdit.nombre %>">
+                    </div>
+                    <p id="campoN" style="color: blue;"></p>
+
+                    <div>
+                        <label for="precio">Valor del producto:</label>
+                        <input class="input" id="valor" type="number" name="precio" value="<%= productToEdit.precio %>" >
+                    </div>
+                    <p id="campoV" style="color: blue;"></p>
+
+                    <div>
+                        <label for="color">Color:</label>
+                        <input class="input" id="color" type="text" name="color" value="<%= productToEdit.color %>" >
+                    </div>
+                    <p id="campoC" style="color: blue;"></p>
+
+                    <div>
+                        <label for="descuento">Descuento:</label>
+                        <input class="input" id="descuento" type="text" name="descuento" value="<%= productToEdit.descuento %>" >
+                    </div>
+                    <p id="campoD" style="color: blue;"></p>
+
+                    <div>
+                        <label for="stock">Stock:</label>
+                        <input class="input" id="stock" type="number" name="stock" value="<%= productToEdit.stock %>" >
+                    </div>
+                    <p id="campoS" style="color: blue;"></p>
+
+                    <div>
+                        <label for="categoria">Categoria:</label>
+                        <select class="input" id="categoria" name="categoria" value="<%= productToEdit.categoria %>">
+                            <option>------------------</option>
+                            <option value="<%= productToEdit.cetgoria %>" >Ruta</option>
+                            <option value="<%= productToEdit.cetgoria %>" >BMX</option>
+                            <option value="<%= productToEdit.cetgoria %>" >Urbano</option>
+                            <option value="<%= productToEdit.cetgoria %>" >Montaña</option>
+                        </select>
+                    </div>
+                    <p id="campoCat" style="color: blue;"></p>
+
+                    <div>
+                        <label for="genre">Genero:</label>
+                        <select class="input" name="genre" id="genero">
+                            <option>------------------</option>
+                            <option value="<%= productToEdit.genre %>" >Hombre</option>
+                            <option value="<%= productToEdit.genre %>" >Mujer</option>
+                            <option value="<%= productToEdit.genre %>" selected>Unisex</option>
+                        </select>
+                    </div>
+                    <p id="campoG" style="color: blue;"></p>
+
+                    <div>
+                        <label for="descripcion">Descripcion del producto:</label>
+                        <input class="input" id="descripcion" type="text" name="descripcion" value="<%= productToEdit.descripcion %>" selected></input>
+                    </div>
+                    <p id="campoDesc" style="color: blue;"></p>
+
+                    <div>
+                        <label class="caracteristicas">Caracteristicas</label>
+                        <div>
+                            <label for="material">Material marco:</label>
+                            <input class="input" id="marco" type="text" name="material" value="<%= productToEdit.material %>">
+                        </div>
+                        <p id="campoM" style="color: blue;"></p>
+
+                        <div>
+                            <label for="numDeCambios">Numero de cambios:</label>
+                            <input class="input" id="camibios" type="text" name="numDeCambios" value="<%= productToEdit.numDeCambios %>">
+                        </div>
+                        <p id="campoNum" style="color: blue;"></p>
+
+                        <div>
+                            <label for="tipoFreno">Tipo de freno:</label>
+                            <input class="input" id="tipoFreno" type="text" name="tipoFreno" value="<%= productToEdit.tipoFreno %>">
+                        </div>
+                        <p id="campoT" style="color: blue;"></p>
+
+                        <div>
+                            <label for="suspension">Suspención:</label>
+                            <input class="input" id="suspension" type="text" name="suspension" value="<%= productToEdit.suspension %>">
+                        </div>
+                        <p id="campoSus" style="color: blue;"></p>
+
+                        <div>
+                            <label for="imagen">Cambiar imagen</label>
+                            <img src="/img/<%=productToEdit.imagen%>" alt="Prototipo <%=productToEdit.nombre%> ">
+                            <input class="input" type="file" name="imagen" id="image" value="<%= productToEdit.imagen %>">
+                        </div>
+                        <p id="campoI" style="color: blue;"></p>
+
+                    </div>
+
+                    <p id="input"></p>
+
+                    <div>
+                        <button class="submit" type="submit">Guardar cambios</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="margin-right"></div>
+
+    </main>
+    <%- include("../partials/footer.ejs") %>
+    <script src="/js/validationAdminEditarProducto.js"></script>
+</body>
+</html>

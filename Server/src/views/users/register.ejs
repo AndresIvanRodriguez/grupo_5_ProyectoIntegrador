@@ -1,0 +1,123 @@
+<!--head-->
+<%- include("../partials/head.ejs") %>
+
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="/css/register.css" type="text/css">
+
+</head>
+<body>
+
+    <!--header-->
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+        <div class="margin-left"></div>
+
+        <div class="principal">
+            <div class="container_form">
+                <div class="titulo-icon">
+                    <h2 class="titulo">Crear Cuenta</h2>
+                    <i class="fas fa-user-plus"></i>
+                </div>                
+
+                <form id="register" action="/users" method="POST" enctype="multipart/form-data">
+                    <div class="div">
+                        <label for="nombre" class="label">Nombre:</label><br>
+                        <input id="nombre" type="text" name="nombre" class="input" value="<%= locals.oldData ? oldData.nombre : null %>">
+                    </div>
+                    <p id="campoN" style="color: blue;"></p>
+                    <% if(locals.errors && errors.nombre){ %>
+                        <p style="color: red;"><%= errors.nombre.msg %></p>
+                    <% } %>
+
+                    <div class="div">
+                        <label for="apellido" class="label">Apellidos:</label><br>
+                        <input id="apellido" type="text" name="apellido" class="input" value="<%= locals.oldData ? oldData.apellido : null %>">
+                    </div>
+                    <p id="campoA" style="color: blue;"></p>
+                    <% if(locals.errors && errors.apellido){ %>
+                        <p style="color: red;"><%= errors.apellido.msg %></p>
+                    <% } %>
+
+                    <div class="div">
+                        <label for="email" class="label">Email:</label><br>
+                        <input id="email" type="email" name="email" class="input" value="<%= locals.oldData ? oldData.email : null %>">
+                    </div>
+                    <p id="campoE" style="color: blue;"></p>
+                    <% if(locals.errors && errors.email){ %>
+                        <p style="color: red;"><%= errors.email.msg %></p>
+                    <% } %>
+                    
+                    <div class="div">
+                        <label for="direccion" class="label">Domicilio:</label><br>
+                        <input id="direccion" type="text" name="direccion" class="input" value="<%= locals.oldData ? oldData.direccion : null %>">
+                    </div>
+                    <p id="campoD" style="color: blue;"></p>
+                    <% if(locals.errors && errors.direccion){ %>
+                        <p style="color: red;"><%= errors.direccion.msg %></p>
+                    <% } %>
+
+                    <div class="div">
+                        <label for="fechaNacimiento" class="label">Fecha nacimiento:</label><br>
+                        <input id="fechaNacimiento" type="date" name="fechaNacimiento" class="input" value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
+                    </div>
+                    <p id="campoF" style="color: blue;"></p>
+                    <% if(locals.errors && errors.fechaNacimiento){ %>
+                        <p style="color: red;"><%= errors.fechaNacimiento.msg %></p>
+                    <% } %>
+
+                    <div class="div">
+                        <label for="password" class="label">Contraseña:</label><br>
+                        <input id="password" type="password" name="password" class="input" value="<%= locals.oldData ? oldData.password : null %>">
+                    </div>
+                    <p id="campoP" style="color: blue;"></p>
+                    <% if(locals.errors && errors.password){ %>
+                        <p style="color: red;"><%= errors.password.msg %></p>
+                    <% } %>
+
+                    <div class="div">
+                        <label for="imagen" class="label">Agregar imagen:</label><br>
+                        <input id="imagen" type="file" name="imagen" class="input" value="<%= locals.oldData ? oldData.imagen : null %>">
+                    </div>
+                    <p id="campoI" style="color: blue;"></p>
+                    <% if(locals.errors && errors.imagen){ %>
+                        <p style="color: red;"><%= errors.imagen.msg %></p>
+                    <% } %>
+
+                    <div class="check">
+                        <div>
+                            <label for="condiciones">Terminos Y Condiciones </label>
+                            <input type="checkbox"  name="condiciones" required>
+                        </div>
+                        <div>
+                            <label for="terminos">Terminos De Uso </label>
+                            <input type="checkbox" name="terminos" required>
+                        </div>
+                    </div>
+                    
+                    <div class="obligatorio">
+                        <p>Campos son obligatorios*</p>
+                    </div>
+                    
+                    
+                    <ul id="nombr"> </ul>
+
+
+                    <div class="div-button">
+                        <button type="submit" class="button">Crear cuenta</button>
+                        <button type="reset" class="button">Restablecer</button>
+                    </div>  
+                </form>
+            </div>
+        </div>
+
+        <div class="margin-left"></div>
+    </main>
+
+    <!--footer-->
+    <%- include("../partials/footer.ejs") %>
+    <script src="/js/validationRegister.js"></script>
+
+</body>
+</html>
