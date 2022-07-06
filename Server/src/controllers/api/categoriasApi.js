@@ -1,8 +1,9 @@
 const db = require ('../../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
+
 module.exports = {
-    'lista': async (req,res) => {
+    'lista': async (req, res) => {
         const datos = await db.Categorie.findAll()
         const respuesta = {
             meta: {
@@ -14,7 +15,7 @@ module.exports = {
         }
         res.json(respuesta);
    },
-    'detail': async (req,res) => {
+    'detail': async (req, res) => {
         const categoria = await db.Categorie.findByPk(req.params.id);
         res.json(categoria);
     }

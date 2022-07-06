@@ -38,4 +38,4 @@ function ListadoCategoria(){
     )
 }
 
-export default ListadoCategoria
+export default ListadoCategoria;

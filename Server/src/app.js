@@ -52,7 +52,7 @@ app.use("/api/users", userRouterApi);
 app.use("/api/categorie", categorieRoutesApi);
 
 //Servidor
-app.listen(process.env.PORT || 3001, () =>console.log("Servidor Corriendo en Puerto 3000"));
+app.listen(process.env.PORT || 3001, () => console.log("Servidor Corriendo en Puerto 3000"));
 
 //Error 404
 app.use((req, res, next) => {
